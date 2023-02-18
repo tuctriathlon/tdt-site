@@ -1,3 +1,20 @@
+# Site web du Triahtlon de Toulouse
+
+## Prerequis
+* Installer git
+* installer node ou nvm
+
+## Installation
+cloner le repo github
+```shell
+git clone git@github.com:tuctriathlon/tdt-site.git
+```
+
+Installer les dependances
+```shell
+npm install
+```
+
 # Frontend
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.1.
