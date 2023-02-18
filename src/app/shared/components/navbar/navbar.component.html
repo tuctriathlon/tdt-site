@@ -1,0 +1,27 @@
+<nav [class.opened]="open" [class.expanded]="expanded">
+  <div class="logo full" src="assets/pictures/logo-tdt-full.png" routerLink="/" ></div>
+  <div class="logo light" src="assets/pictures/logo-tdt-light.png" routerLink="/" ></div>
+  <div class="social">
+    <div class="facebook" *ngIf="(config$ | async)?.facebook_url">
+      <a target="_blank" href="{{(config$ | async)?.facebook_url}}"></a>
+    </div>
+    <div class="twitter" *ngIf="(config$ | async)?.twitter_url">
+      <a target="_blank" href="{{(config$ | async)?.twitter_url}}"></a>
+    </div>
+    <div class="instagram" *ngIf="(config$ | async)?.instagram_url">
+      <a target="_blank" href="{{(config$ | async)?.instagram_url}}"></a>
+    </div>
+  </div>
+  <div class="menu">
+    <i class="material-icons" (click)="open = !open">menu</i>
+  </div>
+  <ul>
+    <li [hidden]="open">
+      <a routerLink="/"><i class="icon material-icons">home</i></a>
+    </li>
+    <li *ngFor="let page of (pages$ | async)" >
+      <a *ngIf="page.url.startsWith('http')" target="_blank" [attr.href]="page.url" class="focus">{{page.page_name}}</a>
+      <a *ngIf="!page.url.startsWith('http')" routerLink="{{page.url}}" routerLinkActive="selected" (click)="open = !open">{{page.page_name}}</a>
+    </li>
+  </ul>
+</nav>

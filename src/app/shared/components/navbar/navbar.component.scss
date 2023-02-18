@@ -1,0 +1,248 @@
+@import '../../styles/colors.scss';
+:host {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  width: 100%;
+  background-color: $headerBackground;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.4);
+  min-height: 60px;
+  display: flex;
+  justify-content: center;
+  nav {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    min-width: 300px;
+    max-width: 1300px;
+    width: 100%;
+    height: 60px;
+    padding: 0em 1em;
+  }
+  .logo {
+    position: relative;
+    background-image: url(/assets/pictures/logo-tdt-light.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    left: 1em;
+    &.full {
+      top: 0.5em;
+      height: 85px;
+      width: 425px;
+      visibility: hidden;
+      opacity: 0;
+    }
+    &.light {
+      top: 8px;
+      height: 45px;
+      width: 300px;
+      margin-left: 0.5em
+    }
+  }
+  .social {    
+    order: 1;
+    display: flex;
+    flex-direction: row;
+    margin: 1.2em 0;
+    z-index: 999;
+    & > div {
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin: 0.5em 6px;
+      margin-left: 0;
+      opacity: 0.5;
+      &:hover {
+        opacity: 1;
+      }
+      a {
+        width: 25px;
+        height: 25px;
+        display: block;
+        padding-bottom: 5px;
+        border: none;
+        &:hover {
+          border: none;
+        }
+      }
+    }
+    .instagram {
+      background-image: url(/assets/pictures/logo-instagram.png);
+    }
+    .twitter {
+      background-image: url(/assets/pictures/logo-twitter.png);
+    }
+    .facebook {
+      background-image: url(/assets/pictures/logo-facebook.png);
+    }
+  }
+  a {
+    color: $headerColor;
+    padding-bottom: 0.3em;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    &:hover,
+    &.selected {
+      color: $headerActive;
+      border-bottom: 2px solid $headerActive;
+    }
+  }
+  .icon {
+    color: $headerColor;
+    font-size: 20px;
+    &:hover {
+      color: $headerActive;
+    }
+  }
+  .focus {
+    color: $focus;
+  }
+  @media screen and (min-width: 1100px) {
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    nav.expanded {
+      position: relative;
+      align-items: flex-end;
+      height: 100px;
+      .logo {
+        background-image: url(/assets/pictures/logo-tdt-full.png);
+        &.light {
+          visibility: hidden;
+          opacity: 0;
+        }
+        &.full {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+    ul {
+      position: relative;      
+      display: flex;
+      align-items: center;
+      list-style: none;
+      margin: 1.2em 1em;
+      padding: 0;
+      z-index: 2;
+    }
+    li {
+      display: inline;
+      padding: 0.5em;
+    }
+    .menu { 
+      display: none;
+    }
+  }
+  @media screen and (max-width: 1100px) {
+    nav {
+      height: 60px;
+      &.opened {
+        ul {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 60px;
+          background-color: $headerBackground;
+          order: 3;
+          width: 100%;
+          margin-top: 0;
+          display: block;
+          height: auto;
+        }
+      }
+      .focus {
+        margin-right: 0;
+      }
+      .social {
+        div {
+          margin: 0 6px;
+        }
+      }
+    }
+    ul {
+      display: none;
+      list-style: none;
+      padding: 0;
+      margin: auto;
+      text-align: center;
+      margin-top: 4em;
+    }
+    li {
+      margin: 0.4em;
+      padding: 0.4em;
+    }
+    a {
+      color: $headerColor;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 1.1em;
+      padding-bottom: 0.1em;
+    }
+    a:hover,
+    a:focus,
+    a:active {
+      color: $headerActive;
+      border-bottom: 2px solid $headerActive;
+    }
+    .logo.light {
+      display: inline-block;
+    }
+    .menu {
+      order: 2;
+      display: flex;
+      align-items: center;
+      max-height: 55px;
+      color: $headerColor;
+      cursor: pointer;
+      &:hover {
+        color: $headerActive;
+      }
+      i {
+        font-size: 33px;
+      }
+    }
+    .facebook {
+      float: right;
+      margin-top: 15px;
+      margin-bottom: 0;
+    }
+  }
+  @media screen and (max-width: 410px) {
+    nav.opened {
+      ul {
+        top: 50px;
+      }
+    }
+    min-height: 50px;
+    nav {
+      height: 50px;
+    }
+    .logo.light {
+      margin-left: 0;
+      margin-top: 3px;
+      margin-bottom: 10px;
+      height: 30px;
+      width: 200px;
+    }
+    .menu {
+      max-height: 50px;
+    }
+    .facebook {
+      margin-top: 9px;
+    }
+    .social {
+      margin-top: 0.9em;      
+      margin-bottom: 0.9em
+    }
+  }
+}

@@ -1,0 +1,102 @@
+/* You can add global styles to this file, and also import other style files */
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  font-family: 'Open Sans', 'Verdana';
+  color: #222222;
+}
+
+a {
+  text-decoration: none;
+  color: #F36C22;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.loading {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.loading img {
+  height: 5em;
+}
+.loading .spinner {
+  position: relative;
+}
+
+@media screen and (max-width: 960px) {
+  .loading img {
+    height: 4em;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .loading img {
+    height: 3em;
+  }
+}
+.loading .blob {
+    width: 1em;
+    height: 1em;
+    background: #2974b5;
+    border-radius: 50%;
+    position: absolute;
+    left: calc(50% - 0.5em);
+}
+
+.loading .blob-2 { animation: animate-to-2 1.5s infinite; }
+.loading .blob-3 { animation: animate-to-3 1.5s infinite; }
+.loading .blob-1 { animation: animate-to-1 1.5s infinite; }
+.loading .blob-4 { animation: animate-to-4 1.5s infinite; }
+.loading .blob-0 { animation: animate-to-0 1.5s infinite; }
+.loading .blob-5 { animation: animate-to-5 1.5s infinite; }
+
+@keyframes animate-to-2 {
+    25%, 75% { transform: translateX(-1em) scale(0.75); }
+    95% { transform: translateX(0em) scale(1); }
+}
+
+@keyframes animate-to-3 {
+    25%, 75% { transform: translateX(1em) scale(0.75); }
+    95% { transform: translateX(0em) scale(1); }
+}
+
+@keyframes animate-to-1 {
+    25% { transform: translateX(-1em) scale(0.75); }
+    50%, 75% { transform: translateX(-3em) scale(0.6); }
+    95% { transform: translateX(0em) scale(1); }
+}
+
+@keyframes animate-to-4 {
+    25% { transform: translateX(1em) scale(0.75); }
+    50%, 75% { transform: translateX(3em) scale(0.6); }
+    95% { transform: translateX(0em) scale(1); }
+}
+
+@keyframes animate-to-0 {
+    25% { transform: translateX(-1em) scale(0.75); }
+    50% { transform: translateX(-3em) scale(0.6); }
+    75% { transform: translateX(-5em) scale(0.5); }
+    95% { transform: translateX(0em) scale(1); }
+}
+
+@keyframes animate-to-5 {
+    25% { transform: translateX(1em) scale(0.75); }
+    50% { transform: translateX(3em) scale(0.6); }
+    75% { transform: translateX(5em) scale(0.5); }
+    95% { transform: translateX(0em) scale(1); }
+}

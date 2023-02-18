@@ -1,0 +1,28 @@
+<tdt-submenu></tdt-submenu>
+<main>
+  <h1 id="procedure">Procedure d'inscription</h1>
+  <article *ngFor="let step of (steps$ | async)">
+    <div class="step-container" [style.background]="step.couleur">
+      <h1>{{step.titre}}</h1>
+      <h2>{{step.description}}</h2>
+    </div>
+    <div class="step-arrow" [style.border-top-color]="step.couleur"></div>
+  </article>
+  <h1 id="documents">Documents</h1>
+  <article>
+    <ul class="list">
+      <li>
+        <a href="/assets/files/certificat_medical_type_tdt.pdf" target="_blank">
+          <i class="material-icons">file_download</i>
+          <span>Certificat médical</span>
+        </a>
+      </li>
+      <li>
+        <a href="/assets/files/autorisation_parentale_type_tdt.docx" target="_blank">
+          <i class="material-icons">file_download</i>
+          <span>Autorisation parentale</span>
+        </a>
+      </li>
+    </ul>
+  </article>
+</main>

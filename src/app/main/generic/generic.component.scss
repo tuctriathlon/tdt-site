@@ -1,0 +1,22 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    ::ng-deep img {
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      max-height: 400px;
+    }
+    .media {
+      position: relative;
+      height: 0;
+      padding-bottom: 56.25%;
+      iframe {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+      }
+    }
+  }

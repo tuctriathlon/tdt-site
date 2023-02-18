@@ -1,0 +1,91 @@
+<main>
+  <article>
+    <h1>{{race?.name}}</h1>
+    <ul>
+      <li>
+        <div class="icon material-icons">timer</div>
+        <div class="container">
+          <div class="title">
+            <span>Départ</span>
+            <span class="value">{{race.day}} {{race.time}}</span>
+          </div>
+        </div>
+      </li>
+      <li *ngIf="race?.precision">
+        <div class="icon material-icons"></div>
+        <div class="container">
+          <div class="content">
+            <span class="value">{{race?.precision}}</span>
+          </div>
+        </div>
+      </li>
+      <li *ngIf="race?.nombre_de_places">
+        <div class="icon material-icons">people</div>
+        <div class="container">
+          <div class="title">
+            <span>Nombre de dossards</span>
+            <span class="value">{{race?.nombre_de_places}}</span>
+          </div>
+        </div>
+      </li>
+      <li *ngIf="race?.description">
+        <div class="icon material-icons"></div>
+        <div class="container">
+          <div class="content" [innerHTML]="race?.description | safeHtml"></div>
+        </div>
+      </li>
+      <li *ngFor="let step of race?.etapes">
+        <div class="icons">
+          <i class="icon material-icons">{{step.icone}}</i>
+        </div>
+        <div class="container">
+          <div class="title">
+            <span>{{step.type}}</span>
+            <span class="value">{{step.distance}}</span>
+          </div>
+          <div class="content" [innerHTML]="step.description | safeHtml"></div>
+        </div>
+      </li>
+      <li *ngIf="race?.prix">
+        <div class="icon material-icons">payment</div>
+        <div class="container">
+          <div class="title">
+            <span>Prix</span>
+            <span class="value">{{race.prix}} €</span>
+          </div>
+          <div class="content" *ngIf="race.prix_pass_compet">Pass compétition {{race.prix_pass_compet}}€<br>La FFTri oblige les Licenciés FFTri Loisir / Dirigeant / Action et les non-licenciés à acheter un Pass Compétition pour pouvoir participer à une épreuve de triathlon. Il s'agit simplement d'un montant complémentaire à payer au moment de votre inscription.</div>
+        </div>
+      </li>
+      <li *ngIf="race?.age">
+        <div class="icon material-icons">face</div>
+        <div class="container">
+          <div class="title">
+            <span>Age minimum</span>
+            <span class="value">{{race.age}} ans</span>
+          </div>
+          <div class="content">Né avant le 1er janvier {{race.yearLimit}}</div>
+        </div>
+      </li>
+      <li *ngIf="race?.recompences">
+        <div class="icon material-icons">star</div>
+        <div class="container">
+          <div class="title">
+            <span>Récompenses</span>
+          </div>
+          <div class="content" [innerHTML]="race?.recompences | safeHtml"></div>
+        </div>
+      </li>
+      <li  *ngFor="let media of race?.medias" class="media">
+        <div class="icon material-icons">image</div>
+        <div class="container">
+          <div class="title">
+            <span>{{media.description}}</span>
+          </div>
+          <div class="content">            
+            <img [src]="media.contenu.data.url"/>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </article>
+</main>

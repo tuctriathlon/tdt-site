@@ -1,0 +1,10 @@
+@import '../../shared/styles/colors.scss';
+:host {
+  display: flex;
+  flex-direction: column;
+  img {
+    height: auto;
+    max-height: 200px;
+    max-width: 200px;
+  }
+}
