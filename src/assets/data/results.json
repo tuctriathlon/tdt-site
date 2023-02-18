@@ -1,0 +1,145 @@
+{
+  "title": "Résultats",
+  "sections": [{
+    "title": "2018",
+    "files": [{
+      "name": "Tous les résultats",
+      "url": "http://chronoweb.com/Download.php?PDF=158-20180918043635-RsultatsToulouse2018.xlsx"
+    }]
+  }, {
+    "title": "2017",
+    "files": [{
+      "name": "XS femme",
+      "url": "/assets/results/2017/tdt_xsf_2017.pdf"
+    }, {
+      "name": "XS homme",
+      "url": "/assets/results/2017/tdt_xsh_2017.pdf"
+    }, {
+      "name": "S individuel",
+      "url": "/assets/results/2017/tdt_s_2017.pdf"
+    }, {
+      "name": "S équipe",
+      "url": "/assets/results/2017/tdt_s_equipe_2017.pdf"
+    }, {
+      "name": "M individuel",
+      "url": "/assets/results/2017/tdt_m_2017.pdf"
+    }, {
+      "name": "M relais",
+      "url": "/assets/results/2017/tdt_m_relais_2017.pdf"
+    }, {
+      "name": "Swimrun",
+      "url": "/assets/results/2017/tdt_swimrun_2017.pdf"
+    }, {
+      "name": "Détails XS femme",
+      "url": "/assets/results/2017/tdt_xsf_2017_details.pdf"
+    }, {
+      "name": "Détails XS homme",
+      "url": "/assets/results/2017/tdt_xsh_2017_details.pdf"
+    }, {
+      "name": "Détails S individuel",
+      "url": "/assets/results/2017/tdt_s_2017_details.pdf"
+    }, {
+      "name": "Détails S équipe",
+      "url": "/assets/results/2017/tdt_s_equipe_2017_details.pdf"
+    }, {
+      "name": "Détails M individuel",
+      "url": "/assets/results/2017/tdt_m_2017_details.pdf"
+    }]
+  },{
+    "title": "2016",
+    "files": [{
+      "name": "XS femme",
+      "url": "/assets/results/2016/tdt_xsf_2016.pdf"
+    }, {
+      "name": "XS homme",
+      "url": "/assets/results/2016/tdt_xsh_2016.pdf"
+    }, {
+      "name": "S individuel",
+      "url": "/assets/results/2016/tdt_s_2016.pdf"
+    }, {
+      "name": "S équipe",
+      "url": "/assets/results/2016/tdt_s_equipe_2016.pdf"
+    }, {
+      "name": "M individuel",
+      "url": "/assets/results/2016/tdt_m_2016.pdf"
+    }, {
+      "name": "M relais",
+      "url": "/assets/results/2016/tdt_m_relais_2016.pdf"
+    }, {
+      "name": "Swimrun",
+      "url": "/assets/results/2016/tdt_swimrun_2016.pdf"
+    }]
+  }, {
+    "title": "2015",
+    "files": [{
+      "name": "XS découverte",
+      "url": "/assets/results/2015/tdt_xs_2015.xlsx"
+    }, {
+      "name": "S individuel",
+      "url": "/assets/results/2015/tdt_s_2015.xlsx"
+    }, {
+      "name": "S équipe",
+      "url": "/assets/results/2015/tdt_s_equipe_2015.xlsx"
+    }, {
+      "name": "M individuel et relais",
+      "url": "/assets/results/2015/tdt_m_2015.xlsx"
+    }]
+  }, {
+    "title": "2014",
+    "files": [{
+      "name": "XS découverte",
+      "url": "/assets/results/2014/tdt_xs_2014.xls"
+    }, {
+      "name": "S individuel",
+      "url": "/assets/results/2014/tdt_s_2014.xls"
+    }, {
+      "name": "S équipe",
+      "url": "/assets/results/2014/tdt_s_equipe_2014.xls"
+    }, {
+      "name": "M individuel et relais",
+      "url": "/assets/results/2014/tdt_m_2014.xls"
+    }]
+  }, {
+    "title": "2013",
+    "files": [{
+      "name": "XS découverte",
+      "url": "/assets/results/2013/tdt_xs_2013.xls"
+    }, {
+      "name": "S individuel",
+      "url": "/assets/results/2013/tdt_s_2013.xls"
+    }, {
+      "name": "S équipe",
+      "url": "/assets/results/2013/tdt_s_equipe_2013.xls"
+    }, {
+      "name": "M individuel et relais",
+      "url": "/assets/results/2013/tdt_m_2013.xls"
+    }]
+  }, {
+    "title": "2012",
+    "files": [{
+      "name": "Sprint",
+      "url": "/assets/results/2012/tdt_sprint_2012.xls"
+    }, {
+      "name": "Courte distance",
+      "url": "/assets/results/2012/tdt_cd_2012.xls"
+    }]
+  }, {
+    "title": "2011",
+    "files": [{
+      "name": "Sprint",
+      "url": "/assets/results/2011/tdt_sprint_2011.xls"
+    }, {
+      "name": "Courte distance",
+      "url": "/assets/results/2011/tdt_cd_2011.xls"
+    }]
+  }, {
+    "title": "2010",
+    "files": [{
+      "name": "Sprint",
+      "url": "/assets/results/2010/tdt_sprint_2010.xls"
+    }, {
+      "name": "Courte distance",
+      "url": "/assets/results/2010/tdt_cd_2010.xls"
+    }]
+  }]
+}

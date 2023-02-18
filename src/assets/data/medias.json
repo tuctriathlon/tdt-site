@@ -1,0 +1,87 @@
+{
+  "title": "Médias",
+  "sections": [
+    {
+    "name": "2018",
+    "year": "2018",
+    "medias": [{
+      "name": "Vidéo officielle",
+      "type": "video",
+      "url": "https://www.youtube.com/embed/kFoHt3shWh8"
+    },{
+      "name": "Photos",
+      "type": "picture",
+      "url": "/photos/2018",
+      "pictures": ["assets/pictures/medias/picture_2018_1.jpg", "assets/pictures/medias/picture_2018_2.jpg", "assets/pictures/medias/picture_2018_3.jpg", "assets/pictures/medias/picture_2018_4.jpg"]
+    }]
+  },{
+    "name": "2017",
+    "year": "2017",
+    "medias": [{
+      "name": "Vidéo officielle",
+      "type": "video",
+      "url": "https://www.youtube.com/embed/5lIZmiD2VOs"
+    },{
+      "name": "Teaser",
+      "type": "video",
+      "url": "https://www.youtube.com/embed/MQX36ZP959s"
+    }, {
+      "name": "Photos",
+      "type": "picture",
+      "url": "/photos/2017",
+      "pictures": ["assets/pictures/medias/picture_2017_1.jpg", "assets/pictures/medias/picture_2017_2.jpg", "assets/pictures/medias/picture_2017_3.jpg", "assets/pictures/medias/picture_2017_4.jpg"]
+    }]
+  }, {
+    "name": "2016",
+    "year": "2016",
+    "medias": [{
+      "name": "Vidéo officielle",
+      "type": "video",
+      "url": "https://www.youtube.com/embed/9BA1M-72Fko"
+    }, {
+      "name": "Teaser",
+      "type": "video",
+      "url": "https://www.youtube.com/embed/y5mGYORhLHQ"
+    }, {
+      "name": "Photos",
+      "type": "picture",
+      "url": "http://www.studio-carl.com/index.php?/category/Triathlon-TLSE-TUC-2016",
+      "pictures": ["assets/pictures/medias/picture_2016_1.jpg", "assets/pictures/medias/picture_2016_2.jpg", "assets/pictures/medias/picture_2016_3.jpg", "assets/pictures/medias/picture_2016_4.jpg"]
+    }]
+  }, {
+    "name": "2015",
+    "year": "2015",
+    "medias": [ {
+      "name": "Photos",
+      "type": "picture",
+      "url": "http://www.studio-carl.com/index.php?/category/Triathlon-TLSE-TUC-2015",
+      "pictures": ["assets/pictures/medias/picture_2015_1.jpg", "assets/pictures/medias/picture_2015_2.jpg", "assets/pictures/medias/picture_2015_3.jpg", "assets/pictures/medias/picture_2015_4.jpg"]
+    }]
+  }, {
+    "name": "2014",
+    "year": "2014",
+    "medias": [{
+      "name": "Vidéo officielle",
+      "type": "video",
+      "url": "https://player.vimeo.com/video/111363167"
+    }, {
+      "name": "Vidéo XS découverte",
+      "type": "video",
+      "url": "https://player.vimeo.com/video/111644394"
+    }, {
+      "name": "Photos",
+      "type": "picture",
+      "url": "http://www.studio-carl.com/index.php?/category/Triathlon-TLSE-TUC-2014",
+      "pictures": ["assets/pictures/medias/picture_2014_1.jpg", "assets/pictures/medias/picture_2014_2.jpg", "assets/pictures/medias/picture_2014_3.jpg", "assets/pictures/medias/picture_2014_4.jpg"]
+    }]
+  }, {
+    "name": "2013",
+    "year": "2013",
+    "medias": [ {
+      "name": "Photos",
+      "type": "picture",
+      "url": "http://www.studio-carl.com/index.php?/category/Triathlon-TLSE-TUC-2013",
+      "pictures": ["assets/pictures/medias/picture_2013_1.jpg", "assets/pictures/medias/picture_2013_2.jpg", "assets/pictures/medias/picture_2013_3.jpg", "assets/pictures/medias/picture_2013_4.jpg"]
+    }]
+  }]
+}

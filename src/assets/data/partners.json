@@ -1,0 +1,96 @@
+{
+  "title": "Nos partenaires",
+  "sections": [{
+    "title": "Partenaires privilégiés",
+    "partners": [{
+      "name": "Errea",
+      "link": "http://fr.errea.com/",
+      "url": "/assets/pictures/partners/logo-errea.png"
+    }, {
+      "name": "Isostar",
+      "link": "https://www.isostar.fr/",
+      "url": "/assets/pictures/partners/logo-isostar.png"
+    }, {
+      "name": "Chullanka",
+      "link": "http://www.chullanka.com/",
+      "url": "/assets/pictures/partners/logo-chullanka.png"
+    }, {
+      "name": "Running Conseil",
+      "link": "https://www.running-conseil.com/",
+      "url": "/assets/pictures/partners/logo-running-conseil.png"
+    }, {
+      "name": "Z3R0D",
+      "link": "http://www.z3r0d.com/",
+      "url": "/assets/pictures/partners/logo-zerod.png"
+    }, {
+      "name": "Tuc Triathlon",
+      "link": "https://www.tuc-triathlon.com/",
+      "url": "/assets/pictures/partners/logo-tuc.png"
+    }, {
+      "name": "Trek",
+      "link": "https://www.trekbikes.com/fr/fr_FR/",
+      "url": "/assets/pictures/partners/logo-trek.png"
+    }]
+  }, {
+    "title": "Partenaires Village",
+    "partners": [ {
+      "name": "Ergysport",
+      "link": "http://www.ergysport.com/",
+      "url": "/assets/pictures/partners/logo-ergysport.png"
+    }, {
+      "name": "CryoSud",
+      "link": "http://cryosud-toulouse.com/",
+      "url": "/assets/pictures/partners/logo-cryosud.png"
+    }, {
+      "name": "Laboratoires Fenioux",
+      "link": "https://www.laboratoires-fenioux.com/fr",
+      "url": "/assets/pictures/partners/logo-fenioux.png"
+    },{
+      "name": "Granhota",
+      "link": "https://www.granhota.fr/",
+      "url": "/assets/pictures/partners/logo-granhota.png"
+    }]
+  }, {
+    "title": "Partenaires Services",
+    "partners": [{
+      "name": "TACTIC",
+      "link": "http://tactic-sport.com/",
+      "url": "/assets/pictures/partners/logo-tactic.png"
+    }, {
+      "name": "Hôtel Zenitude",
+      "link": "https://www.zenitude-hotel-residences.com/fr_FR/",
+      "url": "/assets/pictures/partners/logo-zenitude.png"
+    }]
+  }, {
+    "title": "Villes  Institutions  Médias",
+    "partners": [{
+      "name": "RTL2",
+      "link": "https://www.rtl2.fr/",
+      "url": "/assets/pictures/partners/logo-rtl2.png"
+    }, {
+      "name": "Mairie de Toulouse",
+      "link": "http://www.toulouse.fr/",
+      "url": "/assets/pictures/partners/logo-toulouse.png"
+    }, {
+      "name": "Toulouse Metropole",
+      "link": "http://www.toulouse-metropole.fr/",
+      "url": "/assets/pictures/partners/logo-toulouse-metropole.png"
+    }, {
+      "name": "Ville de Tournefeuille",
+      "link": "http://www.mairie-tournefeuille.fr/",
+      "url": "/assets/pictures/partners/logo-tournefeuille.png"
+    }, {
+      "name": "Region Occitanie Pyrénées Méditerranée",
+      "link": "http://www.laregion.fr/",
+      "url": "/assets/pictures/partners/logo-region.png"
+    }, {
+      "name": "Conseil départemental de la Haute-Garonne",
+      "link": "https://www.haute-garonne.fr/",
+      "url": "/assets/pictures/partners/logo-haute-garonne.png"
+    }, {
+      "name": "UNCU",
+      "link": "http://www.uncu.fr/",
+      "url": "/assets/pictures/partners/logo-uncu.png"
+    }]
+  }]
+}

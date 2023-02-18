@@ -1,0 +1,181 @@
+{
+  "title": "Règlement Triathlon de Toulouse 2018",
+  "sections": [{
+    "title": "Règlement 2019",
+    "content": "à venir"
+    }, {
+    "title": "Règlement 2018 - Organisation",
+    "contents": [{
+      "value": "Le Triathlon de Toulouse 2018 est organisé par le TUC Triathlon."
+    }]
+  }, {
+    "title": "Règlement 2018 - Généralités",
+    "contents": [{
+      "value": "L’épreuve étant organisée sous l’égide de la Fédération Française de Triathlon (FFTri), le <a href=\"http://www.fftri.com/wp-content/uploads/2018/03/Réglementation-Sportive-2018.pdf\" target=\"_blank\">réglement fédéral</a> sera applicable."
+    }, {
+      "value": "Les principales règles sont :"
+    }, {
+      "value": "- toute aide extérieure du concurrent est interdite (accompagnement, ravitaillement hors organisation)."
+    }, {
+      "value": "- les compétiteurs doivent OBLIGATOIREMENT se conformer aux règles et être respectueux des arbitres, des bénévoles et des organisateurs."
+    }, {
+      "value": "- seuls les arbitres officiels de la FFTri ont le pouvoir d’appliquer des sanctions. Toutes les sanctions seront sans appel."
+    }, {
+      "value": "- les coureurs doivent obligatoirement respecter le code de la route."
+    }, {
+      "value": "- tout concurrent participant à une épreuve en usurpant l’identité d’un tiers, ou faisant une fausse déclaration d’identité ou d’âge, se verra disqualifié et fera l’objet de poursuites."
+    }, {
+      "value": "- le concurrent ne peut pas utiliser de radio, téléphone portable, lecteur mp3, baladeur ou tout autre écouteur durant toute la compétition."
+    }, {
+      "value": "Chaque coureur est responsable de son propre chronométrage. La puce de chronométrage doit être portée autour de la cheville tout au long de la course et doit être restituée aux organisateurs à la fin de l’épreuve. Toute puce non restituée sera facturée 50€."
+    }, {
+      "value": "Seuls les coureurs, les organisateurs et les arbitres sont autorisés à entrer dans le parc à vélo."
+    }, {
+      "value": "Les compétiteurs doivent OBLIGATOIREMENT respecter les zones de déchets sous peine de sanctions."
+    }, {
+      "value": "Un contrôle anti-dopage pourra être réalisé après l’arrivée selon les règles prévues par la FFTri."
+    }, {
+      "value": "L’utilisation d’une caméra embarquée sera interdite sur toutes les épreuves."
+    }]
+  }, {
+    "title": "Règlement 2018 - Courses",
+    "contents": [{
+      "value": "Le Triathlon de Toulouse 2018 propose 6 triathlons :"
+    }, {
+      "value": "- epreuve XS femme (300m de nage, 8 km en vélo, 2,5 km en cours à pied), limitée à 250 places, ouverte aux personnes nées avant le 1er janvier 2003"
+    }, {
+      "value": "- epreuve XS homme (300m de nage, 8 km en vélo, 2,5 km en cours à pied), limitée à 250 places, ouverte aux personnes nées avant le 1er janvier 2003"
+    }, {
+      "value": "- epreuve S (750m de nage, 20 km en vélo, 5 km en cours à pied), limitée à 400 places, ouverte aux personnes nées avant le 1er janvier 2003"
+    },{
+      "value": "- epreuve S relais (750m de nage, 20 km en vélo, 5 km en cours à pied), limitée à 100 équipes (de 2 ou 3 coureurs), ouverte aux personnes nées avant le 1er janvier 2003"
+    },{
+      "value": "- epreuve S en équipe (750m de nage, 20 km en vélo, 5 km en cours à pied), en contre la montré, limités à 100 équipes (de 3 à 5 coureurs), ouverte aux personnes nées avant le 1er janvier 2003"
+    },{
+      "value": "- epreuve M (1500m de nage, 40 km en vélo, 10 km en cours à pied), limitée à 400 places, ouverte aux personnes nées avant le 31 décembre 2000"
+    }, {
+      "value": "- epreuve M relais (1500m de nage, 40 km en vélo, 10 km en cours à pied), limité à 100 équipes (de 2 ou 3 coureurs), ouverte aux personnes nées avant le 31 décembre 2000"
+    }, {
+      "value": "L’organisation ne gère pas de liste d’attente. Une fois complète, les inscriptions sont clôturées. Les places annulées par la suite seront remises en vente début septembre 2018 (annonce faite sur notre site et sur notre page Facebook). "
+    }, {
+      "value": "<b>Dispositions générales</b>"
+    }, {
+      "value": "Il est conseillé d’arriver au moins une heure avant le début de l’épreuve (retrait des dossards, installation dans le parc à vélo, briefing de l’organisateur)."
+    }, {
+      "value": "Port de la combinaison natation: il est OBLIGATOIRE quand la température de l’eau est inférieure à 16°C, et INTERDIT quand la température de l’eau est supérieure à 24°C."
+    }, {
+      "value": "OBLIGATION de porter le bonnet de bain fourni par l’organisateur pendant l’épreuve de natation."
+    }, {
+      "value": "Les dossards NE DOIVENT PAS être portés pendant l’épreuve de natation."
+    }, {
+      "value": "Une ligne tracée à la sortie du parc à vélo et une autre tracée à l’arrivée vélo indiqueront les zones à partir desquelles le coureur peut monter ou doit descendre de son vélo."
+    }, {
+      "value": "Le port d’un casque à coque dure avec jugulaire attachée est OBLIGATOIRE tout au long de l’épreuve vélo, y compris dans le parc à vélo."
+    }, {
+      "value": "Le dossard de chaque coureur doit être parfaitement visible (non plié, non déchiré), attaché en trois points et porté dans le dos pour la partie cycliste et sur le devant pour la partie course à pied."
+    }, {
+      "value": "Le drafting ou « aspiration abri » est autorisé pour les courses S, XS et M. Par conséquent, les vélos de contre la montre sont interdits. Les prolongateurs ne doivent pas s’étendre au-delà de 15 cm de l’axe de roue avant, doivent être reliés entre eux, et ne dépassent pas de la ligne créée par les points les plus en avant des leviers de frein."
+    }, {
+      "value": "<b>Gestion des cartons de pénalité</b>"
+    }, {
+      "value": "Les arbitres peuvent donner des cartons rouges, jaunes ou noirs."
+    }, {
+      "value": "Carton rouge => disqualification immédiate"
+    }, {
+      "value": "Carton noir => boucle de pénalité: la boucle de pénalité s’effectue en course à pied. Elle sera indiquée par un drapeau et matérialisée avec de la rubalise. C’est au coureur de gérer sa boucle de pénalité. Le nombre de pénalité est limité à deux, la troisième est synonyme de disqualification."
+    }, {
+      "value": "Carton jaune => avertissement ou Stop & Go pour remise en conformité."
+    }, {
+      "value": "<b>Course en relais</b>"
+    }, {
+      "value": "Composition des équipes de relayeurs : 2 ou 3 personnes."
+    }, {
+      "value": "Les relayeurs disposant d’une licence (valide le jour de la course) des fédérations FF Natation  pour la partie natation, FF Cyclisme pour la partie cycliste, FF Athlétisme pour la partie course à pied, sont dispensés du certificat médical dans leur discipline. Cette licence ne dispense pas de l’achat du Pass compétition."
+    }, {
+      "value": "Le passage de relais se fera dans le parc à vélo par la transmission de la puce de chronométrage."
+    }, {
+      "value": "Chaque discipline est réalisée par un seul relayeur."
+    }, {
+      "value": "<b>Course en équipe contre la montre</b>"
+    }, {
+      "value": "Composition des équipes : de 3 à 5 personnes, tous faisant la course complète ensemble."
+    }, {
+      "value": "Tous les équipiers doivent porter la même tenue (à défaut un tee-shirt de la même couleur). L'organisation ne s'engage pas à fournir des tee-shirts similaires pour tous les membres de l'équipe. Il est donc vivement conseillé de prévoir un tee-shirt au minimum de couleur identique pour chacun des membres de l'équipe."
+    }, {
+      "value": "A tout moment de la course, la tête de l'équipe doit être composée d'au minimum 3 coureurs groupés : ils doivent donc passer la ligne d'arrivée groupés, le temps étant pris sur le 3ème coureur arrivé. En cas d'équipe mixte, au moins un représentant de chaque sexe doit passer la ligne d'arrivée."
+    }, {
+      "value": "Le drafting est autorisé au sein de l'équipe, mais pas entre équipes. A cette occasion et pour cette course seulement, les vélos type \"contre la montre\" seront autorisés."
+    }]
+  }, {
+    "title": "Règlement 2018 - Inscriptions",
+    "contents": [{
+      "value": "Les inscriptions seront prises en compte dans l’ordre d’arrivée des dossiers complets (inscription + paiement). "
+    }, {
+      "value": "Seule la licence de triathlon (française ou ITU) est valable. Elle doit être en cours de validité à la date de la manifestation."
+    }, {
+      "value": "Pour les non-licenciés ou licenciés FFTri Loisir / Dirigeant / Action, le certificat médical fourni (ou sa copie) doit présenter la mention de \"non contre-indication à la pratique du sport en compétition\". Il doit dater de moins d’un an à la date de la manifestation. Il sera déposé en ligne sur la plateforme d’inscriptions."
+    }, {
+      "value": "Les mineurs devront fournir une autorisation parentale et la déposer en ligne sur la plateforme d’inscriptions."
+    }, {
+      "value": "Les non-licenciés ou licenciés FFTri Loisir / Dirigeant / Action doivent acheter un Pass compétition. Il s'agit d'un montant supplémentaire à payer imposé par la FFTri pour pouvoir participer à un triathlon."
+    }, {
+      "value": "La date limite d’inscription est le 1er septembre 2018, à 21h. L'inscription sur place sera possible en fonction des places disponibles."
+    }, {
+      "value": "Licence, certificat médical et autorisation parentale devront être déposés en ligne sur la plateforme d’inscriptions avant le 1er septembre 2018, 21h. Passé cette date, l'organisation se réserve le droit d'annuler votre inscription sans remboursement."
+    }, {
+      "value": "Attention, pour les non-licenciés et les licenciés de la FFTri Loisir / Dirigeant / Action, l'inscription sera complète une fois le certificat médical déposé en ligne sur la plateforme d’inscriptions. Pour les mineurs, l’inscription sera complète une fois l’autorisation parentale déposée en ligne sur la  plateforme d’inscriptions."
+    }, {
+      "value": "<b>Retrait des dossards</b>"
+    }, {
+      "value": "Pour retirer leur dossard, les concurrents licenciés devront présenter leur licence et un justificatif d’identité (carte d’identité, passeport ou permis de conduire) ou sa copie. Les concurrents non-licenciés et licenciés Loisir / Dirigeant / Action devront présenter un justificatif d’identité (carte d’identité, passeport ou permis de conduire). La réglementation de la FFTri permet à une personne de retirer les dossards de plusieurs concurrents en justifiant de l’identité de chacun."
+    }]
+  }, {
+    "title": "Règlement 2018 - Politique d'annulation, de remboursement et de transfert",
+    "contents": [{
+      "value": "Tout coureur qui ne peut pas participer à l’épreuve a la possibilité d’annuler son inscription sans justificatif. Il pourra être remboursé s’il prévient l’organisation avant le 1er septembre 2018, 21h. Passé cette date, aucun remboursement ne sera possible. Le remboursement est effectué à hauteur de 50% du prix de l'épreuve (+ Pass compétition, le cas échéant)."
+    }, {
+      "value": "Remboursement Triathlon XS : 10€ pour un licencié ou un non licencié"
+    }, {
+      "value": "Remboursement Triathlon S : 12€ pour un licencié, 17€ pour un non licencié"
+    },{
+      "value": "Remboursement Triathlon S relais : 20€ pour une équipe (licenciés ou non)"
+    },{
+      "value": "Remboursement Triathlon S CLM : 50€ pour une équipe (licenciés ou non)"
+    },{
+      "value": "Remboursement Triathlon M : 15€ pour un licencié, 35€ pour un non licencié"
+    }, {
+      "value": "Remboursement Triathlon M relais : 25€ pour une équipe (licenciés ou non)"
+    },{
+      "value": "En cas de force majeure et/ou pour des raisons de sécurité, le triathlon pourra être transformé en duathlon. Dans ce cadre, l’organisation se réserve aussi le droit de retarder le départ des courses, d’arrêter les courses, voire d’annuler les courses sans préavis, sans que les coureurs puissent prétendre à aucune indemnisation ou aucun remboursement des frais d’inscription."
+    }, {
+      "value": "<b>Transfert du dossard avant le 8 septembre 2018, 21h</b>"
+    }, {
+      "value": "Si vous êtes inscrit sur une course individuelle (S, M, XS), le comité d’organisation donne aussi la possibilité de transférer votre dossard à une tierce personne jusqu’au 8 septembre 2018, 21h. Passé ce délai, l’échange de dossard ne sera plus possible via la plateforme d’inscriptions."
+    }, {
+      "value": "Pour cela, vous devez vous rendre sur la plateforme d’inscription, et vous munir de vos identifiants pour vous connecter à votre dossier. Vous devrez mentionner le mail de la personne à qui vous transférez votre dossard. Cette dernière recevra un lien lui permettant de procéder à son inscription directement sur la plateforme d’inscriptions, et de télécharger les pièces justificatives exigées. Vous serez remboursé du montant de l'inscription (+ Pass compétition, le cas échéant)."
+    }, {
+      "value": "Si c’est l’ensemble du relais ou de l’équipe qui ne peut finalement pas participer et que vous avez trouvé un autre duo/trio/… à qui transférer votre inscription, merci de contacter l’organisation (contact@triathlondetoulouse.com) qui vous expliquera la procédure à suivre."
+    },{
+      "value": "<b>Transfert du dossard le jour de l’épreuve</b>"
+    }, {
+      "value": "Vous pourrez toutefois vous présenter le jour même de l'épreuve au stand inscription pour que l'organisation puisse précéder à l'échange. La personne qui récupère le dossard doit présenter un certificat médical valide (ou une licence valide). Deux possibilités:"
+    }, {
+      "value": "- les deux personnes (personne qui donne son dossard et personne qui récupère le dossard) viennent se présenter au stand des inscriptions,"
+    }, {
+      "value": "- la personne qui récupère le dossard se présente au stand des inscriptions et justifie de l’identité de la personne qui lui cède son dossard (carte identité, passeport, permis de conduite)."
+    }]
+  }, {
+    "title": "Règlement 2018 - Responsabilités",
+    "contents": [{
+      "value": "L'organisation de l'épreuve est assurée par l'entremise de la FFTri. Cependant, chaque participant doit être couvert personnellement par une assurance individuelle (les licenciés FFA et FFTri sont couverts par l'assurance incluse dans leur licence). L’organisation de l’épreuve ne pourra être tenue responsable en cas de perte, bris, vol de matériel ainsi qu'en cas d'accident provoqué par un mauvais état de santé du concurrent ou du non-respect du présent règlement."
+    }, {
+      "value": "L’organisateur décline toute responsabilité pour les dommages matériels et corporels, ainsi que pour les vols, pertes, etc..., avant, pendant et après l’ensemble des épreuves."
+    }, {
+      "value": "Par sa participation au Triathlon de Toulouse 2018, chaque concurrent autorise expressément l’organisateur à utiliser son image, sa voix et prestation sportive en vue de toute exploitation directe ou sous forme dérivée de l’épreuve."
+    }, {
+      "value": "En cas d’annulation de l’événement indépendante de la volonté de l’organisateur (cas de force majeure, impératifs de sécurité, conditions météorologiques, décision des autorités administratives, etc…), aucun remboursement ne pourra être effectué et le participant ne pourra pas réclamer le paiement de dommages et intérêts à l’organisateur."
+    }, {
+      "value": "La simple inscription d’un concurrent au Triathlon de Toulouse 2018 vaut acceptation de ce règlement dans sa totalité."
+    }]
+  }]
+}

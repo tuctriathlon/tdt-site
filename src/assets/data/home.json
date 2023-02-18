@@ -1,0 +1,18 @@
+{
+  "title": "Home",
+  "sections": [
+    {
+      "content": "<a href=\"occitaman\"><img src=\"/assets/pictures/affiche_tdt_2019.png\" style=\"max-width: 700px;\"></a>"
+    },
+  	 {
+      "title": "La vidéo officielle de la 9ème édition",
+      "date": "02 Octobre 2018",
+      "content": "Pour revivre cette édition du Triathlon de Toulouse 2018, la vidéo officielle est maintenant disponible dans la section \"Photos\/Vidéos\" ! "
+    }, {
+      "title": "Photos de l'édition 2018 disponibles",
+      "date": "25 Septembre 2018",
+      "content": "Les photos sont maintenant disponibles dans la section \"Photos\/Vidéos\" !"
+    }
+  ]
+}
+
