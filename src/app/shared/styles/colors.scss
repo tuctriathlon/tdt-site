@@ -1,7 +1,12 @@
-$primary: #3F51B5; // #2974B5;
+$blue2023: #6dcbdd;
+$orange2023: #e2964b;
+$yellowTUC: #ffe747;
+
+
+$primary: #10434c; // #2974B5;
 $secondary: #6371FE; //#def0ff;
-$active: #93C955;
-$focus: #FFE800;
+$active: $orange2023;
+$focus: $yellowTUC;
 
 $green: #93C955;
 $orange: #F36C22;
@@ -11,9 +16,9 @@ $black: #111111;
 $white: #FFFFFF;
 $icon: #888888;
 
-$headerBackground: $primary;
+$headerBackground: $blue2023;
 $headerColor: $white;
-$headerActive: $active;
+$headerActive: $yellowTUC;
 
-$footerBackground: $secondary;
+$footerBackground: $blue2023;
 $footerColor: $white;

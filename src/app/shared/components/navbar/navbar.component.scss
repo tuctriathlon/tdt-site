@@ -89,7 +89,7 @@
     border-bottom: 2px solid transparent;
     &:hover,
     &.selected {
-      color: $headerActive;
+      color: $headerActive !important;
       border-bottom: 2px solid $headerActive;
     }
   }
