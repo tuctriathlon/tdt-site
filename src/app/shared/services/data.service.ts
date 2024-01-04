@@ -1,9 +1,9 @@
+import { HttpClient } from '@angular/common/http'
 import { Injectable } from '@angular/core';
-import { Http, Response } from '@angular/http';
-import { map, filter } from 'rxjs/operators';
-import { BehaviorSubject } from 'rxjs';
-import { Content } from '../models/models';
 import * as moment from 'moment';
+import { BehaviorSubject } from 'rxjs';
+import { map } from 'rxjs/operators';
+import { Content } from '../models/models';
 
 
 @Injectable()
@@ -21,7 +21,7 @@ export class DataService {
   home = new BehaviorSubject([]);
   contents: BehaviorSubject<Array<Content>> = new BehaviorSubject([]);
 
-  constructor(private http: Http) {
+  constructor(private http: HttpClient) {
     this.getData(`/items/information_content?sort=ordre_affichage`)
       .subscribe(contents => this.contents.next(contents));
 
@@ -34,19 +34,19 @@ export class DataService {
 
     this.getData(`/items/partenaires?fields=*.*&sort=ordre_affichage`)
       .subscribe(partners => this.partners.next(partners));
-    
+
     this.getData(`/items/medias?fields=*.*&sort=-annee`)
       .subscribe(medias => this.medias.next(medias));
-    
+
     this.getData(`/items/resultats?fields=*.*&sort=-annee`)
       .subscribe(results => this.results.next(results));
-    
+
     this.getData(`/items/inscription_etape?fields=*.*&sort=ordre_affichage`)
       .subscribe(inscriptions => this.inscriptions.next(inscriptions));
-    
+
     this.getData(`/items/courses?fields=*.*.*&sort=date`)
       .pipe(map(medias => {
-        return medias.map(race => {        
+        return medias.map(race => {
           race.name = race.type_de_course + ' ' + race.format;
           race.name = race.specificite ? race.name + ' ' + race.specificite : race.name;
           race.slug = race.name.replace(' ', '-').toLowerCase();
@@ -64,7 +64,7 @@ export class DataService {
         });
       }))
       .subscribe(races => this.races.next(races));
-    
+
     this.getData(`/items/home_page?fields=*.*&sort=-created_on`)
       .pipe(map(articles => {
         articles.forEach(article => {
@@ -118,8 +118,8 @@ export class DataService {
       .pipe(map(response => this.extractData(response)))
   }
 
-  private extractData(res: Response) {
-    return res.json().data || {};
+  private extractData(res) {
+    return res.data || {};
   }
 }
 
