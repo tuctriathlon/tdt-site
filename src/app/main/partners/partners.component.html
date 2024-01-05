@@ -2,7 +2,7 @@
     <article *ngFor="let partner of partners$ | async">
         <h3>{{ partner.nom }}</h3>
         <a href="{{ partner.url }}" target="_blank">
-            <img [src]="partner.icone.data.url" />
+            <img [src]="partner.icone.data.url" [alt]="partner.nom"/>
         </a>
         <p>{{ partner.description }}</p>
     </article>
