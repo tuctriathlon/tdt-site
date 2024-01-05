@@ -22,7 +22,7 @@
         border-color : transparent transparent transparent transparent;
       }
       .race-header {
-        margin: 0.2em 0.2em 0em 0.2em;
+        margin: 0.2em 0.2em 0 0.2em;
         padding: 0.5em 1em;
         color: $secondary;
         text-transform: uppercase;
@@ -53,7 +53,7 @@
         margin-top: -1px;
       }
       .race-body {
-        margin: 0em 0.2em 0.2em 0.2em;
+        margin: 0 0.2em 0.2em 0.2em;
         padding: 0.7em;
         ul {
           padding: 0;
@@ -63,7 +63,7 @@
             display: flex;
             align-items: center;
             min-height: 2em;
-            margin: 0.2em 0em;
+            margin: 0.2em 0;
             .race-icon {
               color: $icon;
               width: 40px;
@@ -105,7 +105,7 @@
   }
   .ribbon span::before {
     content: "";
-    position: absolute; left: 0px; top: 100%;
+    position: absolute; left: 0; top: 100%;
     z-index: -1;
     border-left: 3px solid $warn;
     border-right: 3px solid transparent;
@@ -114,7 +114,7 @@
   }
   .ribbon span::after {
     content: "";
-    position: absolute; right: 0px; top: 100%;
+    position: absolute; right: 0; top: 100%;
     z-index: -1;
     border-left: 3px solid transparent;
     border-right: 3px solid $warn;

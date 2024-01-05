@@ -22,13 +22,13 @@ h1 {
 h2 {
     font-weight: 400;
     font-size: 2.2em;
-    margin: 0em 0em 1em 0em;
+    margin: 0 0 1em 0;
     text-align: center;
 }
 h3 {
     font-size: 1.5em;
     font-weight: 600;
-    margin: 2em 0em 0.5em 0em;
+    margin: 2em 0 0.5em 0;
     text-align: center;
 }
 
@@ -98,36 +98,36 @@ a {
 
 @keyframes animate-to-2 {
     25%, 75% { transform: translateX(-1em) scale(0.75); }
-    95% { transform: translateX(0em) scale(1); }
+    95% { transform: translateX(0) scale(1); }
 }
 
 @keyframes animate-to-3 {
     25%, 75% { transform: translateX(1em) scale(0.75); }
-    95% { transform: translateX(0em) scale(1); }
+    95% { transform: translateX(0) scale(1); }
 }
 
 @keyframes animate-to-1 {
     25% { transform: translateX(-1em) scale(0.75); }
     50%, 75% { transform: translateX(-3em) scale(0.6); }
-    95% { transform: translateX(0em) scale(1); }
+    95% { transform: translateX(0) scale(1); }
 }
 
 @keyframes animate-to-4 {
     25% { transform: translateX(1em) scale(0.75); }
     50%, 75% { transform: translateX(3em) scale(0.6); }
-    95% { transform: translateX(0em) scale(1); }
+    95% { transform: translateX(0) scale(1); }
 }
 
 @keyframes animate-to-0 {
     25% { transform: translateX(-1em) scale(0.75); }
     50% { transform: translateX(-3em) scale(0.6); }
     75% { transform: translateX(-5em) scale(0.5); }
-    95% { transform: translateX(0em) scale(1); }
+    95% { transform: translateX(0) scale(1); }
 }
 
 @keyframes animate-to-5 {
     25% { transform: translateX(1em) scale(0.75); }
     50% { transform: translateX(3em) scale(0.6); }
     75% { transform: translateX(5em) scale(0.5); }
-    95% { transform: translateX(0em) scale(1); }
+    95% { transform: translateX(0) scale(1); }
 }
