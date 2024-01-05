@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { share } from 'rxjs'
 import { DataService } from '../../shared/services/data.service';
 
 @Component({

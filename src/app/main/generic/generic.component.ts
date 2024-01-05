@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Params } from '@angular/router';
-import { DataService } from '../../shared/services/data.service';
+import { Component, OnInit } from '@angular/core'
+import { ActivatedRoute, Params } from '@angular/router'
+import { Observable } from 'rxjs'
+import { Content } from 'src/app/shared/models/content.model'
+import { DataService } from 'src/app/shared/services/data.service'
 
 @Component({
   selector: 'tdt-generic-page',
@@ -10,10 +12,11 @@ import { DataService } from '../../shared/services/data.service';
 export class GenericComponent implements OnInit {
 
   public subPages = [];
-  public articles$;
+  public articles$: Observable<Content[]>;
 
   constructor(private route: ActivatedRoute,
-              private dataService: DataService) { }
+              private dataService: DataService) {
+  }
 
   ngOnInit() {
     this.route.params
@@ -28,11 +31,11 @@ export class GenericComponent implements OnInit {
                   this.subPages = pages.filter(page => page.parent_page_id === currentPage.parent_page_id);
                 }
                 this.articles$ = this.dataService.getContent(currentPage.id);
-              }      
+              }
             });
         } else {
           this.articles$ = this.dataService.getHome();
-        }        
+        }
       });
   }
 }

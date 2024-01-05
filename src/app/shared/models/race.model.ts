@@ -8,10 +8,9 @@ export interface Races {
 export interface Race {
     name: string;
     slug: string;
-    day;
-    time;
-    date;
-    prix;
+    description: string;
+    date: string;
+    prix: number;
     type_de_course;
     format;
     specificite;
@@ -20,16 +19,17 @@ export interface Race {
     nombre_de_places;
     age;
     prix_pass_compet;
-    recompense;
+    recompense: string
     couleur;
     etapes: Etape[]
     yearLimit: number;
+    medias: Media[]
 }
 
 export interface Etape {
     affichage_distance: string
     course_id: Course
-    description: null
+    description: string
     distance: number
     icone: string
     id: number
@@ -52,4 +52,9 @@ export interface Course {
     recompense: string
     specificite: null
     type_de_course: string
+}
+
+export interface Media {
+    description: string
+    contenu: { data: { url: string }}
 }

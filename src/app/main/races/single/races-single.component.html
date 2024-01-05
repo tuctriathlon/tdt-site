@@ -1,5 +1,5 @@
 <main>
-  <article>
+  <article *ngIf="race$ | async as race">
     <h1>{{race?.name}}</h1>
     <ul>
       <li>
@@ -7,7 +7,7 @@
         <div class="container">
           <div class="title">
             <span>Départ</span>
-            <span class="value">{{race.day}} {{race.time}}</span>
+            <span class="value">{{ race.date | date : 'EEEE HH:mm' }}</span>
           </div>
         </div>
       </li>
@@ -41,9 +41,9 @@
         <div class="container">
           <div class="title">
             <span>{{step.type}}</span>
-            <span class="value">{{step.distance}}</span>
+            <span class="value">{{step.computedDistance}}</span>
           </div>
-          <div class="content" [innerHTML]="step.description | safeHtml"></div>
+          <div *ngIf="step.description" class="content" [innerHTML]="step.description | safeHtml"></div>
         </div>
       </li>
       <li *ngIf="race?.prix">
@@ -63,16 +63,16 @@
             <span>Age minimum</span>
             <span class="value">{{race.age}} ans</span>
           </div>
-          <div class="content">Né avant le 1er janvier {{race.yearLimit}}</div>
+          <div class="content">Né avant le 31 décembre {{race.yearLimit}}</div>
         </div>
       </li>
-      <li *ngIf="race?.recompences">
+      <li *ngIf="race?.recompense">
         <div class="icon material-icons">star</div>
         <div class="container">
           <div class="title">
             <span>Récompenses</span>
           </div>
-          <div class="content" [innerHTML]="race?.recompences | safeHtml"></div>
+          <div class="content" [innerHTML]="race?.recompense | safeHtml"></div>
         </div>
       </li>
       <li  *ngFor="let media of race?.medias" class="media">
@@ -81,8 +81,8 @@
           <div class="title">
             <span>{{media.description}}</span>
           </div>
-          <div class="content">            
-            <img [src]="media.contenu.data.url"/>
+          <div class="content">
+            <img [src]="media.contenu.data.url" [alt]="media.description"/>
           </div>
         </div>
       </li>

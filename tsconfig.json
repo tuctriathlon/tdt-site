@@ -19,7 +19,8 @@
         ],
         "useDefineForClassFields": false,
         "noPropertyAccessFromIndexSignature": true,
-        "resolveJsonModule": true
+        "resolveJsonModule": true,
+        "allowSyntheticDefaultImports": true,
     },
     "angularCompilerOptions": {
         "enableI18nLegacyMessageIdFormat": false,
