@@ -1,8 +1,6 @@
-export interface Races {
-    days: [{
-        day: String;
-        races: Array<Race>;
-    }]
+export interface DayRace {
+    day: String;
+    races: Array<Race>;
 }
 
 export interface Race {

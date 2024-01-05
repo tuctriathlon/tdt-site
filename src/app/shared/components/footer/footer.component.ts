@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { BehaviorSubject } from 'rxjs'
+import { BehaviorSubject, Observable } from 'rxjs'
+import { Partner } from 'src/app/shared/models/partner.model'
 import { SiteConfig } from 'src/app/shared/models/site-config.model'
 import { DataService } from '../../services/data.service';
 
@@ -11,7 +12,7 @@ import { DataService } from '../../services/data.service';
 export class FooterComponent implements OnInit {
 
   public config$: BehaviorSubject<SiteConfig>;
-  public partners$;
+  public partners$: Observable<Partner[]>;
 
   constructor(private dataService: DataService) {}
 

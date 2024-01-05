@@ -1,9 +1,9 @@
 import { DatePipe } from '@angular/common'
-import { Component, OnInit } from '@angular/core';
-import { share } from 'rxjs'
-import { Race } from 'src/app/shared/models/race.model'
+import { Component, OnInit } from '@angular/core'
+import { Observable } from 'rxjs'
 
-import { map } from 'rxjs/operators';
+import { map } from 'rxjs/operators'
+import { DayRace, Race } from 'src/app/shared/models/race.model'
 import { DataService } from 'src/app/shared/services/data.service'
 
 @Component({
@@ -13,7 +13,7 @@ import { DataService } from 'src/app/shared/services/data.service'
 })
 export class RacesOverviewComponent implements OnInit {
 
-    public races$;
+    public races$: Observable<DayRace[]>;
 
     constructor(private dataService: DataService,
                 private datePipe: DatePipe) { }

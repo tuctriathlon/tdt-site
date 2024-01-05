@@ -16,7 +16,7 @@
           <ul>
             <li *ngIf="race.date">
               <div class="race-icon material-icons">schedule</div>
-              <div class="race-text">{{race.time}}</div>
+              <div class="race-text">{{race.date | date : 'HH:mm'}}</div>
             </li>
             <li *ngIf="race.nombre_de_places">
               <div class="race-icon material-icons">people</div>
@@ -26,7 +26,7 @@
               <div class="race-icon">
                 <i class="material-icons">{{step.icone}}</i>
               </div>
-              <div class="race-text">{{step.distance}}</div>
+              <div class="race-text">{{step.computedDistance}}</div>
             </li>
             <li *ngIf="race.precision">
               <div class="race-icon material-icons"></div>

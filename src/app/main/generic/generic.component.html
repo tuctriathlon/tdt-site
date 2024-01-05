@@ -5,8 +5,8 @@
     <h4 *ngIf="article.created_on">{{article?.created_on | date: 'dd MMMM YYYY'}}</h4>
     <p *ngIf="article.description" [innerHtml]="article?.description | safeHtml"></p>
     <div class="media" *ngIf="article?.url_video">
-      <iframe *ngIf="article?.url_video" height="100%" width="100%" [src]="article.url_video | safeUrl" frameborder="0" allowfullscreen></iframe>
+      <iframe *ngIf="article?.url_video" height="100%" width="100%" [src]="article.url_video | safeUrl" frameborder="0" allowfullscreen [title]="article.titre"></iframe>
     </div>
-    <img *ngIf="article?.image" [src]="article.image.data.url" />
+    <img *ngIf="article?.image" [src]="article.image.data.url" [alt]="article.titre"/>
   </article>
 </main>

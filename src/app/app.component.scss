@@ -1,53 +1,13 @@
-@import 'shared/styles/colors.scss';
-:host {
-  ::ng-deep {
-    a {
-      transition-delay: all 0.2s;
-    }
-    a:hover,
-    a:hover li i {
-      color: $active !important;
-    }
-    h1 {
-      color: $primary;
-      font-weight: 600;
-      font-size: 2em;
-      margin-top: 0;
-      text-align: center;
-    }
-    h2 {
-      color: $primary;
-      font-weight: 400;
-      font-size: 2.2em;
-      margin: 0em 0em 1em 0em;
-      text-align: center;
-    }
-    h3 {
-      font-size: 1.5em;
-      font-weight: 600;
-      margin: 2em 0em 0.5em 0em;
-      text-align: center;
-    }
-    article {
-      margin-bottom: 2em;
-      h4 {
-        margin: -1.3em 0em 1em 0.2em;
-        font-size: 1.1em;
-        opacity: 0.5;
-        font-weight: 200;
-        text-align: center;
-      }
-    }
-    main-page {
-      margin-top: 65px;
-    }
-    tdt-slideshow {
-      &.wrap ul {
-        height: 200px !important;
-      }
-      ul {
-        margin-bottom: -65px !important;
-      }
-    }
-  }
+main {
+    display: flex;
+    flex-direction: column;
 }
+tdt-slideshow {
+    margin-top: 50px;
+    overflow: hidden;
+    height: 450px;
+}
+.wrap {
+    height: 200px;
+}
+

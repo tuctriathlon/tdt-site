@@ -1,19 +1,30 @@
-$primary: #3F51B5; // #2974B5;
-$secondary: #6371FE; //#def0ff;
-$active: #93C955;
-$focus: #FFE800;
+$primary: #6dcbdd;
+$secondary: #10434c;
+$active: #ffe747;
 
-$green: #93C955;
 $orange: #F36C22;
-$blue: #00AEEF;
+$warn: #8F0808;
 
 $black: #111111;
 $white: #FFFFFF;
 $icon: #888888;
 
-$headerBackground: $primary;
-$headerColor: $white;
-$headerActive: $active;
+$marginBackground: $primary;
 
-$footerBackground: $secondary;
-$footerColor: $white;
+@mixin compute-color($background: #FFFFFF) {
+    $accessible-color: calc(
+        (
+            (
+                (
+                    red($background) * 299 +
+                    green($background) * 587 +
+                    blue($background) * 114
+                ) / 1000
+            ) - 128
+        ) * -1000
+    );
+    $color: rgb($accessible-color, $accessible-color, $accessible-color);
+    background: $background;
+    color: $color;
+    border-color: $color;
+}

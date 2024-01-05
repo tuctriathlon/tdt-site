@@ -1,38 +1,37 @@
 :host {
-  width: 100%;
-  ul {
-    position: relative;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-    list-style: none;
-    margin-top: 50px;
-    height: 450px;
-    li {
-      position: absolute;
-      width: 100%;
-      visibility: hidden;
-      opacity: 0;
-      transition: all 0.5s;
-      height: 100%;
-      background-size: cover;
-      background-position: center center;
-      &.active {
-        visibility: visible;
-        opacity: 1;
-      }
-    }
-  }
-  @media screen and (max-width: 800px) {
+    width: 100%;
+
     ul {
-      margin-top: 50px;
-      height: 350px !important;
+        padding: 0;
+        overflow: hidden;
+        list-style: none;
+        height: 100%;
+        margin: 0;
+        li {
+            width: 0;
+            visibility: hidden;
+            opacity: 0;
+            transition: all 0.5s;
+            height: 100%;
+            background-size: cover;
+            background-position: center center;
+            display: inline-block;
+            &.active {
+                visibility: visible;
+                opacity: 1;
+                width: 100%;
+            }
+        }
     }
-  }
-  @media screen and (max-width: 640px) {
-    ul {
-      margin-top: 50px;
-      height: 250px !important;
+    @media screen and (max-width: 800px) {
+        ul {
+            height: 350px !important;
+        }
     }
-  }
+    @media screen and (max-width: 640px) {
+        ul {
+            height: 200px !important;
+            margin-top: 50px;
+        }
+    }
 }

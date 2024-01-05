@@ -19,7 +19,6 @@ export class DataService {
     config: BehaviorSubject<SiteConfig> = new BehaviorSubject<SiteConfig>(null);
     pages = new BehaviorSubject<Page[]>([]);
     medias = new BehaviorSubject([]);
-    partners = new BehaviorSubject<Partner[]>([]);
     results = new BehaviorSubject([]);
     inscriptions = new BehaviorSubject([]);
     races: BehaviorSubject<Race[]> = new BehaviorSubject<Race[]>([]);
@@ -32,8 +31,7 @@ export class DataService {
         this.getData<Page>(`/items/pages_collection?fields=*&sort=ordre_affichage`)
             .subscribe(pages => this.pages.next(pages));
 
-        this.getData<Partner>(`/items/partenaires?fields=*.*&sort=ordre_affichage`)
-            .subscribe(partners => this.partners.next(partners));
+
 
         this.getData(`/items/medias?fields=*.*&sort=-annee`)
             .subscribe(medias => this.medias.next(medias));
@@ -59,7 +57,7 @@ export class DataService {
     }
 
     getPartners() {
-        return this.partners;
+        return this.getData<Partner>(`/items/partenaires?fields=*.*&sort=ordre_affichage`);
     }
 
     getResults() {

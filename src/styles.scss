@@ -1,58 +1,89 @@
 /* You can add global styles to this file, and also import other style files */
+@import "app/shared/styles/colors";
 
 html {
-  height: 100%;
+    height: 100%;
 }
 
 body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  font-size: 13px;
-  font-family: 'Open Sans', 'Verdana';
-  color: #222222;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: 'Open Sans', 'Verdana';
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 2em;
+    margin-top: 0;
+    text-align: center;
+}
+h2 {
+    font-weight: 400;
+    font-size: 2.2em;
+    margin: 0em 0em 1em 0em;
+    text-align: center;
+}
+h3 {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 2em 0em 0.5em 0em;
+    text-align: center;
+}
+
+h4 {
+    margin: -1.3em 0 1em 0.2em;
+    font-size: 1.1em;
+    opacity: .5;
+    font-weight: 200;
+    text-align: center;
 }
 
 a {
-  text-decoration: none;
-  color: #F36C22;
+    text-decoration: none;
+    transition-delay: 0.2s;
+    color: $orange;
+    :any-link {
+        color: $orange;
+    }
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .loading {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .loading img {
-  height: 5em;
+    height: 5em;
 }
 .loading .spinner {
-  position: relative;
+    position: relative;
 }
 
 @media screen and (max-width: 960px) {
-  .loading img {
-    height: 4em;
-  }
+    .loading img {
+        height: 4em;
+    }
 }
 
 @media screen and (max-width: 410px) {
-  .loading img {
-    height: 3em;
-  }
+    .loading img {
+        height: 3em;
+    }
 }
 .loading .blob {
     width: 1em;
     height: 1em;
-    background: #2974b5;
+    background: $secondary;
     border-radius: 50%;
     position: absolute;
     left: calc(50% - 0.5em);

@@ -44,7 +44,7 @@
           display: flex;
           align-items: center;
           justify-content: center;
-        }             
+        }
         .arrow {
           width: 0;
           height: 0;
@@ -52,14 +52,13 @@
           border-width: 1em 1em 0 1em;
           margin: auto;
           margin-top: -1px;
-          border-top-color: $green;    
+          border-top-color: $active;
           color: transparent;
           visibility: hidden;
         }
         &:hover, &.selected {
           .media-title{
-            background-color: $green;
-            color: white;
+              @include compute-color($active)
           }
           .arrow {
             visibility: visible;
