@@ -9,26 +9,28 @@ import { DataService } from 'src/app/shared/services/data.service'
 @Component({
     selector: 'tdt-races-overview-page',
     templateUrl: './races-overview.component.html',
-    styleUrls: ['./races-overview.component.scss']
+    styleUrls: ['./races-overview.component.scss'],
 })
 export class RacesOverviewComponent implements OnInit {
+    public races$: Observable<DayRace[]>
 
-    public races$: Observable<DayRace[]>;
-
-    constructor(private dataService: DataService,
-                private datePipe: DatePipe) { }
+    constructor(
+        private dataService: DataService,
+        private datePipe: DatePipe
+    ) {}
 
     ngOnInit() {
-        this.races$ = this.dataService.getRaces()
-            .pipe(map(races => {
+        this.races$ = this.dataService.getRaces().pipe(
+            map((races) => {
                 return races.reduce((days, race: Race) => {
                     const raceDay = this.datePipe.transform(race.date, 'EEEE')
-                    if (!days.find(day => day.day === raceDay)) {
-                        days.push({day : raceDay, races: []});
+                    if (!days.find((day) => day.day === raceDay)) {
+                        days.push({ day: raceDay, races: [] })
                     }
-                    days.find(day => day.day === raceDay).races.push(race);
-                    return days;
-                }, []);
-            }))
+                    days.find((day) => day.day === raceDay).races.push(race)
+                    return days
+                }, [])
+            })
+        )
     }
 }

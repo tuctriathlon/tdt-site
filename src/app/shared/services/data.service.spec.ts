@@ -4,16 +4,12 @@ import { TestBed } from '@angular/core/testing'
 import { DataService } from 'src/app/shared/services/data.service'
 
 describe('DataService', () => {
-  let service: DataService
+    let service: DataService
 
     beforeEach(() => {
         TestBed.configureTestingModule({
-            imports: [
-                HttpClientTestingModule
-            ],
-            providers: [
-                HttpClient,
-            ]
+            imports: [HttpClientTestingModule],
+            providers: [HttpClient],
         })
         service = TestBed.inject(DataService)
     })

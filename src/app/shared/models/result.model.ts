@@ -1,5 +1,5 @@
 export interface Result {
-    annee: string;
-    url: string;
-    file: string;
+    annee: string
+    url: string
+    file: string
 }

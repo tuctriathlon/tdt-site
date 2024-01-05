@@ -1,4 +1,3 @@
-
 export class SiteConfig {
     contactez_nous: string
     facebook_url: string

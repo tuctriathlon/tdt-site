@@ -1,12 +1,21 @@
 <div class="contact">
-    <span>Contactez nous <h1>{{(config$ | async).contactez_nous}}</h1></span>
+    <span
+        >Contactez nous
+        <h1>{{ (config$ | async).contactez_nous }}</h1></span
+    >
 </div>
 <div class="partners">
     <h2>Partenaires</h2>
     <ul>
-        <li *ngFor="let partner of (partners$ | async)">
-            <a href="{{partner.url}}" target="_blank">
-                <img [src]="partner.icone.data.url" [title]="partner.nom" [alt]="partner.nom" width="70px" height="auto"/>
+        <li *ngFor="let partner of partners$ | async">
+            <a href="{{ partner.url }}" target="_blank">
+                <img
+                    [src]="partner.icone.data.url"
+                    [title]="partner.nom"
+                    [alt]="partner.nom"
+                    width="70px"
+                    height="auto"
+                />
             </a>
         </li>
     </ul>

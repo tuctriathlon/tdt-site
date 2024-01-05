@@ -1,15 +1,16 @@
 import { NgModule } from '@angular/core'
 import { RouterModule, Routes } from '@angular/router'
+import { MainComponent } from 'src/app/main/main.component'
 
-import { GenericComponent } from './generic/generic.component'
-import { InscriptionComponent } from './inscription/inscription.component'
-import { MainComponent } from './main.component'
-import { MediasComponent } from './medias/medias.component'
-import { PartnersComponent } from './partners/partners.component'
-import { RacesOverviewComponent } from './races/overview/races-overview.component'
-import { RacesComponent } from './races/races.component'
-import { RacesSingleComponent } from './races/single/races-single.component'
-import { ResultsComponent } from './results/results.component'
+import { GenericComponent } from 'src/app/main/generic/generic.component'
+import { InscriptionComponent } from 'src/app/main/inscription/inscription.component'
+
+import { MediasComponent } from 'src/app/main/medias/medias.component'
+import { PartnersComponent } from 'src/app/main/partners/partners.component'
+import { RacesOverviewComponent } from 'src/app/main/races/overview/races-overview.component'
+import { RacesComponent } from 'src/app/main/races/races.component'
+import { RacesSingleComponent } from 'src/app/main/races/single/races-single.component'
+import { ResultsComponent } from 'src/app/main/results/results.component'
 
 const routes: Routes = [
     {
@@ -18,11 +19,11 @@ const routes: Routes = [
         children: [
             {
                 path: '',
-                component: GenericComponent
+                component: GenericComponent,
             },
             {
                 path: 'inscription',
-                component: InscriptionComponent
+                component: InscriptionComponent,
             },
             {
                 path: 'courses',
@@ -30,47 +31,48 @@ const routes: Routes = [
                 children: [
                     {
                         path: 'programme',
-                        component: RacesOverviewComponent
+                        component: RacesOverviewComponent,
                     },
                     {
                         path: ':slug',
-                        component: RacesSingleComponent
+                        component: RacesSingleComponent,
                     },
                     {
                         path: '',
-                        redirectTo: 'programme'
-                    }
-                ]
+                        redirectTo: 'programme',
+                    },
+                ],
             },
             {
                 path: 'medias',
-                component: MediasComponent
+                component: MediasComponent,
             },
             {
                 path: 'partenaires',
-                component: PartnersComponent
+                component: PartnersComponent,
             },
             {
                 path: 'resultats',
-                component: ResultsComponent
+                component: ResultsComponent,
             },
             {
                 path: ':slug',
-                component: GenericComponent
-            }
-        ]
+                component: GenericComponent,
+            },
+        ],
     },
     {
         path: '**',
-        redirectTo: '/'
-    }
-];
+        redirectTo: '/',
+    },
+]
 
 @NgModule({
-    imports: [RouterModule.forRoot(routes, {
-        scrollPositionRestoration: 'enabled'
-    })],
-    exports: [RouterModule]
+    imports: [
+        RouterModule.forRoot(routes, {
+            scrollPositionRestoration: 'enabled',
+        }),
+    ],
+    exports: [RouterModule],
 })
-export class MainRoutingModule {
-}
+export class MainRoutingModule {}

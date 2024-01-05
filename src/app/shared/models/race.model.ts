@@ -1,26 +1,26 @@
 export interface DayRace {
-    day: String;
-    races: Array<Race>;
+    day: string
+    races: Array<Race>
 }
 
 export interface Race {
-    name: string;
-    slug: string;
-    description: string;
-    date: string;
-    prix: number;
-    type_de_course;
-    format;
-    specificite;
-    complet: boolean;
-    precision;
-    nombre_de_places;
-    age;
-    prix_pass_compet;
+    name: string
+    slug: string
+    description: string
+    date: string
+    prix: number
+    type_de_course
+    format
+    specificite
+    complet: boolean
+    precision
+    nombre_de_places
+    age
+    prix_pass_compet
     recompense: string
-    couleur;
+    couleur
     etapes: Etape[]
-    yearLimit: number;
+    yearLimit: number
     medias: Media[]
 }
 
@@ -33,14 +33,14 @@ export interface Etape {
     id: number
     image: null
     type: string
-    computedDistance: string;
+    computedDistance: string
 }
 
 export interface Course {
     age: number
     complet: boolean
     couleur: string
-    date: "2023-09-09 18:00:00"
+    date: '2023-09-09 18:00:00'
     format: string
     id: number
     nombre_de_places: string
@@ -54,5 +54,5 @@ export interface Course {
 
 export interface Media {
     description: string
-    contenu: { data: { url: string }}
+    contenu: { data: { url: string } }
 }

@@ -1,24 +1,44 @@
 <nav [class.opened]="open" [class.expanded]="expanded">
-    <div class="logo full" routerLink="/" ></div>
-    <div class="logo light" routerLink="/" ></div>
+    <div class="logo full" routerLink="/"></div>
+    <div class="logo light" routerLink="/"></div>
     <ul class="nav-menu">
         <li [hidden]="open">
             <a routerLink="/"><i class="icon material-icons">home</i></a>
         </li>
-        <li *ngFor="let page of (pages$ | async)" >
-            <a *ngIf="page.url.startsWith('http')" target="_blank" [attr.href]="page.url" class="focus">{{page.page_name}}</a>
-            <a *ngIf="!page.url.startsWith('http')" routerLink="{{page.url}}" routerLinkActive="selected" (click)="open = !open">{{page.page_name}}</a>
+        <li *ngFor="let page of pages$ | async">
+            <a
+                *ngIf="page.url.startsWith('http')"
+                target="_blank"
+                [attr.href]="page.url"
+                class="focus"
+                >{{ page.page_name }}</a
+            >
+            <a
+                *ngIf="!page.url.startsWith('http')"
+                routerLink="{{ page.url }}"
+                routerLinkActive="selected"
+                (click)="open = !open"
+                >{{ page.page_name }}</a
+            >
         </li>
     </ul>
     <ul class="social">
         <li class="facebook" *ngIf="(config$ | async)?.facebook_url">
-            <a target="_blank" href="{{(config$ | async)?.facebook_url}}" aria-label="facebook"></a>
+            <a
+                target="_blank"
+                href="{{ (config$ | async)?.facebook_url }}"
+                aria-label="facebook"
+            ></a>
         </li>
         <li class="twitter" *ngIf="(config$ | async)?.twitter_url">
-            <a target="_blank" href="{{(config$ | async)?.twitter_url}}" aria-label="twitter"></a>
+            <a target="_blank" href="{{ (config$ | async)?.twitter_url }}" aria-label="twitter"></a>
         </li>
         <li class="instagram" *ngIf="(config$ | async)?.instagram_url">
-            <a target="_blank" href="{{(config$ | async)?.instagram_url}}" aria-label="instagram"></a>
+            <a
+                target="_blank"
+                href="{{ (config$ | async)?.instagram_url }}"
+                aria-label="instagram"
+            ></a>
         </li>
     </ul>
     <div class="menu">

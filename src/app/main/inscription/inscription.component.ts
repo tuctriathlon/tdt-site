@@ -1,18 +1,17 @@
-import { Component, OnInit } from '@angular/core';
-import { DataService } from '../../shared/services/data.service';
+import { Component, OnInit } from '@angular/core'
+import { DataService } from 'src/app/shared/services/data.service'
 
 @Component({
-  selector: 'tdt-inscription-page',
-  templateUrl: './inscription.component.html',
-  styleUrls: ['./inscription.component.scss']
+    selector: 'tdt-inscription-page',
+    templateUrl: './inscription.component.html',
+    styleUrls: ['./inscription.component.scss'],
 })
 export class InscriptionComponent implements OnInit {
+    public steps$
 
-  public steps$;
+    constructor(private dataService: DataService) {}
 
-  constructor(private dataService: DataService) { }
-
-  ngOnInit() {
-    this.steps$ = this.dataService.getInscriptionSteps();
-  }
+    ngOnInit() {
+        this.steps$ = this.dataService.getInscriptionSteps()
+    }
 }
