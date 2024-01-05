@@ -1,7 +1,8 @@
 import { Component, HostListener, OnInit } from "@angular/core";
 import { Router, NavigationEnd } from '@angular/router';
 import { BehaviorSubject } from 'rxjs'
-import { SiteConfig } from 'src/app/shared/models/models'
+import { SiteConfig } from 'src/app/shared/models/site-config.model'
+
 import { DataService } from '../../services/data.service';
 import { map } from "rxjs/operators";
 

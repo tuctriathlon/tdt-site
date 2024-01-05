@@ -1,4 +1,4 @@
-<nav [class.opened]="open" [class.expanded]="expanded">
+<nav [class.opened]="open" [class.expanded]="expanded" [style.background-color]="(config$ | async)?.header_color">
   <div class="logo full" src="assets/pictures/logo-tdt-full.png" routerLink="/" ></div>
   <div class="logo light" src="assets/pictures/logo-tdt-light.png" routerLink="/" ></div>
   <div class="social">

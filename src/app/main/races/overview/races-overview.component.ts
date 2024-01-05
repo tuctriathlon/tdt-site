@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from '../../../shared/services/data.service';
-import { Race } from '../../../shared/models/models';
+import { Race } from 'src/app/shared/models/race.model'
+
 import { map } from 'rxjs/operators';
+import { DataService } from 'src/app/shared/services/data.service'
 
 @Component({
   selector: 'tdt-races-overview-page',

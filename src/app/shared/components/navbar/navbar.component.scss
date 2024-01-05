@@ -4,7 +4,6 @@
   z-index: 99;
   top: 0;
   width: 100%;
-  background-color: $headerBackground;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.4);
   min-height: 60px;
   display: flex;
@@ -45,7 +44,7 @@
       margin-left: 0.5em
     }
   }
-  .social {    
+  .social {
     order: 1;
     display: flex;
     flex-direction: row;
@@ -127,7 +126,7 @@
       }
     }
     ul {
-      position: relative;      
+      position: relative;
       display: flex;
       align-items: center;
       list-style: none;
@@ -139,7 +138,7 @@
       display: inline;
       padding: 0.5em;
     }
-    .menu { 
+    .menu {
       display: none;
     }
   }
@@ -241,7 +240,7 @@
       margin-top: 9px;
     }
     .social {
-      margin-top: 0.9em;      
+      margin-top: 0.9em;
       margin-bottom: 0.9em
     }
   }

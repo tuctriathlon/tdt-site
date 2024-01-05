@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BehaviorSubject } from 'rxjs'
-import { SiteConfig } from 'src/app/shared/models/models'
+import { SiteConfig } from 'src/app/shared/models/site-config.model'
 import { DataService } from '../../services/data.service';
 
 @Component({

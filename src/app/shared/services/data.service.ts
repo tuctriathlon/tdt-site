@@ -1,9 +1,15 @@
 import { HttpClient } from '@angular/common/http'
 import { Injectable } from '@angular/core';
 import * as moment from 'moment';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs'
 import { map } from 'rxjs/operators';
-import { Content, SiteConfig } from '../models/models'
+import { Article } from 'src/app/shared/models/article.model'
+import { Page } from 'src/app/shared/models/page.model'
+import { Partner } from 'src/app/shared/models/partner.model'
+import { Race } from 'src/app/shared/models/race.model'
+import { Content } from 'src/app/shared/models/content.model'
+import { SiteConfig } from 'src/app/shared/models/site-config.model'
+
 
 
 @Injectable()
@@ -11,28 +17,24 @@ export class DataService {
 
   PREFIX = "http://admin.triathlondetoulouse.com/tdt";
 
-  config = new BehaviorSubject<SiteConfig>(null);
-  pages = new BehaviorSubject([]);
+  config: BehaviorSubject<SiteConfig> = new BehaviorSubject<SiteConfig>(null);
+  pages = new BehaviorSubject<Page[]>([]);
   medias = new BehaviorSubject([]);
-  partners = new BehaviorSubject([]);
+  partners = new BehaviorSubject<Partner[]>([]);
   results = new BehaviorSubject([]);
   inscriptions = new BehaviorSubject([]);
-  races = new BehaviorSubject([]);
+  races: BehaviorSubject<Race[]> = new BehaviorSubject<Race[]>([]);
   home = new BehaviorSubject([]);
-  contents: BehaviorSubject<Array<Content>> = new BehaviorSubject([]);
+  contents: BehaviorSubject<Content[]> = new BehaviorSubject([]);
 
   constructor(private http: HttpClient) {
-    this.getData(`/items/information_content?sort=ordre_affichage`)
+    this.getData<Content>(`/items/information_content?sort=ordre_affichage`)
       .subscribe(contents => this.contents.next(contents));
 
-    this.getData(`/items/general_information?limit=1`)
-      .pipe(map(configs => configs[0]))
-      .subscribe(config => this.config.next(config));
-
-    this.getData(`/items/pages_collection?fields=*&sort=ordre_affichage`)
+    this.getData<Page>(`/items/pages_collection?fields=*&sort=ordre_affichage`)
       .subscribe(pages => this.pages.next(pages));
 
-    this.getData(`/items/partenaires?fields=*.*&sort=ordre_affichage`)
+    this.getData<Partner>(`/items/partenaires?fields=*.*&sort=ordre_affichage`)
       .subscribe(partners => this.partners.next(partners));
 
     this.getData(`/items/medias?fields=*.*&sort=-annee`)
@@ -44,9 +46,9 @@ export class DataService {
     this.getData(`/items/inscription_etape?fields=*.*&sort=ordre_affichage`)
       .subscribe(inscriptions => this.inscriptions.next(inscriptions));
 
-    this.getData(`/items/courses?fields=*.*.*&sort=date`)
-      .pipe(map(medias => {
-        return medias.map(race => {
+    this.getData<Race>(`/items/courses?fields=*.*.*&sort=date`)
+      .pipe(map(races => {
+        return races.map(race => {
           race.name = race.type_de_course + ' ' + race.format;
           race.name = race.specificite ? race.name + ' ' + race.specificite : race.name;
           race.slug = race.name.replace(' ', '-').toLowerCase();
@@ -54,8 +56,8 @@ export class DataService {
           race.day = date.locale('fr').format('dddd');
           race.time = date.format('HH:mm');
           race.etapes.forEach(etape => {
-            etape.distance = etape.affichage_distance === 'm' ? etape.distance : etape.distance / 1000;
-            etape.distance += ' ' + etape.affichage_distance;
+            etape.computedDistance = etape.affichage_distance === 'm' ? etape.distance.toString() : (etape.distance / 1000).toString();
+            etape.computedDistance += ' ' + etape.affichage_distance;
           });
           if (race.age) {
             race.yearLimit = +date.format('YYYY') - race.age;
@@ -65,7 +67,7 @@ export class DataService {
       }))
       .subscribe(races => this.races.next(races));
 
-    this.getData(`/items/home_page?fields=*.*&sort=-created_on`)
+    this.getData<Article>(`/items/home_page?fields=*.*&sort=-created_on`)
       .pipe(map(articles => {
         articles.forEach(article => {
           const date = moment(article.created_on, "YYYY-MM-DD HH:mm:ss");
@@ -76,6 +78,10 @@ export class DataService {
       .subscribe(home => this.home.next(home));
   }
 
+  loadConfig() {
+      return this.getData<SiteConfig>(`/items/general_information?limit=1`)
+          .pipe(map(configs => this.config.next(configs[0])));
+  }
   getGlobalConfig() {
     return this.config;
   }
@@ -100,7 +106,7 @@ export class DataService {
     return this.pages;
   }
 
-  getContent(pageId: String) {
+  getContent(pageId: number) {
     return this.contents
       .pipe(map(contents => contents.filter(content => content.page_id === pageId)));
   }
@@ -113,13 +119,11 @@ export class DataService {
     return this.races;
   }
 
-  private getData(url) {
-    return this.http.get(`${this.PREFIX}${url}`)
-      .pipe(map(response => this.extractData(response)))
-  }
-
-  private extractData(res) {
-    return res.data || {};
+  private getData<T>(url): Observable<T[]> {
+    return this.http.get<{ data: T[], public: boolean }>(`${this.PREFIX}${url}`)
+      .pipe(
+          map(res => res.data),
+      )
   }
 }
 
