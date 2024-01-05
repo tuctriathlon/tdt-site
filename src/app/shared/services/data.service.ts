@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import * as moment from 'moment';
 import { BehaviorSubject } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { Content } from '../models/models';
+import { Content, SiteConfig } from '../models/models'
 
 
 @Injectable()
@@ -11,7 +11,7 @@ export class DataService {
 
   PREFIX = "http://admin.triathlondetoulouse.com/tdt";
 
-  config = new BehaviorSubject({});
+  config = new BehaviorSubject<SiteConfig>(null);
   pages = new BehaviorSubject([]);
   medias = new BehaviorSubject([]);
   partners = new BehaviorSubject([]);

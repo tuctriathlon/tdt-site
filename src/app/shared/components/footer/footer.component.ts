@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { BehaviorSubject } from 'rxjs'
+import { SiteConfig } from 'src/app/shared/models/models'
 import { DataService } from '../../services/data.service';
 
 @Component({
@@ -7,8 +9,8 @@ import { DataService } from '../../services/data.service';
   styleUrls: ['./footer.component.scss'],
 })
 export class FooterComponent implements OnInit {
-  
-  public config$;
+
+  public config$: BehaviorSubject<SiteConfig>;
   public partners$;
 
   constructor(private dataService: DataService) {}

@@ -1,5 +1,7 @@
 import { Component, HostListener, OnInit } from "@angular/core";
 import { Router, NavigationEnd } from '@angular/router';
+import { BehaviorSubject } from 'rxjs'
+import { SiteConfig } from 'src/app/shared/models/models'
 import { DataService } from '../../services/data.service';
 import { map } from "rxjs/operators";
 
@@ -10,7 +12,7 @@ import { map } from "rxjs/operators";
 })
 export class NavbarComponent implements OnInit {
 
-  public config$;
+  public config$: BehaviorSubject<SiteConfig>;
   public pages$;
   public expandable = false;
   public expanded = true;
@@ -34,6 +36,6 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
     this.config$ = this.dataService.getGlobalConfig();
     this.pages$ = this.dataService.getPages() //
-      .pipe(map(pages => pages.filter(page => page.parent_page_id === null)));      
+      .pipe(map(pages => pages.filter(page => page.parent_page_id === null)));
   }
 }
