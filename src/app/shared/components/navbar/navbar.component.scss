@@ -11,6 +11,7 @@ $active: #ffe747;
     display: flex;
     justify-content: center;
     nav {
+        z-index: 1;
         color: $white;
         background-color: $marginBackground;
         position: relative;

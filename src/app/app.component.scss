@@ -6,8 +6,18 @@ tdt-slideshow {
     margin-top: 50px;
     overflow: hidden;
     height: 450px;
+    .wrap {
+        height: 200px;
+    }
 }
-.wrap {
-    height: 200px;
+@media screen and (max-width: 800px) {
+    tdt-slideshow {
+        height: 350px;
+    }
 }
-
+@media screen and (max-width: 640px) {
+    tdt-slideshow {
+        height: 200px !important;
+        margin-top: 50px;
+    }
+}
