@@ -1,7 +1,5 @@
-//@import '../../styles/colors.scss';
-$white: #fff;
-$marginBackground: #6dcbdd;
-$active: #ffe747;
+@import '../../styles/colors.scss';
+
 :host {
     position: fixed;
     top: 0;
@@ -33,23 +31,25 @@ $active: #ffe747;
             }
         }
     }
-    .logo {
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: left center;
-        cursor: pointer;
+    .logo-container {
         flex-grow: 1;
         align-self: center;
-        &.full {
-            height: 85px;
-            width: 425px;
-            display: none;
-            background-image: url(/assets/pictures/logo-tdt-full.png);
-        }
-        &.light {
+        display: inline-flex;
+        .logo {
             height: 45px;
-            width: 300px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: left center;
+            cursor: pointer;
+        }
+        .tdt {
+            width: 140px;
             background-image: url(/assets/pictures/logo-tdt-light.png);
+        }
+        .tuc {
+            width: 90px;
+            background-image: url(/assets/pictures/by_tuc.png);
+            border: none;
         }
     }
     .social {
@@ -63,6 +63,7 @@ $active: #ffe747;
             opacity: 0.5;
             width: 25px;
             height: 25px;
+            cursor: pointer;
             &:hover {
                 opacity: 1;
             }
@@ -115,14 +116,16 @@ $active: #ffe747;
             position: relative;
             align-items: flex-end;
             height: 100px;
-            .logo {
-                &.light {
-                    display: none;
+            .logo-container {
+                .tdt {
+                    height: 85px;
+                    width: 425px;
+                    background-image: url("/assets/pictures/logo-tdt-full.png");
                 }
-                &.full {
-                    visibility: visible;
-                    opacity: 1;
-                    display: block;
+                .tuc {
+                    height: 85px;
+                    width: 200px;
+                    border-bottom: none;
                 }
             }
         }
@@ -181,9 +184,6 @@ $active: #ffe747;
             font-size: 1.1em;
             padding-bottom: 0.1em;
         }
-        .logo.light {
-            display: inline-block;
-        }
         .menu {
             display: flex;
             align-items: center;
@@ -204,9 +204,13 @@ $active: #ffe747;
         nav {
             height: 50px;
         }
-        .logo.light {
+        .logo-container .tdt {
             height: 30px;
-            width: 200px;
+            width: 100px;
+        }
+        .logo-container .tuc {
+            height: 30px;
+            width: 60px;
         }
         .menu {
             max-height: 50px;
