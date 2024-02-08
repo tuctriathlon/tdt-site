@@ -12,7 +12,7 @@ import { SiteConfig } from 'src/app/shared/models/site-config.model'
     providedIn: 'root',
 })
 export class DataService {
-    PREFIX = 'http://admin.triathlondetoulouse.com/tdt'
+    PREFIX = 'https://admin.triathlondetoulouse.com/tdt'
 
     config: BehaviorSubject<SiteConfig> = new BehaviorSubject<SiteConfig>(null)
     pages = new BehaviorSubject<Page[]>([])
