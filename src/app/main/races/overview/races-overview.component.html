@@ -1,48 +1,52 @@
 <main id="overview">
-  <article *ngFor="let raceDay of (races$ | async)">
-    <h1>{{raceDay.day}}</h1>
-    <div class="races">
-      <div class="race-container" *ngFor="let race of raceDay.races" routerLink="/courses/{{race.slug}}">
-        <div class="ribbon" *ngIf="race.complet"><span>COMPLET</span></div>
-        <div class="race-header" [style.background]="race.couleur">
-          <div class="race-type">{{race.type_de_course}}</div>
-          <div class="race-name">
-            <span>{{race.format}}</span>
-            <span class="race-extra-name">{{race.specificite}}</span>
-          </div>
+    <article *ngFor="let raceDay of races$ | async">
+        <h1>{{ raceDay.day }}</h1>
+        <div class="races">
+            <div
+                class="race-container"
+                *ngFor="let race of raceDay.races"
+                routerLink="/courses/{{ race.slug }}"
+            >
+                <div class="ribbon" *ngIf="race.complet"><span>COMPLET</span></div>
+                <div class="race-header" [style.background]="race.couleur">
+                    <div class="race-type">{{ race.type_de_course }}</div>
+                    <div class="race-name">
+                        <span>{{ race.format }}</span>
+                        <span class="race-extra-name">{{ race.specificite }}</span>
+                    </div>
+                </div>
+                <div class="race-arrow" [style.border-top-color]="race.couleur"></div>
+                <div class="race-body">
+                    <ul>
+                        <li *ngIf="race.date">
+                            <div class="race-icon material-icons">schedule</div>
+                            <div class="race-text">{{ race.date | date: 'HH:mm' }}</div>
+                        </li>
+                        <li *ngIf="race.nombre_de_places">
+                            <div class="race-icon material-icons">people</div>
+                            <div class="race-text">{{ race.nombre_de_places }}</div>
+                        </li>
+                        <li *ngFor="let step of race.etapes">
+                            <div class="race-icon">
+                                <i class="material-icons">{{ step.icone }}</i>
+                            </div>
+                            <div class="race-text">{{ step.computedDistance }}</div>
+                        </li>
+                        <li *ngIf="race.precision">
+                            <div class="race-icon material-icons"></div>
+                            <div class="race-text">{{ race.precision }}</div>
+                        </li>
+                        <li *ngIf="race.prix" title="Prix de la course">
+                            <div class="race-icon material-icons">payment</div>
+                            <div class="race-text">{{ race.prix }} €</div>
+                        </li>
+                        <li *ngIf="race.age" title="Age minimum pour participer">
+                            <div class="race-icon material-icons">face</div>
+                            <div class="race-text">{{ race.age }} ans</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="race-arrow" [style.border-top-color]="race.couleur"></div>
-        <div class="race-body">
-          <ul>
-            <li *ngIf="race.date">
-              <div class="race-icon material-icons">schedule</div>
-              <div class="race-text">{{race.time}}</div>
-            </li>
-            <li *ngIf="race.nombre_de_places">
-              <div class="race-icon material-icons">people</div>
-              <div class="race-text">{{race.nombre_de_places}}</div>
-            </li>
-            <li *ngFor="let step of race.etapes">
-              <div class="race-icon">
-                <i class="material-icons">{{step.icone}}</i>
-              </div>
-              <div class="race-text">{{step.distance}}</div>
-            </li>
-            <li *ngIf="race.precision">
-              <div class="race-icon material-icons"></div>
-              <div class="race-text">{{race.precision}}</div>
-            </li>
-            <li *ngIf="race.prix" title="Prix de la course">
-              <div class="race-icon material-icons">payment</div>
-              <div class="race-text">{{race.prix}} €</div>
-            </li>
-            <li *ngIf="race.age" title="Age minimum pour participer">
-              <div class="race-icon material-icons">face</div>
-              <div class="race-text">{{race.age}} ans</div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </article>
+    </article>
 </main>

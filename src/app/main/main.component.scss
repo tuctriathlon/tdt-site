@@ -1,6 +1,6 @@
 @import '../shared/styles/colors.scss';
 :host {
-  position: relative;
+    width: 100%;
   min-height: 500px;
   max-width: 900px;
   margin: auto;
@@ -12,12 +12,12 @@
     @media screen and (min-width: 410px) {
       article p {
         font-size: 1.1em;
-      }    
+      }
     }
   }
   ::ng-deep ul.submenu{
     list-style: none;
-    margin: 1em 0em 1em 0em;
+    margin: 1em 0 1em 0;
     padding: 0;
     display: flex;
     flex-direction: row;
@@ -29,7 +29,7 @@
       margin: 0 0.6em;
       white-space: nowrap;
       a {
-        color: $primary;
+        color: $secondary;
         font-weight: 600;
         padding-bottom: 0.4em;
         transition: all 0.2s;

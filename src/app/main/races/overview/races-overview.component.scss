@@ -12,7 +12,7 @@
     .race-container {
       position: relative;
       flex-basis: 25%;
-	  max-width: 190px;
+      max-width: 200px;
       @media screen and (max-width: 1000px) {
         min-width: 20em;
       }
@@ -22,10 +22,11 @@
         border-color : transparent transparent transparent transparent;
       }
       .race-header {
-        margin: 0.2em 0.2em 0em 0.2em;
+        margin: 0.2em 0.2em 0 0.2em;
         padding: 0.5em 1em;
-        color: white;
+        color: $secondary;
         text-transform: uppercase;
+        font-size: 1.2em;
         font-weight: 600;
         text-align: center;
         .race-type {
@@ -33,12 +34,12 @@
         }
         .race-name {
           font-weight: 800;
-          font-size: 2em;
-          text-transform: capitalize;
+          font-size: 1.6em;
+          text-transform: uppercase;
         }
         .race-extra-name {
           font-size: 0.7em;
-          font-weight: 600;    
+          font-weight: 600;
           text-transform: uppercase;
           margin-left: 0.5em;
         }
@@ -52,7 +53,7 @@
         margin-top: -1px;
       }
       .race-body {
-        margin: 0em 0.2em 0.2em 0.2em;
+        margin: 0 0.2em 0.2em 0.2em;
         padding: 0.7em;
         ul {
           padding: 0;
@@ -62,7 +63,7 @@
             display: flex;
             align-items: center;
             min-height: 2em;
-            margin: 0.2em 0em;
+            margin: 0.2em 0;
             .race-icon {
               color: $icon;
               width: 40px;
@@ -87,7 +88,7 @@
   .ribbon span {
     font-size: 9px;
     font-weight: bold;
-    color: #FFF;
+    color: $white;
     text-transform: uppercase;
     text-align: center;
     line-height: 20px;
@@ -95,30 +96,29 @@
     -webkit-transform: rotate(-45deg);
     width: 80px;
     display: block;
-    background: #79A70A;
-    background: -webkit-linear-gradient(#F70505 0%, #8F0808 100%);
-    background: linear-gradient(#F70505 0%, #8F0808 100%);
-    box-shadow: 0 3px 10px -5px black;
+    background: -webkit-linear-gradient(lighten($warn, 20%) 0%, $warn 100%);
+    background: linear-gradient(lighten($warn, 20%) 0%, $warn 100%);
+    box-shadow: 0 3px 10px -5px $black;
     position: absolute;
     top: 15px;
     left: -15px;
   }
   .ribbon span::before {
     content: "";
-    position: absolute; left: 0px; top: 100%;
+    position: absolute; left: 0; top: 100%;
     z-index: -1;
-    border-left: 3px solid #8F0808;
+    border-left: 3px solid $warn;
     border-right: 3px solid transparent;
     border-bottom: 3px solid transparent;
-    border-top: 3px solid #8F0808;
+    border-top: 3px solid $warn;
   }
   .ribbon span::after {
     content: "";
-    position: absolute; right: 0px; top: 100%;
+    position: absolute; right: 0; top: 100%;
     z-index: -1;
     border-left: 3px solid transparent;
-    border-right: 3px solid #8F0808;
+    border-right: 3px solid $warn;
     border-bottom: 3px solid transparent;
-    border-top: 3px solid #8F0808;
+    border-top: 3px solid $warn;
   }
 }

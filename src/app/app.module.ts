@@ -1,30 +1,38 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http'
+import { BrowserModule } from '@angular/platform-browser'
+import { APP_INITIALIZER, LOCALE_ID, NgModule } from '@angular/core'
+import { FormsModule } from '@angular/forms'
+import { RouterModule } from '@angular/router'
+import { firstValueFrom } from 'rxjs'
+import { DataService } from 'src/app/shared/services/data.service'
+import { SharedModule } from 'src/app/shared/shared.module'
+import { MainModule } from 'src/app/main/main.module'
+import { AppComponent } from 'src/app/app.component'
+import { registerLocaleData } from '@angular/common'
 
-import { RouterModule } from '@angular/router';
+import localeFr from '@angular/common/locales/fr'
 
-import { SharedModule } from './shared/shared.module';
-import { MainModule } from './main/main.module';
+registerLocaleData(localeFr)
 
-import { AppComponent } from './app.component';
+function initializeAppFactory(dataService: DataService): () => Promise<void> {
+    return () => firstValueFrom(dataService.loadConfig())
+}
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    RouterModule,
-    BrowserModule,
-    FormsModule,
-    HttpModule,
-    SharedModule,
-    MainModule
-  ],
-  providers: [],
-  bootstrap: [
-    AppComponent
-  ]
+    declarations: [AppComponent],
+    imports: [RouterModule, BrowserModule, FormsModule, HttpClientModule, SharedModule, MainModule],
+    providers: [
+        {
+            provide: APP_INITIALIZER,
+            useFactory: initializeAppFactory,
+            deps: [DataService],
+            multi: true,
+        },
+        {
+            provide: LOCALE_ID,
+            useValue: 'fr-FR',
+        },
+    ],
+    bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

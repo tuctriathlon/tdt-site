@@ -1,101 +1,102 @@
 @import '../../shared/styles/colors.scss';
 :host {
-  flex-grow: 1;
-  @media screen and (min-width: 800px) {
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 999999;
-    main {
-      flex-grow: 1;
-      flex-basis: 70%;
-    }
-  }
-  article {
-    .media-container {
-      display: flex;
-      flex-direction: column;
-      & > ul {
-        height: 50px;
-      }
-    }
-    ul {
-      list-style: none;
-      margin: 0px 10px 10px 10px;
-      padding: 0;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: row;
-      li {
-        flex-grow: 1;
+    flex-grow: 1;
+    @media screen and (min-width: 800px) {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 0;
-        cursor: pointer;
-        font-weight: 600;
-        .media-title {
-          flex-grow: 1;
-          width: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }             
-        .arrow {
-          width: 0;
-          height: 0;
-          border-style: solid;
-          border-width: 1em 1em 0 1em;
-          margin: auto;
-          margin-top: -1px;
-          border-top-color: $green;    
-          color: transparent;
-          visibility: hidden;
+        flex-shrink: 999999;
+        main {
+            flex-grow: 1;
+            flex-basis: 70%;
         }
-        &:hover, &.selected {
-          .media-title{
-            background-color: $green;
-            color: white;
-          }
-          .arrow {
-            visibility: visible;
-          }
-        }
-      }
     }
-    .video {
-      position: relative;
-      height: 0;
-      padding-bottom: 56.25%;
-      iframe {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
-      }
-    }
-    .picture {
-      ul {
-        display: flex;
-        flex-direction: column;
-        a {
-         color: $icon;
+    article {
+        .media-container {
+            display: flex;
+            flex-direction: column;
+            & > ul {
+                height: 50px;
+            }
         }
-        li {
-          display: flex;
-          flex-direction: row;
-          margin-bottom: 0.2em;
-          i {
-            margin-right: 0.5em;
-            color: $icon;
-          }
+        ul {
+            list-style: none;
+            margin: 0 10px 10px 10px;
+            padding: 0;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: row;
+            li {
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 0;
+                cursor: pointer;
+                font-weight: 600;
+                .media-title {
+                    flex-grow: 1;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .arrow {
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 1em 1em 0 1em;
+                    margin: auto;
+                    margin-top: -1px;
+                    border-top-color: $active;
+                    color: transparent;
+                    visibility: hidden;
+                }
+                &:hover, &.selected {
+                    .media-title{
+                        @include compute-color($active)
+                    }
+                    .arrow {
+                        visibility: visible;
+                    }
+                }
+            }
         }
-      }
+        .video {
+            position: relative;
+            height: 0;
+            padding-bottom: 56.25%;
+            z-index: -1;
+            iframe {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                left: 0;
+                border: none;
+            }
+        }
+        .picture {
+            ul {
+                display: flex;
+                flex-direction: column;
+                a {
+                    color: $icon;
+                }
+                li {
+                    display: flex;
+                    flex-direction: row;
+                    margin-bottom: 0.2em;
+                    i {
+                        margin-right: 0.5em;
+                        color: $icon;
+                    }
+                }
+            }
+        }
     }
-  }
 }

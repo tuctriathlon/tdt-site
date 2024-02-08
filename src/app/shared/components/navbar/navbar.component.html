@@ -1,27 +1,49 @@
 <nav [class.opened]="open" [class.expanded]="expanded">
-  <div class="logo full" src="assets/pictures/logo-tdt-full.png" routerLink="/" ></div>
-  <div class="logo light" src="assets/pictures/logo-tdt-light.png" routerLink="/" ></div>
-  <div class="social">
-    <div class="facebook" *ngIf="(config$ | async)?.facebook_url">
-      <a target="_blank" href="{{(config$ | async)?.facebook_url}}"></a>
+    <div class="logo-container">
+        <div class="logo tdt" routerLink="/"></div>
+        <a class="logo tuc" href="https://www.tuc-triathlon.com" target="_blank"></a>
     </div>
-    <div class="twitter" *ngIf="(config$ | async)?.twitter_url">
-      <a target="_blank" href="{{(config$ | async)?.twitter_url}}"></a>
+    <ul class="nav-menu">
+        <li [hidden]="open">
+            <a routerLink="/"><i class="icon material-icons">home</i></a>
+        </li>
+        <li *ngFor="let page of pages$ | async">
+            <a
+                *ngIf="page.url.startsWith('http')"
+                target="_blank"
+                [attr.href]="page.url"
+                class="focus"
+                >{{ page.page_name }}</a
+            >
+            <a
+                *ngIf="!page.url.startsWith('http')"
+                routerLink="{{ page.url }}"
+                routerLinkActive="selected"
+                (click)="open = !open"
+                >{{ page.page_name }}</a
+            >
+        </li>
+    </ul>
+    <ul class="social">
+        <li class="facebook" *ngIf="(config$ | async)?.facebook_url">
+            <a
+                target="_blank"
+                href="{{ (config$ | async)?.facebook_url }}"
+                aria-label="facebook"
+            ></a>
+        </li>
+        <li class="twitter" *ngIf="(config$ | async)?.twitter_url">
+            <a target="_blank" href="{{ (config$ | async)?.twitter_url }}" aria-label="twitter"></a>
+        </li>
+        <li class="instagram" *ngIf="(config$ | async)?.instagram_url">
+            <a
+                target="_blank"
+                href="{{ (config$ | async)?.instagram_url }}"
+                aria-label="instagram"
+            ></a>
+        </li>
+    </ul>
+    <div class="menu">
+        <i class="material-icons" (click)="open = !open">menu</i>
     </div>
-    <div class="instagram" *ngIf="(config$ | async)?.instagram_url">
-      <a target="_blank" href="{{(config$ | async)?.instagram_url}}"></a>
-    </div>
-  </div>
-  <div class="menu">
-    <i class="material-icons" (click)="open = !open">menu</i>
-  </div>
-  <ul>
-    <li [hidden]="open">
-      <a routerLink="/"><i class="icon material-icons">home</i></a>
-    </li>
-    <li *ngFor="let page of (pages$ | async)" >
-      <a *ngIf="page.url.startsWith('http')" target="_blank" [attr.href]="page.url" class="focus">{{page.page_name}}</a>
-      <a *ngIf="!page.url.startsWith('http')" routerLink="{{page.url}}" routerLinkActive="selected" (click)="open = !open">{{page.page_name}}</a>
-    </li>
-  </ul>
 </nav>

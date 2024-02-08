@@ -19,7 +19,7 @@
     h2,
     h3 {
       margin: 0;
-      color: white;
+      color: $white;
       text-align: center;
     }
     h1 {
@@ -37,29 +37,15 @@
       font-weight: 200;
       margin: 0.5em 0;
     }
-    background-color: #CACACA;
-    &.green {
-      background-color: $green;
-    }
-    &.orange {
-      background-color: $orange;
-    }
-    &.blue {
-      background-color: $blue;
-    }
   }
   .step-arrow {
-    border: 1px solid $orange;
     width: 0;
     height: 0;
     border-style: solid;
     border-width: 2em 2em 0 2em;
     margin: auto;
     margin-top: -1px;
-    border-color: $orange transparent transparent transparent;
-    &.green {
-      border-color: $green transparent transparent transparent;
-    }
+    border-color: transparent;
   }
   ul.list {
     padding: 0;
@@ -80,17 +66,6 @@
         color: $icon;
         margin-right: 0.5em;
       }
-    }
-  }
-  .inscription {
-    color: $primary;
-    text-align: center;
-    font-size: 3em;
-    font-weight: 800;
-    margin: 0em 0em 1em 0em;
-    cursor: pointer;
-    &:hover {
-      color: $active;
     }
   }
 }

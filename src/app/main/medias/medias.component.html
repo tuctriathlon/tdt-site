@@ -1,31 +1,40 @@
 <main>
-  <article *ngFor="let media of (medias$ | async)">
-    <h1>{{media.annee}}</h1>
-    <div class="media-container" *ngIf="media.elements.length > 0">
-      <ul *ngIf="media.elements.length > 1">
-        <li *ngFor="let element of media.elements; let first=first"
-            (click)="media.selected = element"
-            [class.selected]="media.selected === element"
-            [style.marginLeft]="first ? '0':'10px'">
-          <div class="media-title">{{element.name}}</div>
-          <div class="arrow"></div>
-        </li>
-      </ul>
-      <div class="video" *ngIf="media.selected.type === 'video'">
-        <iframe height="100%" width="100%" 
-                [src]="media.selected.url | safeUrl" 
-                frameborder="0"  allowfullscreen></iframe>
-      </div>
-      <div class="picture" *ngIf="media.selected.type === 'photo'">
-        <ul>
-          <a [href]="picture.url | safeUrl" target="_blank" *ngFor="let picture of media.selected.pictures">
-            <li>
-              <i class="material-icons">camera_alt</i>
-              <span>{{picture.name}}</span>
-            </li>
-          </a>
-        </ul>
-      </div>
-    </div>
-  </article>
+    <article *ngFor="let media of medias$ | async">
+        <h1>{{ media.annee }}</h1>
+        <div class="media-container" *ngIf="media.elements.length > 0">
+            <ul *ngIf="media.elements.length > 1">
+                <li
+                    *ngFor="let element of media.elements; let first = first"
+                    (click)="media.selected = element"
+                    [class.selected]="media.selected === element"
+                    [style.marginLeft]="first ? '0' : '10px'"
+                >
+                    <div class="media-title">{{ element.name }}</div>
+                    <div class="arrow"></div>
+                </li>
+            </ul>
+            <div class="video" *ngIf="media.selected.type === 'video'">
+                <iframe
+                    height="100%"
+                    width="100%"
+                    [src]="media.selected.url | safeUrl"
+                    allowfullscreen
+                ></iframe>
+            </div>
+            <div class="picture" *ngIf="media.selected.type === 'photo'">
+                <ul>
+                    <a
+                        [href]="picture.url | safeUrl"
+                        target="_blank"
+                        *ngFor="let picture of media.selected.pictures"
+                    >
+                        <li>
+                            <i class="material-icons">camera_alt</i>
+                            <span>{{ picture.name }}</span>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </article>
 </main>

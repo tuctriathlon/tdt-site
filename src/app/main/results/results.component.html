@@ -1,13 +1,13 @@
 <main>
-  <article *ngFor="let result of (results$ |async)">
-    <h1>{{result.annee}}</h1>
-    <ul>
-      <a href="{{file.url}}" target="_blank" *ngFor="let file of result.resultats">
-        <li>
-          <i class="material-icons">file_download</i>
-          <span>{{file.nom_course}}</span>
-        </li>
-      </a>
-    </ul>
-  </article>
+    <article *ngFor="let result of results$ | async">
+        <h1>{{ result.annee }}</h1>
+        <ul>
+            <a href="{{ file.url }}" target="_blank" *ngFor="let file of result.resultats">
+                <li>
+                    <i class="material-icons">file_download</i>
+                    <span>{{ file.nom_course }}</span>
+                </li>
+            </a>
+        </ul>
+    </article>
 </main>

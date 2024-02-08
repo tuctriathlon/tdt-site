@@ -1,5 +1,7 @@
 <ul (click)="nextPicture()">
-  <li *ngFor="let picture of slideshow; let i = index;" 
-      [class.active]="idx === i" 
-      [style.background-image]="'url(' + picture + ')'"></li>
+    <li
+        *ngFor="let picture of slideshow; let i = index"
+        [class.active]="idx === i"
+        [style.background-image]="'url(' + picture + ')'"
+    ></li>
 </ul>

@@ -39,4 +39,6 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
->>>>>>> cbacac3 (init repo)
+
+# angular cli
+.angular
