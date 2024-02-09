@@ -8,6 +8,7 @@
     min-height: 60px;
     display: flex;
     justify-content: center;
+    z-index: 10;
     nav {
         z-index: 1;
         color: $white;
@@ -55,23 +56,20 @@
     .social {
         display: flex;
         flex-direction: row;
-        margin: 1.2em 0;
         & > li {
-            background-repeat: no-repeat;
-            background-size: contain;
-            margin: 0.5em 0.25em;
-            opacity: 0.5;
-            width: 25px;
-            height: 25px;
-            cursor: pointer;
-            &:hover {
-                opacity: 1;
-            }
             a {
+                background-repeat: no-repeat;
+                background-size: contain;
+                margin: 0.5em 0.25em;
+                opacity: 0.5;
+                width: 25px;
+                height: 25px;
+                cursor: pointer;
                 display: inline-block;
                 border: none;
                 &:hover {
                     border: none;
+                    opacity: 1;
                 }
             }
         }
@@ -83,6 +81,9 @@
         }
         .facebook {
             background-image: url(/assets/pictures/logo-facebook.png);
+        }
+        .linkedin {
+            background-image: url(/assets/pictures/logo-linkedin.png);
         }
     }
     a {
@@ -164,21 +165,12 @@
             .focus {
                 margin-right: 0;
             }
-            .social {
-                li {
-                    margin: 0 .25em;
-                }
-            }
         }
         ul.nav-menu {
             display: none;
             padding: 0;
             text-align: center;
             margin: 4em auto auto auto;
-        }
-        li {
-            margin: 0.4em;
-            padding: 0.4em;
         }
         a {
             font-size: 1.1em;

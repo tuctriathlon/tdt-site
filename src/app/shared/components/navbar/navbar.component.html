@@ -25,18 +25,23 @@
         </li>
     </ul>
     <ul class="social">
-        <li class="facebook" *ngIf="(config$ | async)?.facebook_url">
+        <li *ngIf="(config$ | async)?.facebook_url">
             <a
+                class="facebook"
                 target="_blank"
                 href="{{ (config$ | async)?.facebook_url }}"
                 aria-label="facebook"
             ></a>
         </li>
-        <li class="twitter" *ngIf="(config$ | async)?.twitter_url">
-            <a target="_blank" href="{{ (config$ | async)?.twitter_url }}" aria-label="twitter"></a>
+        <li *ngIf="(config$ | async)?.twitter_url">
+            <a class="twitter" target="_blank" href="{{ (config$ | async)?.twitter_url }}" aria-label="twitter"></a>
         </li>
-        <li class="instagram" *ngIf="(config$ | async)?.instagram_url">
+        <li *ngIf="(config$ | async)?.linkedin_url">
+            <a class="linkedin" target="_blank" href="{{ (config$ | async)?.linkedin_url }}" aria-label="twitter"></a>
+        </li>
+        <li *ngIf="(config$ | async)?.instagram_url">
             <a
+                class="instagram"
                 target="_blank"
                 href="{{ (config$ | async)?.instagram_url }}"
                 aria-label="instagram"
