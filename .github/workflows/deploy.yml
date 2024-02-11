@@ -50,6 +50,6 @@ jobs:
                 host: ${{ secrets.SERVER_HOST }}
                 username: ${{ secrets.SERVER_USERNAME }}
                 password: ${{ secrets.SERVER_PASSWORD }}
-                source: "dist/*"
+                source: "dist/*.*"
                 target: ${{ github.event.inputs.deploy-path }}
-                strip_components: 1
+                strip_components: 2
