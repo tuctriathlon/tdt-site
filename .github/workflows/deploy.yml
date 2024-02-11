@@ -42,13 +42,18 @@ jobs:
                 host: ${{ secrets.SERVER_HOST }}
                 username: ${{ secrets.SERVER_USERNAME }}
                 password: ${{ secrets.SERVER_PASSWORD }}
-                script: ./create_backup.sh ${{ github.event.inputs.deploy-path }} && find ${{ github.event.inputs.deploy-path }} -maxdepth 1 -type f -exec rm -f {} +
+                script: |
+                  ./create_backup.sh ${{ github.event.inputs.deploy-path }}
+                  find ${{ github.event.inputs.deploy-path }} -maxdepth 1 ! -name '.htaccess' -type f -exec rm -f {} +
+
+            - name: Archive name
+              id: archive-name
+              run: echo archive-name=build_${{ github.sha }}.tar.gz >> $GITHUB_OUTPUT
 
             - name: build archive
               run: |
-                echo ${{ github.sha }}
-                tar -czf build_${{ github.sha }}.tar.gz --exclude="assets" -C ./dist .
-                echo $(ls)
+                echo ${{ github.sha:0:7 }}
+                tar -czf ${{ steps.archive-name.outputs.archive-name }} --exclude="assets" -C ./dist/frontend .
 
             - name: upload file
               uses: appleboy/scp-action@master
@@ -56,5 +61,13 @@ jobs:
                 host: ${{ secrets.SERVER_HOST }}
                 username: ${{ secrets.SERVER_USERNAME }}
                 password: ${{ secrets.SERVER_PASSWORD }}
-                source: build_${{ github.sha }}.tar.gz
-                target: ${{ github.event.inputs.deploy-path }}
+                source: ${{ steps.archive-name.outputs.archive-name }}
+                target: backup
+
+            - name: Deploy
+              uses: appleboy/ssh-action@v1.0.3
+              with:
+                host: ${{ secrets.SERVER_HOST }}
+                username: ${{ secrets.SERVER_USERNAME }}
+                password: ${{ secrets.SERVER_PASSWORD }}
+                script: ./restore_backup.sh ${{ steps.archive-name.outputs.archive-name }} ${{ github.event.inputs.deploy-path }}
