@@ -17,7 +17,7 @@ jobs:
         runs-on: ubuntu-latest
 
         env:
-          SHA7: "${GITHUB_SHA:0:7}"
+          SHA7: ${GITHUB_SHA:0:7}
 
         steps:
             - name: Checkout
