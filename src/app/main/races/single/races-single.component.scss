@@ -2,6 +2,7 @@
 :host {
   flex-grow: 1;
   flex-basis: 70%;
+    text-align: center;
   main {
     text-align: left;
     h1 {
@@ -47,7 +48,7 @@
           flex-grow: 1;
           align-items: stretch;
           .content {
-            text-align: center;            
+            text-align: center;
             img {
               width: auto;
               height: auto;
@@ -55,7 +56,7 @@
               max-height: 400px;
             }
           }
-        }        
+        }
       }
     }
   }

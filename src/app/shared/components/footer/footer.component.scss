@@ -2,7 +2,7 @@
 
 :host {
     background: $marginBackground;
-    color: $white;
+    color: $marginText;
     padding: 1em;
     display: flex;
     flex-direction: column;
@@ -27,7 +27,7 @@
         max-width: 1100px;
         margin: auto;
         border-top: 1px solid;
-        border-color: $white;
+        border-color: $marginText;
         > li {
             flex-basis: 100%;
             margin-top: 1.3em;
@@ -50,6 +50,9 @@
                 transition: all 0.2s;
                 &:hover {
                     opacity: 1;
+                }
+                a {
+                    color: $marginText;
                 }
             }
         }

@@ -1,6 +1,6 @@
 {
   "/assets": {
-    "target": "http://www.triathlondetoulouse.com",
+    "target": "https://www.triathlondetoulouse.com",
     "secure": true,
     "changeOrigin": true,
     "logLevel": "debug"

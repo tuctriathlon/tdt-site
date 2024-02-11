@@ -1,5 +1,5 @@
 <tdt-submenu></tdt-submenu>
-<main>
+<div>
     <h1 id="procedure">Procedure d'inscription</h1>
     <article *ngFor="let step of steps$ | async">
         <div class="step-container" [style.background]="step.couleur">
@@ -25,4 +25,4 @@
             </li>
         </ul>
     </article>
-</main>
+</div>

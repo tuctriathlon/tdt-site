@@ -1,4 +1,4 @@
-$primary: #6dcbdd;
+$primary: var(--main-background-color);
 $secondary: #10434c;
 $active: #ffe747;
 
@@ -10,6 +10,7 @@ $white: #FFFFFF;
 $icon: #888888;
 
 $marginBackground: $primary;
+$marginText: var(--main-text-color);
 
 @mixin compute-color($background: #FFFFFF) {
     $accessible-color: calc(

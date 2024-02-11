@@ -1,4 +1,4 @@
-<main>
+<div>
     <article *ngFor="let partner of partners$ | async">
         <h3>{{ partner.nom }}</h3>
         <a href="{{ partner.url }}" target="_blank">
@@ -6,4 +6,4 @@
         </a>
         <p>{{ partner.description }}</p>
     </article>
-</main>
+</div>

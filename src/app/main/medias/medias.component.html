@@ -1,4 +1,4 @@
-<main>
+<div>
     <article *ngFor="let media of medias$ | async">
         <h1>{{ media.annee }}</h1>
         <div class="media-container" *ngIf="media.elements.length > 0">
@@ -19,22 +19,23 @@
                     width="100%"
                     [src]="media.selected.url | safeUrl"
                     allowfullscreen
+                    [title]="'video officielle ' + media.selected.name"
                 ></iframe>
             </div>
             <div class="picture" *ngIf="media.selected.type === 'photo'">
                 <ul>
-                    <a
-                        [href]="picture.url | safeUrl"
-                        target="_blank"
-                        *ngFor="let picture of media.selected.pictures"
-                    >
-                        <li>
+                    <li>
+                        <a
+                            [href]="picture.url | safeUrl"
+                            target="_blank"
+                            *ngFor="let picture of media.selected.pictures"
+                        >
                             <i class="material-icons">camera_alt</i>
                             <span>{{ picture.name }}</span>
-                        </li>
-                    </a>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
     </article>
-</main>
+</div>

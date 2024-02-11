@@ -1,11 +1,2 @@
-<ul class="submenu">
-    <li>
-        <a routerLink="/courses/programme" routerLinkActive="selected">Programme</a>
-    </li>
-    <li *ngFor="let race of races$ | async">
-        <a routerLink="{{ race.slug }}" routerLinkActive="selected" class="{{ race.couleur }}">{{
-            race.name
-        }}</a>
-    </li>
-</ul>
+<tdt-submenu [menuItems]="menuItems$ | async"></tdt-submenu>
 <router-outlet></router-outlet>

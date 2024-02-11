@@ -1,8 +1,8 @@
 <tdt-submenu></tdt-submenu>
-<main>
+<div>
     <article *ngFor="let article of articles$ | async">
         <h2 *ngIf="article.titre">{{ article?.titre }}</h2>
-        <h4 *ngIf="article.created_on">{{ article?.created_on | date: 'dd MMMM YYYY' }}</h4>
+        <p *ngIf="article.created_on" class="article-date">{{ article?.created_on | date: 'dd MMMM YYYY' }}</p>
         <p *ngIf="article.description" [innerHtml]="article?.description | safeHtml"></p>
         <div class="media" *ngIf="article?.url_video">
             <iframe
@@ -16,4 +16,4 @@
         </div>
         <img *ngIf="article?.image" [src]="article.image.data.url" [alt]="article.titre" />
     </article>
-</main>
+</div>

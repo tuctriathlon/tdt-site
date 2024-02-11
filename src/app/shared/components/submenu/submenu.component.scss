@@ -1,1 +1,29 @@
 @import '../../styles/colors.scss';
+
+.submenu{
+    list-style: none;
+    margin: 1em 0 1em 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    li {
+        padding: 0.3em;
+        padding-bottom: 0.7em;
+        margin: 0 0.6em;
+        white-space: nowrap;
+        a {
+            color: $black;
+            font-weight: 600;
+            padding-bottom: 0.4em;
+            transition: all 0.2s;
+            border-bottom: 2px solid transparent;
+            &:hover,
+            &.selected {
+                color: $primary;
+                border-bottom: 2px solid $primary;
+            }
+        }
+    }
+}

@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core'
+import { Component, Input, OnChanges } from '@angular/core'
 import { Router } from '@angular/router'
+import { Page } from 'src/app/shared/models/page.model'
 import { DataService } from 'src/app/shared/services/data.service'
 
 @Component({
@@ -7,15 +8,24 @@ import { DataService } from 'src/app/shared/services/data.service'
     templateUrl: './submenu.component.html',
     styleUrls: ['./submenu.component.scss'],
 })
-export class SubmenuComponent implements OnInit {
-    public subPages = []
+export class SubmenuComponent implements OnChanges {
+    @Input() menuItems: Partial<Page>[] = []
+    public subPages: Partial<Page>[] = []
 
     constructor(
         private router: Router,
         private dataService: DataService
     ) {}
 
-    ngOnInit() {
+    ngOnChanges() {
+        if (this.menuItems?.length) {
+            this.subPages = this.menuItems
+        } else {
+            this.loadSubPages()
+        }
+    }
+
+    private loadSubPages() {
         const url = this.router.url.replace('/', '')
         if (url) {
             this.dataService.getPages().subscribe((pages) => {

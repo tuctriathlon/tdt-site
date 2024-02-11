@@ -5,9 +5,10 @@
         display: flex;
         flex-direction: column;
         flex-shrink: 999999;
-        main {
+        div {
             flex-grow: 1;
             flex-basis: 70%;
+            text-align: center;
         }
     }
     article {
@@ -84,13 +85,18 @@
             ul {
                 display: flex;
                 flex-direction: column;
-                a {
-                    color: $icon;
-                }
+                justify-content: stretch;
                 li {
-                    display: flex;
-                    flex-direction: row;
-                    margin-bottom: 0.2em;
+                    :hover {
+                        background: #eeeeee;
+                    }
+                    a {
+                        color: $black;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                    }
                     i {
                         margin-right: 0.5em;
                         color: $icon;
