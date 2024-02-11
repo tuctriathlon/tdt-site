@@ -52,4 +52,4 @@ jobs:
                 password: ${{ secrets.SERVER_PASSWORD }}
                 source: "dist/*.*"
                 target: ${{ github.event.inputs.deploy-path }}
-                strip_components: 2
+                strip_components: 1
