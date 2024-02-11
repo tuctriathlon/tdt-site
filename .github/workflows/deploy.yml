@@ -16,6 +16,9 @@ jobs:
         name: Build and test
         runs-on: ubuntu-latest
 
+        env:
+          SHA7: "${GITHUB_SHA:0:7}"
+
         steps:
             - name: Checkout
               uses: actions/checkout@v3
@@ -42,18 +45,14 @@ jobs:
                 host: ${{ secrets.SERVER_HOST }}
                 username: ${{ secrets.SERVER_USERNAME }}
                 password: ${{ secrets.SERVER_PASSWORD }}
-                script: |
-                  ./create_backup.sh ${{ github.event.inputs.deploy-path }}
-                  find ${{ github.event.inputs.deploy-path }} -maxdepth 1 ! -name '.htaccess' -type f -exec rm -f {} +
+                script: ./create_backup.sh ${{ github.event.inputs.deploy-path }}
 
             - name: Archive name
               id: archive-name
-              run: echo archive-name=build_${{ github.sha }}.tar.gz >> $GITHUB_OUTPUT
+              run: echo archive-name=build_${SHA7}.tar.gz >> $GITHUB_OUTPUT
 
             - name: build archive
-              run: |
-                echo ${{ github.sha:0:7 }}
-                tar -czf ${{ steps.archive-name.outputs.archive-name }} --exclude="assets" -C ./dist/frontend .
+              run: tar -czf ${{ steps.archive-name.outputs.archive-name }} --exclude="assets" -C ./dist/frontend .
 
             - name: upload file
               uses: appleboy/scp-action@master
@@ -70,4 +69,4 @@ jobs:
                 host: ${{ secrets.SERVER_HOST }}
                 username: ${{ secrets.SERVER_USERNAME }}
                 password: ${{ secrets.SERVER_PASSWORD }}
-                script: ./restore_backup.sh ${{ steps.archive-name.outputs.archive-name }} ${{ github.event.inputs.deploy-path }}
+                script: ./deploy_backup.sh ${{ steps.archive-name.outputs.archive-name }} ${{ github.event.inputs.deploy-path }}
