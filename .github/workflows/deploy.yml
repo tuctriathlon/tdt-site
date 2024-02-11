@@ -47,6 +47,7 @@ jobs:
             - name: build archive
               run: |
                 echo ${{ github.sha }}
+                echo $(ls)
                 tar -czf build_${{ github.sha }}.tar.gz --exclude="assets" -C ./dist .
 
             - name: upload file
