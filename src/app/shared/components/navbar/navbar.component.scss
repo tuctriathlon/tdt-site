@@ -117,6 +117,9 @@
             position: relative;
             align-items: flex-end;
             height: 100px;
+            .social li {
+                padding: 0;
+            }
             .logo-container {
                 .tdt {
                     height: 85px;
@@ -125,7 +128,7 @@
                 }
                 .tuc {
                     height: 85px;
-                    width: 200px;
+                    width: 70px;
                     border-bottom: none;
                 }
             }
