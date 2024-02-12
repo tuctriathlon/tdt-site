@@ -1,7 +1,7 @@
 # This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
 
-name: Node.js CI
+name: Deploy website
 
 on:
     workflow_dispatch:
@@ -9,6 +9,11 @@ on:
             deploy-path:
                 description: "Location to deploy"
                 required: true
+                type: choice
+                default: francis
+                options:
+                    - triathlondetoulouse/master/public
+                    - francis
 
 jobs:
     build-and-test:
@@ -36,13 +41,31 @@ jobs:
               run: yarn build
 
             - name: Backup web
-              run: ssh -i ${{ secrets.SSH_PRIVATE_KEY }} ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_HOST }}:${{ github.event.inputs.deploy-path }} "touch git.txt"
+              uses: appleboy/ssh-action@v1.0.3
+              with:
+                host: ${{ secrets.SERVER_HOST }}
+                username: ${{ secrets.SERVER_USERNAME }}
+                password: ${{ secrets.SERVER_PASSWORD }}
+                script: ./create_backup.sh ${{ github.event.inputs.deploy-path }}
 
-#            - name: upload file
-#              uses: appleboy/scp-action@master
-#              with:
-#                host: ${{ secrets.SERVER_HOST }}
-#                username: ${{ secrets.SERVER_USERNAME }}
-#                key: ${{ secrets.SSH_PRIVATE_KEY }}
-#                source: "path/to/local/files"
-#                target: "path/to/remote/directory"
+            - name: build archive
+              run: |
+                tar -czf build_${{ github.sha }}.tar.gz --exclude="assets" -C ./dist/frontend .
+                echo "Archive created: build_${{ github.sha }}.tar.gz"
+
+            - name: upload file
+              uses: appleboy/scp-action@master
+              with:
+                host: ${{ secrets.SERVER_HOST }}
+                username: ${{ secrets.SERVER_USERNAME }}
+                password: ${{ secrets.SERVER_PASSWORD }}
+                source: build_${{ github.sha }}.tar.gz
+                target: "backup"
+
+            - name: Deploy
+              uses: appleboy/ssh-action@v1.0.3
+              with:
+                host: ${{ secrets.SERVER_HOST }}
+                username: ${{ secrets.SERVER_USERNAME }}
+                password: ${{ secrets.SERVER_PASSWORD }}
+                script: ./deploy_backup.sh build_${{ github.sha }}.tar.gz ${{ github.event.inputs.deploy-path }}
