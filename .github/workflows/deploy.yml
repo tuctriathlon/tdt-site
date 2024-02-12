@@ -9,7 +9,11 @@ on:
             deploy-path:
                 description: "Location to deploy"
                 required: true
-                default: triathlondetoulouse/master
+                type: choice
+                default: francis
+                options:
+                    - triathlondetoulouse/master/public
+                    - francis
 
 jobs:
     build-and-test:
