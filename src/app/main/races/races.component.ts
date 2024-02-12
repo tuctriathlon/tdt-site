@@ -19,8 +19,8 @@ export class RacesComponent implements OnInit {
     ngOnInit() {
         this.races$ = this.dataService.getRaces()
         this.menuItems$ = this.races$.pipe(
-            map(races => {
-                let pages = races.map((race, index) => {
+            map((races) => {
+                const pages = races.map((race, index) => {
                     return {
                         id: index,
                         page_name: race.name,
@@ -30,11 +30,10 @@ export class RacesComponent implements OnInit {
                 pages.unshift({
                     id: -1,
                     page_name: 'Programme',
-                    url: '/courses/programme'
+                    url: '/courses/programme',
                 })
                 return pages
             })
         )
-
     }
 }

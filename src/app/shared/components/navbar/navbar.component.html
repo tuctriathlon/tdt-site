@@ -1,7 +1,12 @@
 <nav [class.opened]="open" [class.expanded]="expanded">
     <div class="logo-container">
         <div class="logo tdt" routerLink="/"></div>
-        <a class="logo tuc" aria-label="lien TUC Triathlon" href="https://www.tuc-triathlon.com" target="_blank"></a>
+        <a
+            class="logo tuc"
+            aria-label="lien TUC Triathlon"
+            href="https://www.tuc-triathlon.com"
+            target="_blank"
+        ></a>
     </div>
     <ul class="nav-menu">
         <li [hidden]="open">
@@ -34,10 +39,20 @@
             ></a>
         </li>
         <li *ngIf="(config$ | async)?.twitter_url">
-            <a class="twitter" target="_blank" href="{{ (config$ | async)?.twitter_url }}" aria-label="twitter"></a>
+            <a
+                class="twitter"
+                target="_blank"
+                href="{{ (config$ | async)?.twitter_url }}"
+                aria-label="twitter"
+            ></a>
         </li>
         <li *ngIf="(config$ | async)?.linkedin_url">
-            <a class="linkedin" target="_blank" href="{{ (config$ | async)?.linkedin_url }}" aria-label="twitter"></a>
+            <a
+                class="linkedin"
+                target="_blank"
+                href="{{ (config$ | async)?.linkedin_url }}"
+                aria-label="twitter"
+            ></a>
         </li>
         <li *ngIf="(config$ | async)?.instagram_url">
             <a

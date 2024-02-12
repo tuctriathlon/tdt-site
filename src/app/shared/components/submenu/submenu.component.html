@@ -1,5 +1,7 @@
 <ul class="submenu" *ngIf="subPages.length > 0">
     <li *ngFor="let subPage of subPages">
-        <a routerLink="/{{ subPage.url }}" routerLinkActive="selected"> test {{ subPage.page_name }}</a>
+        <a routerLink="/{{ subPage.url }}" routerLinkActive="selected">
+            test {{ subPage.page_name }}</a
+        >
     </li>
 </ul>
