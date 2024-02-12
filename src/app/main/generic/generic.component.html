@@ -2,7 +2,9 @@
 <div>
     <article *ngFor="let article of articles$ | async">
         <h2 *ngIf="article.titre">{{ article?.titre }}</h2>
-        <p *ngIf="article.created_on" class="article-date">{{ article?.created_on | date: 'dd MMMM YYYY' }}</p>
+        <p *ngIf="article.created_on" class="article-date">
+            {{ article?.created_on | date: 'dd MMMM YYYY' }}
+        </p>
         <p *ngIf="article.description" [innerHtml]="article?.description | safeHtml"></p>
         <div class="media" *ngIf="article?.url_video">
             <iframe
