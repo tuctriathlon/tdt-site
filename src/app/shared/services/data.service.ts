@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core'
 import { BehaviorSubject, Observable, tap } from 'rxjs'
 import { map } from 'rxjs/operators'
 import { Content } from 'src/app/shared/models/content.model'
+import { MetaDonnees, MetaDonneesPayload } from 'src/app/shared/models/meta-donnees.model'
 import { Page } from 'src/app/shared/models/page.model'
 import { Partner } from 'src/app/shared/models/partner.model'
 import { Race } from 'src/app/shared/models/race.model'
@@ -21,6 +22,7 @@ export class DataService {
     inscriptions = new BehaviorSubject([])
     races: BehaviorSubject<Race[]> = new BehaviorSubject<Race[]>([])
     contents: BehaviorSubject<Content[]> = new BehaviorSubject([])
+    metaData: BehaviorSubject<MetaDonnees[]> = new BehaviorSubject([])
 
     mainBackgroundColor: string = '#3F51B5'
     mainTextColor: string = '#ffffff'
@@ -51,6 +53,8 @@ export class DataService {
         this.getData(`/items/inscription_etape?fields=*.*&sort=ordre_affichage`).subscribe(
             (inscriptions) => this.inscriptions.next(inscriptions)
         )
+
+        this.getData<MetaDonneesPayload>(`/items/metadonnees?fields=*.*`).subscribe((payload) => this.metaData.next(payload[0].metadonnees))
     }
 
     loadConfig() {
