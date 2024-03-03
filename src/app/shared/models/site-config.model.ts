@@ -1,8 +1,8 @@
 export class SiteConfig {
     contactez_nous: string
     facebook_url: string
-    footer_color: string
-    header_color: string
+    primary_color: string
+    secondary_color: string
     id: number
     instagram_url: string
     linkedin_url: string

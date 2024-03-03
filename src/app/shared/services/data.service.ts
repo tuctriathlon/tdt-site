@@ -9,6 +9,8 @@ import { Partner } from 'src/app/shared/models/partner.model'
 import { Race } from 'src/app/shared/models/race.model'
 import { SiteConfig } from 'src/app/shared/models/site-config.model'
 
+const DEFAULT_PRIMARY_COLOR = '#3F51B5'
+const DEFAULT_SECONDARY_COLOR = '#FFEB13'
 @Injectable({
     providedIn: 'root',
 })
@@ -24,15 +26,8 @@ export class DataService {
     contents: BehaviorSubject<Content[]> = new BehaviorSubject([])
     metaData: BehaviorSubject<MetaDonnees[]> = new BehaviorSubject([])
 
-    mainBackgroundColor: string = '#3F51B5'
-    mainTextColor: string = '#ffffff'
-
     constructor(private http: HttpClient) {
-        document.documentElement.style.setProperty(
-            '--main-background-color',
-            this.mainBackgroundColor
-        )
-        document.documentElement.style.setProperty('--main-text-color', this.mainTextColor)
+        this.setColors()
 
         this.getData<Content>(`/items/information_content?sort=ordre_affichage`).subscribe(
             (contents) => this.contents.next(contents)
@@ -61,21 +56,23 @@ export class DataService {
         return this.getData<SiteConfig>(`/items/general_information?limit=1`).pipe(
             tap((configs) => {
                 const config = configs[0]
-                if (config.header_color) {
-                    this.mainBackgroundColor = config.header_color
-                    this.mainTextColor = this.computeTextColor(this.mainBackgroundColor)
-                    document.documentElement.style.setProperty(
-                        '--main-background-color',
-                        this.mainBackgroundColor
-                    )
-                    document.documentElement.style.setProperty(
-                        '--main-text-color',
-                        this.mainTextColor
-                    )
+                if (config.primary_color || config.secondary_color){
+                    this.setColors(config.primary_color, config.secondary_color)
+                }
+
+                if(config.titre_tdt) {
+                    document.title = config.titre_tdt
                 }
             }),
             map((configs) => this.config.next(configs[0]))
         )
+    }
+
+    private setColors(primaryColor: string = DEFAULT_PRIMARY_COLOR, secondaryColor: string = DEFAULT_SECONDARY_COLOR) {
+        document.documentElement.style.setProperty('--primary-color', primaryColor)
+        document.documentElement.style.setProperty('--secondary-color', secondaryColor)
+        document.documentElement.style.setProperty('--primary-text-color', this.computeTextColor(primaryColor))
+        document.documentElement.style.setProperty('--secondary-text-color', this.computeTextColor(secondaryColor))
     }
     getGlobalConfig() {
         return this.config

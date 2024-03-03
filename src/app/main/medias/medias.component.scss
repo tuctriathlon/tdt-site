@@ -53,13 +53,15 @@
                     border-width: 1em 1em 0 1em;
                     margin: auto;
                     margin-top: -1px;
-                    border-top-color: $active;
+                    border-top-color: $secondary;
                     color: transparent;
                     visibility: hidden;
                 }
                 &:hover, &.selected {
                     .media-title{
-                        @include compute-color($active)
+                        background: $secondary;
+                        color: $secondaryTextColor;
+                        border-color: $secondaryTextColor;
                     }
                     .arrow {
                         visibility: visible;

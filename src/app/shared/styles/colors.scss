@@ -1,31 +1,11 @@
-$primary: var(--main-background-color);
-$secondary: #10434c;
-$active: #ffe747;
+$primary: var(--primary-color, #3F51B5);
+$primaryTextColor: var(--primary-text-color, #FFFFFF);
+$secondary: var(--secondary-color, #FFEB13);
+$secondaryTextColor: var(--secondary-text-color, #111111);
 
-$orange: #F36C22;
 $warn: #8F0808;
 
 $black: #111111;
 $white: #FFFFFF;
 $icon: #888888;
 
-$marginBackground: $primary;
-$marginText: var(--main-text-color);
-
-@mixin compute-color($background: #FFFFFF) {
-    $accessible-color: calc(
-        (
-            (
-                (
-                    red($background) * 299 +
-                    green($background) * 587 +
-                    blue($background) * 114
-                ) / 1000
-            ) - 128
-        ) * -1000
-    );
-    $color: rgb($accessible-color, $accessible-color, $accessible-color);
-    background: $background;
-    color: $color;
-    border-color: $color;
-}

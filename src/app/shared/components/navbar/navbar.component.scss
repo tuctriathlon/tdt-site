@@ -11,8 +11,8 @@
     z-index: 10;
     nav {
         z-index: 1;
-        color: $marginText;
-        background-color: $marginBackground;
+        color: $primaryTextColor;
+        background-color: $primary;
         position: relative;
         display: flex;
         justify-content: flex-end;
@@ -25,10 +25,10 @@
             background-color: inherit;
             list-style: none;
             a:any-link {
-                color: $marginText;
+                color: $primaryTextColor;
             }
             a:hover, a:active {
-                color: $active;
+                color: $secondary;
             }
         }
     }
@@ -93,18 +93,18 @@
         border-bottom: 2px solid transparent;
         &:hover,
         &.selected {
-            color: $active !important;
-            border-bottom: 2px solid $active;
+            color: $secondary !important;
+            border-bottom: 2px solid $secondary;
         }
     }
     .icon {
         font-size: 20px;
         &:hover {
-            color: $active;
+            color: $secondary;
         }
     }
     .focus {
-        color: $active;
+        color: $secondary;
     }
     @media screen and (min-width: 1100px) {
         nav {
