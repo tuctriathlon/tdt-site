@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core'
-import { CommonModule } from '@angular/common'
+import { CommonModule, NgOptimizedImage } from '@angular/common'
 import { RouterModule } from '@angular/router'
 
 import { NavbarComponent } from 'src/app/shared/components/navbar/navbar.component'
@@ -13,7 +13,7 @@ import { DataService } from 'src/app/shared/services/data.service'
 import { SubmenuComponent } from 'src/app/shared/components/submenu/submenu.component'
 
 @NgModule({
-    imports: [CommonModule, RouterModule],
+    imports: [CommonModule, RouterModule, NgOptimizedImage],
     exports: [
         NavbarComponent,
         SlideshowComponent,

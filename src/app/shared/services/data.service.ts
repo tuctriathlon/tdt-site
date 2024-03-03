@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core'
 import { BehaviorSubject, Observable, tap } from 'rxjs'
 import { map } from 'rxjs/operators'
 import { Content } from 'src/app/shared/models/content.model'
+import { DirectusImage, ThumbnailNames } from 'src/app/shared/models/file.model'
 import { MetaDonnees, MetaDonneesPayload } from 'src/app/shared/models/meta-donnees.model'
 import { Page } from 'src/app/shared/models/page.model'
 import { Partner } from 'src/app/shared/models/partner.model'
@@ -11,11 +12,12 @@ import { SiteConfig } from 'src/app/shared/models/site-config.model'
 
 const DEFAULT_PRIMARY_COLOR = '#3F51B5'
 const DEFAULT_SECONDARY_COLOR = '#FFEB13'
+const PREFIX = 'https://admin.triathlondetoulouse.com/tdt'
 @Injectable({
     providedIn: 'root',
 })
 export class DataService {
-    PREFIX = 'https://admin.triathlondetoulouse.com/tdt'
+
 
     config: BehaviorSubject<SiteConfig> = new BehaviorSubject<SiteConfig>(null)
     pages = new BehaviorSubject<Page[]>([])
@@ -53,7 +55,7 @@ export class DataService {
     }
 
     loadConfig() {
-        return this.getData<SiteConfig>(`/items/general_information?limit=1`).pipe(
+        return this.getData<SiteConfig>(`/items/general_information?fields=*.*&limit=1`).pipe(
             tap((configs) => {
                 const config = configs[0]
                 if (config.primary_color || config.secondary_color){
@@ -133,7 +135,7 @@ export class DataService {
 
     private getData<T>(url): Observable<T[]> {
         return this.http
-            .get<{ data: T[]; public: boolean }>(`${this.PREFIX}${url}`)
+            .get<{ data: T[]; public: boolean }>(`${PREFIX}${url}`)
             .pipe(map((res) => res.data))
     }
 
@@ -160,5 +162,9 @@ export class DataService {
         } else {
             return '#ffffff' // Return black for light colors
         }
+    }
+
+    static getThumbnailUrl(image: DirectusImage, thumbnailName: ThumbnailNames) {
+        return PREFIX + '/assets/' + image.private_hash + '?key=' + thumbnailName
     }
 }
