@@ -1,13 +1,13 @@
 export interface DirectusImage {
-    "id": string
-    "title": string
+    id: string
+    title: string
     private_hash: string
-    "data": {
+    data: {
         url: string
     }
 }
 export enum ThumbnailNames {
-    LARGE_CROP = 'directus-large-crop' ,
+    LARGE_CROP = 'directus-large-crop',
     LARGE_CONTAIN = 'directus-large-contain',
     MEDIUM_CONTAIN = 'directus-medium-contain',
     MEDIUM_CROP = 'directus-medium-crop',

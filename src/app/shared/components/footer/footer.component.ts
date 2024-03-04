@@ -20,10 +20,15 @@ export class FooterComponent implements OnInit {
     ngOnInit() {
         this.config$ = this.dataService.getGlobalConfig()
         this.partners$ = this.dataService.getPartners().pipe(
-            map(partners => partners.map(partner => ({
-                ...partner,
-                iconUrl: DataService.getThumbnailUrl(partner.icone, ThumbnailNames.SMALL_CONTAIN),
-            })))
+            map((partners) =>
+                partners.map((partner) => ({
+                    ...partner,
+                    iconUrl: DataService.getThumbnailUrl(
+                        partner.icone,
+                        ThumbnailNames.SMALL_CONTAIN
+                    ),
+                }))
+            )
         )
     }
 }

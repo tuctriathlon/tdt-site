@@ -1,6 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core'
 import { NavigationEnd, Router } from '@angular/router'
-import { BehaviorSubject, Observable, tap } from 'rxjs'
+import { BehaviorSubject, Observable } from 'rxjs'
 import { map } from 'rxjs/operators'
 import { ThumbnailNames } from 'src/app/shared/models/file.model'
 import { SiteConfig } from 'src/app/shared/models/site-config.model'
@@ -43,17 +43,15 @@ export class NavbarComponent implements OnInit {
     ngOnInit() {
         this.config$ = this.dataService.getGlobalConfig()
         this.logoUrl$ = this.config$.pipe(
-            map((config) => DataService.getThumbnailUrl(config.logo_tdt, ThumbnailNames.LARGE_CONTAIN)),
+            map((config) =>
+                DataService.getThumbnailUrl(config.logo_tdt, ThumbnailNames.LARGE_CONTAIN)
+            )
         )
-        this.day$ = this.config$.pipe(
-            map((config) => config.date.match(/\d{1,2}\s&\s\d{1,2}/)[0])
-        )
+        this.day$ = this.config$.pipe(map((config) => config.date.match(/\d{1,2}\s&\s\d{1,2}/)[0]))
         this.month$ = this.config$.pipe(
             map((config) => config.date.toUpperCase().match(/\w{3,}/)[0])
         )
-        this.year$ = this.config$.pipe(
-            map((config) => config.date.match(/\d{4}/)[0])
-        )
+        this.year$ = this.config$.pipe(map((config) => config.date.match(/\d{4}/)[0]))
         this.pages$ = this.dataService
             .getPages() //
             .pipe(map((pages) => pages.filter((page) => page.parent_page_id === null)))

@@ -11,7 +11,8 @@ export class AppComponent implements OnInit {
 
     constructor(
         private dataService: DataService,
-        private router: Router) {}
+        private router: Router
+    ) {}
 
     ngOnInit() {
         this.router.events.subscribe((_event) => {
@@ -21,10 +22,10 @@ export class AppComponent implements OnInit {
             metaData.forEach((meta) => {
                 let item = document.querySelector(`meta[name="${meta.name}"]`)
                 if (!item) {
-                    item = document.createElement("meta")
+                    item = document.createElement('meta')
                     document.head.appendChild(item)
                 }
-                item.setAttribute("content", meta.content)
+                item.setAttribute('content', meta.content)
             })
         })
     }

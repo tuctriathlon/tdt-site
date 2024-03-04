@@ -1,11 +1,11 @@
 export interface MetaDonnees {
-    id: number,
-    name: string,
-    content: string,
+    id: number
+    name: string
+    content: string
 }
 
 export interface MetaDonneesPayload {
-    id: number,
-    title: string,
-    metadonnees: MetaDonnees[],
+    id: number
+    title: string
+    metadonnees: MetaDonnees[]
 }

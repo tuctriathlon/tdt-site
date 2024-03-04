@@ -17,8 +17,6 @@ const PREFIX = 'https://admin.triathlondetoulouse.com/tdt'
     providedIn: 'root',
 })
 export class DataService {
-
-
     config: BehaviorSubject<SiteConfig> = new BehaviorSubject<SiteConfig>(null)
     pages = new BehaviorSubject<Page[]>([])
     medias = new BehaviorSubject([])
@@ -51,18 +49,20 @@ export class DataService {
             (inscriptions) => this.inscriptions.next(inscriptions)
         )
 
-        this.getData<MetaDonneesPayload>(`/items/metadonnees?fields=*.*`).subscribe((payload) => this.metaData.next(payload[0].metadonnees))
+        this.getData<MetaDonneesPayload>(`/items/metadonnees?fields=*.*`).subscribe((payload) =>
+            this.metaData.next(payload[0].metadonnees)
+        )
     }
 
     loadConfig() {
         return this.getData<SiteConfig>(`/items/general_information?fields=*.*&limit=1`).pipe(
             tap((configs) => {
                 const config = configs[0]
-                if (config.primary_color || config.secondary_color){
+                if (config.primary_color || config.secondary_color) {
                     this.setColors(config.primary_color, config.secondary_color)
                 }
 
-                if(config.titre_tdt) {
+                if (config.titre_tdt) {
                     document.title = config.titre_tdt
                 }
             }),
@@ -70,11 +70,20 @@ export class DataService {
         )
     }
 
-    private setColors(primaryColor: string = DEFAULT_PRIMARY_COLOR, secondaryColor: string = DEFAULT_SECONDARY_COLOR) {
+    private setColors(
+        primaryColor: string = DEFAULT_PRIMARY_COLOR,
+        secondaryColor: string = DEFAULT_SECONDARY_COLOR
+    ) {
         document.documentElement.style.setProperty('--primary-color', primaryColor)
         document.documentElement.style.setProperty('--secondary-color', secondaryColor)
-        document.documentElement.style.setProperty('--primary-text-color', this.computeTextColor(primaryColor))
-        document.documentElement.style.setProperty('--secondary-text-color', this.computeTextColor(secondaryColor))
+        document.documentElement.style.setProperty(
+            '--primary-text-color',
+            this.computeTextColor(primaryColor)
+        )
+        document.documentElement.style.setProperty(
+            '--secondary-text-color',
+            this.computeTextColor(secondaryColor)
+        )
     }
     getGlobalConfig() {
         return this.config
