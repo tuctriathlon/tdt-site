@@ -1,3 +1,5 @@
+import { DirectusImage } from 'src/app/shared/models/file.model'
+
 export class SiteConfig {
     contactez_nous: string
     facebook_url: string
@@ -6,7 +8,7 @@ export class SiteConfig {
     id: number
     instagram_url: string
     linkedin_url: string
-    logo_tdt: number
+    logo_tdt: DirectusImage
     titre_tdt: string
     twitter_url: string
 }

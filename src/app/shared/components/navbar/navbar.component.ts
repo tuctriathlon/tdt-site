@@ -1,10 +1,11 @@
 import { Component, HostListener, OnInit } from '@angular/core'
-import { Router, NavigationEnd } from '@angular/router'
-import { BehaviorSubject } from 'rxjs'
+import { NavigationEnd, Router } from '@angular/router'
+import { BehaviorSubject, Observable, tap } from 'rxjs'
+import { map } from 'rxjs/operators'
+import { ThumbnailNames } from 'src/app/shared/models/file.model'
 import { SiteConfig } from 'src/app/shared/models/site-config.model'
 
 import { DataService } from 'src/app/shared/services/data.service'
-import { map } from 'rxjs/operators'
 
 @Component({
     selector: 'tdt-navbar',
@@ -14,6 +15,7 @@ import { map } from 'rxjs/operators'
 export class NavbarComponent implements OnInit {
     public config$: BehaviorSubject<SiteConfig>
     public pages$
+    public logoUrl$: Observable<string>
     public expandable = false
     public expanded = true
     public open = false
@@ -37,6 +39,10 @@ export class NavbarComponent implements OnInit {
 
     ngOnInit() {
         this.config$ = this.dataService.getGlobalConfig()
+        this.logoUrl$ = this.config$.pipe(
+            map((config) => DataService.getThumbnailUrl(config.logo_tdt, ThumbnailNames.LARGE_CONTAIN)),
+            tap((url) => console.log(url))
+        )
         this.pages$ = this.dataService
             .getPages() //
             .pipe(map((pages) => pages.filter((page) => page.parent_page_id === null)))

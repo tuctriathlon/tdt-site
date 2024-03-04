@@ -1,6 +1,16 @@
 <nav [class.opened]="open" [class.expanded]="expanded">
     <div class="logo-container">
-        <div class="logo tdt" routerLink="/"></div>
+        <img [ngSrc]="logoUrl$ | async"
+             height="100"
+             width="260"
+             class="tdt"
+             routerLink="/"
+             alt="logo" />
+        <div class="event-date">
+            <div class="day">14 & 15</div>
+            <div class="month">SEPTEMBRE</div>
+            <div class="year">2024</div>
+        </div>
         <a
             class="logo tuc"
             aria-label="lien TUC Triathlon"
@@ -18,14 +28,14 @@
                 target="_blank"
                 [attr.href]="page.url"
                 class="focus"
-                >{{ page.page_name }}</a
+            >{{ page.page_name }}</a
             >
             <a
                 *ngIf="!page.url.startsWith('http')"
                 routerLink="{{ page.url }}"
                 routerLinkActive="selected"
                 (click)="open = !open"
-                >{{ page.page_name }}</a
+            >{{ page.page_name }}</a
             >
         </li>
     </ul>

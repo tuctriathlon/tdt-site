@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core'
-import { BehaviorSubject, Observable, tap } from 'rxjs'
+import { BehaviorSubject, Observable } from 'rxjs'
 import { map } from 'rxjs/operators'
 import { ThumbnailNames } from 'src/app/shared/models/file.model'
 import { Partner } from 'src/app/shared/models/partner.model'
@@ -23,8 +23,7 @@ export class FooterComponent implements OnInit {
             map(partners => partners.map(partner => ({
                 ...partner,
                 iconUrl: DataService.getThumbnailUrl(partner.icone, ThumbnailNames.SMALL_CONTAIN),
-            }))),
-            tap(partners => console.log(partners[0]))
+            })))
         )
     }
 }
