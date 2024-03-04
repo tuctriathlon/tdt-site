@@ -11,4 +11,5 @@ export class SiteConfig {
     logo_tdt: DirectusImage
     titre_tdt: string
     twitter_url: string
+    date: string
 }

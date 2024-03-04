@@ -13,4 +13,5 @@ export enum ThumbnailNames {
     MEDIUM_CROP = 'directus-medium-crop',
     SMALL_CONTAIN = 'directus-small-contain',
     SMALL_CROP = 'directus-small-crop',
+    THUMBNAIL = 'thumbnail',
 }

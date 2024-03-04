@@ -16,6 +16,9 @@ export class NavbarComponent implements OnInit {
     public config$: BehaviorSubject<SiteConfig>
     public pages$
     public logoUrl$: Observable<string>
+    public day$: Observable<string>
+    public month$: Observable<string>
+    public year$: Observable<string>
     public expandable = false
     public expanded = true
     public open = false
@@ -41,7 +44,15 @@ export class NavbarComponent implements OnInit {
         this.config$ = this.dataService.getGlobalConfig()
         this.logoUrl$ = this.config$.pipe(
             map((config) => DataService.getThumbnailUrl(config.logo_tdt, ThumbnailNames.LARGE_CONTAIN)),
-            tap((url) => console.log(url))
+        )
+        this.day$ = this.config$.pipe(
+            map((config) => config.date.match(/\d{1,2}\s&\s\d{1,2}/)[0])
+        )
+        this.month$ = this.config$.pipe(
+            map((config) => config.date.toUpperCase().match(/\w{3,}/)[0])
+        )
+        this.year$ = this.config$.pipe(
+            map((config) => config.date.match(/\d{4}/)[0])
         )
         this.pages$ = this.dataService
             .getPages() //
