@@ -1,11 +1,27 @@
 @import '../../shared/styles/colors.scss';
 :host {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-  img {
-    height: auto;
-    max-height: 200px;
-    max-width: 200px;
-  }
+    img {
+        max-height: 200px;
+        max-width: 200px;
+        object-fit: contain;
+        object-position: center;
+    }
+
+    .partenaire {
+        display: inline-flex;
+        margin: 10px;
+        height: 400px;
+        width: 200px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .divider {
+        margin: 20px auto;
+        border-bottom: 1px solid black;
+        width: 60%;
+    }
 }
