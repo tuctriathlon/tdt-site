@@ -1,8 +1,8 @@
 @import '../../styles/colors.scss';
 
 :host {
-    background: $marginBackground;
-    color: $marginText;
+    background: $primary;
+    color: $primaryTextColor;
     padding: 1em;
     display: flex;
     flex-direction: column;
@@ -27,7 +27,7 @@
         max-width: 1100px;
         margin: auto;
         border-top: 1px solid;
-        border-color: $marginText;
+        border-color: $primaryTextColor;
         > li {
             flex-basis: 100%;
             margin-top: 1.3em;
@@ -52,7 +52,7 @@
                     opacity: 1;
                 }
                 a {
-                    color: $marginText;
+                    color: $primaryTextColor;
                 }
             }
         }

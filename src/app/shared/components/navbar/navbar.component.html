@@ -1,6 +1,18 @@
 <nav [class.opened]="open" [class.expanded]="expanded">
     <div class="logo-container">
-        <div class="logo tdt" routerLink="/"></div>
+        <img
+            [ngSrc]="logoUrl$ | async"
+            height="100"
+            width="260"
+            class="tdt"
+            routerLink="/"
+            alt="logo"
+        />
+        <div class="event-date">
+            <div class="day">{{ day$ | async }}</div>
+            <div class="month">{{ month$ | async }}</div>
+            <div class="year">{{ year$ | async }}</div>
+        </div>
         <a
             class="logo tuc"
             aria-label="lien TUC Triathlon"

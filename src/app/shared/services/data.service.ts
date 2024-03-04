@@ -3,17 +3,20 @@ import { Injectable } from '@angular/core'
 import { BehaviorSubject, Observable, tap } from 'rxjs'
 import { map } from 'rxjs/operators'
 import { Content } from 'src/app/shared/models/content.model'
+import { DirectusImage, ThumbnailNames } from 'src/app/shared/models/file.model'
+import { MetaDonnees, MetaDonneesPayload } from 'src/app/shared/models/meta-donnees.model'
 import { Page } from 'src/app/shared/models/page.model'
 import { Partner } from 'src/app/shared/models/partner.model'
 import { Race } from 'src/app/shared/models/race.model'
 import { SiteConfig } from 'src/app/shared/models/site-config.model'
 
+const DEFAULT_PRIMARY_COLOR = '#3F51B5'
+const DEFAULT_SECONDARY_COLOR = '#FFEB13'
+const PREFIX = 'https://admin.triathlondetoulouse.com/tdt'
 @Injectable({
     providedIn: 'root',
 })
 export class DataService {
-    PREFIX = 'https://admin.triathlondetoulouse.com/tdt'
-
     config: BehaviorSubject<SiteConfig> = new BehaviorSubject<SiteConfig>(null)
     pages = new BehaviorSubject<Page[]>([])
     medias = new BehaviorSubject([])
@@ -21,16 +24,10 @@ export class DataService {
     inscriptions = new BehaviorSubject([])
     races: BehaviorSubject<Race[]> = new BehaviorSubject<Race[]>([])
     contents: BehaviorSubject<Content[]> = new BehaviorSubject([])
-
-    mainBackgroundColor: string = '#3F51B5'
-    mainTextColor: string = '#ffffff'
+    metaData: BehaviorSubject<MetaDonnees[]> = new BehaviorSubject([])
 
     constructor(private http: HttpClient) {
-        document.documentElement.style.setProperty(
-            '--main-background-color',
-            this.mainBackgroundColor
-        )
-        document.documentElement.style.setProperty('--main-text-color', this.mainTextColor)
+        this.setColors()
 
         this.getData<Content>(`/items/information_content?sort=ordre_affichage`).subscribe(
             (contents) => this.contents.next(contents)
@@ -51,26 +48,41 @@ export class DataService {
         this.getData(`/items/inscription_etape?fields=*.*&sort=ordre_affichage`).subscribe(
             (inscriptions) => this.inscriptions.next(inscriptions)
         )
+
+        this.getData<MetaDonneesPayload>(`/items/metadonnees?fields=*.*`).subscribe((payload) =>
+            this.metaData.next(payload[0].metadonnees)
+        )
     }
 
     loadConfig() {
-        return this.getData<SiteConfig>(`/items/general_information?limit=1`).pipe(
+        return this.getData<SiteConfig>(`/items/general_information?fields=*.*&limit=1`).pipe(
             tap((configs) => {
                 const config = configs[0]
-                if (config.header_color) {
-                    this.mainBackgroundColor = config.header_color
-                    this.mainTextColor = this.computeTextColor(this.mainBackgroundColor)
-                    document.documentElement.style.setProperty(
-                        '--main-background-color',
-                        this.mainBackgroundColor
-                    )
-                    document.documentElement.style.setProperty(
-                        '--main-text-color',
-                        this.mainTextColor
-                    )
+                if (config.primary_color || config.secondary_color) {
+                    this.setColors(config.primary_color, config.secondary_color)
+                }
+
+                if (config.titre_tdt) {
+                    document.title = config.titre_tdt
                 }
             }),
             map((configs) => this.config.next(configs[0]))
+        )
+    }
+
+    private setColors(
+        primaryColor: string = DEFAULT_PRIMARY_COLOR,
+        secondaryColor: string = DEFAULT_SECONDARY_COLOR
+    ) {
+        document.documentElement.style.setProperty('--primary-color', primaryColor)
+        document.documentElement.style.setProperty('--secondary-color', secondaryColor)
+        document.documentElement.style.setProperty(
+            '--primary-text-color',
+            this.computeTextColor(primaryColor)
+        )
+        document.documentElement.style.setProperty(
+            '--secondary-text-color',
+            this.computeTextColor(secondaryColor)
         )
     }
     getGlobalConfig() {
@@ -132,7 +144,7 @@ export class DataService {
 
     private getData<T>(url): Observable<T[]> {
         return this.http
-            .get<{ data: T[]; public: boolean }>(`${this.PREFIX}${url}`)
+            .get<{ data: T[]; public: boolean }>(`${PREFIX}${url}`)
             .pipe(map((res) => res.data))
     }
 
@@ -159,5 +171,9 @@ export class DataService {
         } else {
             return '#ffffff' // Return black for light colors
         }
+    }
+
+    static getThumbnailUrl(image: DirectusImage, thumbnailName: ThumbnailNames) {
+        return PREFIX + '/assets/' + image.private_hash + '?key=' + thumbnailName
     }
 }

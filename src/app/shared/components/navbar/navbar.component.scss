@@ -11,8 +11,8 @@
     z-index: 10;
     nav {
         z-index: 1;
-        color: $marginText;
-        background-color: $marginBackground;
+        color: $primaryTextColor;
+        background-color: $primary;
         position: relative;
         display: flex;
         justify-content: flex-end;
@@ -25,10 +25,10 @@
             background-color: inherit;
             list-style: none;
             a:any-link {
-                color: $marginText;
+                color: $primaryTextColor;
             }
             a:hover, a:active {
-                color: $active;
+                color: $secondary;
             }
         }
     }
@@ -36,6 +36,9 @@
         flex-grow: 1;
         align-self: center;
         display: inline-flex;
+        .event-date {
+            display: none;
+        }
         .logo {
             height: 45px;
             background-repeat: no-repeat;
@@ -44,11 +47,13 @@
             cursor: pointer;
         }
         .tdt {
-            width: 140px;
-            background-image: url(/assets/pictures/logo-tdt-light.png);
+            width: 156px;
+            object-fit: contain;
+            object-position: left;
         }
         .tuc {
-            width: 90px;
+            width: 50px;
+            height: 100px;
             background-image: url(/assets/pictures/by_tuc.png);
             border: none;
         }
@@ -57,10 +62,11 @@
         display: flex;
         flex-direction: row;
         & > li {
+            padding: 0.5em 0;
             a {
                 background-repeat: no-repeat;
                 background-size: contain;
-                margin: 0.5em 0.25em;
+                margin: 0 0.25em;
                 opacity: 0.5;
                 width: 25px;
                 height: 25px;
@@ -93,18 +99,18 @@
         border-bottom: 2px solid transparent;
         &:hover,
         &.selected {
-            color: $active !important;
-            border-bottom: 2px solid $active;
+            color: $secondary !important;
+            border-bottom: 2px solid $secondary;
         }
     }
     .icon {
         font-size: 20px;
         &:hover {
-            color: $active;
+            color: $secondary;
         }
     }
     .focus {
-        color: $active;
+        color: $secondary;
     }
     @media screen and (min-width: 1100px) {
         nav {
@@ -117,17 +123,35 @@
             position: relative;
             align-items: flex-end;
             height: 100px;
-            .social li {
-                padding: 0;
-            }
             .logo-container {
+                .event-date {
+                    display: unset;
+                    margin:auto 10px auto -10px;
+                    transform:matrix(0.99869231,0,-0.30286453,1.0013094,0,0);
+                    font-weight:900;
+                    font-family:'Arial Black',serif;
+                    text-align:center;
+                    text-anchor:middle;
+                    text-shadow: 4px 4px 2px rgba(0,0,0,0.3);
+                    .day {
+                        font-size:25px;
+                        letter-spacing:-3px;
+                        line-height: 28px;
+                    }
+                    .month {
+                        font-size:15px;
+                        line-height: 16px
+                    }
+                    .year {
+                        font-size:35px;
+                        line-height: 38px
+                    }
+                }
                 .tdt {
-                    height: 85px;
-                    width: 425px;
-                    background-image: url("/assets/pictures/logo-tdt-full.png");
+                    height: 100px;
+                    width: 300px;
                 }
                 .tuc {
-                    height: 85px;
                     width: 70px;
                     border-bottom: none;
                 }
