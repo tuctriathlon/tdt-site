@@ -1,8 +1,36 @@
 <div>
-    <article *ngFor="let partner of partners$ | async">
-        <h3>{{ partner.nom }}</h3>
+    <h1>Partenaires premiums</h1>
+    <article *ngFor="let partner of premiumPartners" class="partenaire">
+        <h3 style="text-align: center">{{ partner.nom }}</h3>
         <a href="{{ partner.url }}" target="_blank">
             <img [src]="partner.icone.data.url" [alt]="partner.nom" />
+        </a>
+        <p>{{ partner.description }}</p>
+    </article>
+    <div class="divider"></div>
+    <h1>Partenaires officiels</h1>
+    <article *ngFor="let partner of officialPartners" class="partenaire">
+        <h3 style="text-align: center">{{ partner.nom }}</h3>
+        <a href="{{ partner.url }}" target="_blank">
+            <img [src]="partner.icone.data.url" [alt]="partner.nom" />
+        </a>
+        <p>{{ partner.description }}</p>
+    </article>
+    <div class="divider"></div>
+    <h1>Supporters</h1>
+    <article *ngFor="let partner of supporters" class="partenaire">
+        <h3 style="text-align: center">{{ partner.nom }}</h3>
+        <a href="{{ partner.url }}" target="_blank">
+            <img [ngSrc]="partner.iconUrl" height="200" width="200" [alt]="partner.nom" />
+        </a>
+        <p>{{ partner.description }}</p>
+    </article>
+    <div class="divider"></div>
+    <h1>Institutions</h1>
+    <article *ngFor="let partner of institutions" class="partenaire">
+        <h3 style="text-align: center">{{ partner.nom }}</h3>
+        <a href="{{ partner.url }}" target="_blank">
+            <img [ngSrc]="partner.iconUrl" height="200" width="200" [alt]="partner.nom" />
         </a>
         <p>{{ partner.description }}</p>
     </article>
