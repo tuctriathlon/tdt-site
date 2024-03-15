@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 import { map } from 'rxjs/operators'
 import { ThumbnailNames } from 'src/app/shared/models/file.model'
+import { PartnerType } from 'src/app/shared/models/partner.model'
 import { DataService } from 'src/app/shared/services/data.service'
 
 @Component({
@@ -32,10 +33,10 @@ export class PartnersComponent implements OnInit {
                 )
             )
             .subscribe((partners) => {
-                this.premiumPartners = partners.slice(0, 3)
-                this.officialPartners = partners.slice(3, 6)
-                this.supporters = partners.slice(6, 9)
-                this.institutions = partners.slice(9)
+                this.premiumPartners = partners.filter(partner => partner.type === PartnerType.PREMIUM)
+                this.officialPartners = partners.filter(partner => partner.type === PartnerType.OFFICIEL)
+                this.supporters = partners.filter(partner => partner.type === PartnerType.SUPPORTER)
+                this.institutions = partners.filter(partner => partner.type === PartnerType.INSTITUTION)
             })
     }
 }
