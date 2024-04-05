@@ -6,16 +6,16 @@ export interface Partner {
     description: string
     icone: DirectusImage
     url?: string
-    iconUrl?: string,
+    iconUrl?: string
     type: PartnerType
 }
 
 export enum PartnerType {
-    PREMIUM = "0" ,
-    OFFICIEL = "1",
-    SUPPORTER = "2",
-    INSTITUTION = "3",
-    FOOD_TRUCK = "4",
-    FOURNISSEUR = "5",
-    PRINCIPAL = "6",
+    PREMIUM = '0',
+    OFFICIEL = '1',
+    SUPPORTER = '2',
+    INSTITUTION = '3',
+    FOOD_TRUCK = '4',
+    FOURNISSEUR = '5',
+    PRINCIPAL = '6',
 }
