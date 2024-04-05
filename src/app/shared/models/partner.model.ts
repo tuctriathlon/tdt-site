@@ -14,5 +14,8 @@ export enum PartnerType {
     PREMIUM = "0" ,
     OFFICIEL = "1",
     SUPPORTER = "2",
-    INSTITUTION = "3"
+    INSTITUTION = "3",
+    FOOD_TRUCK = "4",
+    FOURNISSEUR = "5",
+    PRINCIPAL = "6",
 }

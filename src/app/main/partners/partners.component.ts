@@ -15,6 +15,9 @@ export class PartnersComponent implements OnInit {
     officialPartners = []
     supporters = []
     institutions = []
+    foodTrucks = []
+    fournisseurs = []
+    principalPartners = []
 
     constructor(private dataService: DataService) {}
 
@@ -37,6 +40,9 @@ export class PartnersComponent implements OnInit {
                 this.officialPartners = partners.filter(partner => partner.type === PartnerType.OFFICIEL)
                 this.supporters = partners.filter(partner => partner.type === PartnerType.SUPPORTER)
                 this.institutions = partners.filter(partner => partner.type === PartnerType.INSTITUTION)
+                this.foodTrucks = partners.filter(partner => partner.type === PartnerType.FOOD_TRUCK)
+                this.fournisseurs = partners.filter(partner => partner.type === PartnerType.FOURNISSEUR)
+                this.principalPartners = partners.filter( partner => partner.type === PartnerType.PRINCIPAL)
             })
     }
 }
