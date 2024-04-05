@@ -1,9 +1,85 @@
-<div>
-    <article *ngFor="let partner of partners$ | async">
-        <h3>{{ partner.nom }}</h3>
-        <a href="{{ partner.url }}" target="_blank">
-            <img [src]="partner.icone.data.url" [alt]="partner.nom" />
-        </a>
-        <p>{{ partner.description }}</p>
-    </article>
-</div>
+<ul>
+    <li *ngIf="principalPartners.length > 0">
+        <h1>Partenaires principaux</h1>
+        <ul class="partenaire-list">
+            <li *ngFor="let partner of principalPartners" class="partenaire">
+                <a href="{{ partner.url }}" target="_blank">
+                    <img [src]="partner.icone.data.url" [alt]="partner.nom" />
+                </a>
+                <p>{{ partner.description }}</p>
+            </li>
+        </ul>
+        <div class="divider"></div>
+    </li>
+    <li *ngIf="premiumPartners.length > 0">
+        <h1>Partenaires premiums</h1>
+        <ul class="partenaire-list">
+            <li *ngFor="let partner of premiumPartners" class="partenaire">
+                <a href="{{ partner.url }}" target="_blank">
+                    <img [src]="partner.icone.data.url" [alt]="partner.nom" />
+                </a>
+                <p>{{ partner.description }}</p>
+            </li>
+        </ul>
+        <div class="divider"></div>
+    </li>
+    <li *ngIf="officialPartners.length > 0">
+        <h1>Partenaires officiels</h1>
+        <ul class="partenaire-list">
+            <li *ngFor="let partner of officialPartners" class="partenaire">
+                <a href="{{ partner.url }}" target="_blank">
+                    <img [src]="partner.icone.data.url" [alt]="partner.nom" />
+                </a>
+                <p>{{ partner.description }}</p>
+            </li>
+        </ul>
+        <div class="divider"></div>
+    </li>
+    <li *ngIf="supporters.length > 0">
+        <h1>Supporters</h1>
+        <ul class="partenaire-list">
+            <li *ngFor="let partner of supporters" class="partenaire">
+                <a href="{{ partner.url }}" target="_blank">
+                    <img [ngSrc]="partner.iconUrl" height="200" width="200" [alt]="partner.nom" />
+                </a>
+                <p>{{ partner.description }}</p>
+            </li>
+        </ul>
+        <div class="divider"></div>
+    </li>
+    <li *ngIf="foodTrucks.length > 0">
+        <h1>Food truck</h1>
+        <ul class="partenaire-list">
+            <li *ngFor="let partner of foodTrucks" class="partenaire">
+                <a href="{{ partner.url }}" target="_blank">
+                    <img [ngSrc]="partner.iconUrl" height="200" width="200" [alt]="partner.nom" />
+                </a>
+                <p>{{ partner.description }}</p>
+            </li>
+        </ul>
+        <div class="divider"></div>
+    </li>
+    <li *ngIf="fournisseurs.length > 0">
+        <h1>Fournisseurs</h1>
+        <ul class="partenaire-list">
+            <li *ngFor="let partner of fournisseurs" class="partenaire">
+                <a href="{{ partner.url }}" target="_blank">
+                    <img [ngSrc]="partner.iconUrl" height="200" width="200" [alt]="partner.nom" />
+                </a>
+                <p>{{ partner.description }}</p>
+            </li>
+        </ul>
+        <div class="divider"></div>
+    </li>
+    <li *ngIf="institutions.length > 0">
+        <h1>Institutions</h1>
+        <ul class="partenaire-list">
+            <li *ngFor="let partner of institutions" class="partenaire">
+                <a href="{{ partner.url }}" target="_blank">
+                    <img [ngSrc]="partner.iconUrl" height="200" width="200" [alt]="partner.nom" />
+                </a>
+                <p>{{ partner.description }}</p>
+            </li>
+        </ul>
+    </li>
+</ul>

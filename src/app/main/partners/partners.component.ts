@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core'
+import { map } from 'rxjs/operators'
+import { ThumbnailNames } from 'src/app/shared/models/file.model'
+import { PartnerType } from 'src/app/shared/models/partner.model'
 import { DataService } from 'src/app/shared/services/data.service'
 
 @Component({
@@ -7,11 +10,53 @@ import { DataService } from 'src/app/shared/services/data.service'
     styleUrls: ['./partners.component.scss'],
 })
 export class PartnersComponent implements OnInit {
-    public partners$
+    private partners$
+    premiumPartners = []
+    officialPartners = []
+    supporters = []
+    institutions = []
+    foodTrucks = []
+    fournisseurs = []
+    principalPartners = []
 
     constructor(private dataService: DataService) {}
 
     ngOnInit() {
-        this.partners$ = this.dataService.getPartners()
+        this.partners$ = this.dataService
+            .getPartners()
+            .pipe(
+                map((partners) =>
+                    partners.map((partner) => ({
+                        ...partner,
+                        iconUrl: DataService.getThumbnailUrl(
+                            partner.icone,
+                            ThumbnailNames.THUMBNAIL
+                        ),
+                    }))
+                )
+            )
+            .subscribe((partners) => {
+                this.premiumPartners = partners.filter(
+                    (partner) => partner.type === PartnerType.PREMIUM
+                )
+                this.officialPartners = partners.filter(
+                    (partner) => partner.type === PartnerType.OFFICIEL
+                )
+                this.supporters = partners.filter(
+                    (partner) => partner.type === PartnerType.SUPPORTER
+                )
+                this.institutions = partners.filter(
+                    (partner) => partner.type === PartnerType.INSTITUTION
+                )
+                this.foodTrucks = partners.filter(
+                    (partner) => partner.type === PartnerType.FOOD_TRUCK
+                )
+                this.fournisseurs = partners.filter(
+                    (partner) => partner.type === PartnerType.FOURNISSEUR
+                )
+                this.principalPartners = partners.filter(
+                    (partner) => partner.type === PartnerType.PRINCIPAL
+                )
+            })
     }
 }
