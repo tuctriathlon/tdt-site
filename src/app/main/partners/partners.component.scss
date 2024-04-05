@@ -1,4 +1,8 @@
 @import '../../shared/styles/colors.scss';
+ul {
+    list-style: none;
+}
+
 :host {
     display: flex;
     flex-direction: column;
