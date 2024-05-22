@@ -9,6 +9,12 @@
         max-width: 100%;
         max-height: 400px;
     }
+    .article {
+        padding: 50px 0;
+    }
+    .article:nth-child(n + 2) {
+        border-top: 2px solid black;
+    }
     .article-date {
         margin: -1.3em 0 1em 0.2em;
         font-size: 1.1em;

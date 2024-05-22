@@ -1,6 +1,6 @@
 <tdt-submenu></tdt-submenu>
 <div>
-    <article *ngFor="let article of articles$ | async">
+    <article *ngFor="let article of articles$ | async" class="article">
         <h2 *ngIf="article.titre">{{ article?.titre }}</h2>
         <p *ngIf="article.created_on" class="article-date">
             {{ article?.created_on | date: 'dd MMMM YYYY' }}
