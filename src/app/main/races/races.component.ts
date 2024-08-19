@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core'
-import { combineLatest, filter, Observable } from 'rxjs'
+import { combineLatest, Observable } from 'rxjs'
 import { map } from 'rxjs/operators'
 import { Page } from 'src/app/shared/models/page.model'
 import { Race } from 'src/app/shared/models/race.model'

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core'
-import { ActivatedRoute, Params } from '@angular/router'
-import { combineLatest, merge, Observable } from 'rxjs'
+import { ActivatedRoute } from '@angular/router'
+import { combineLatest, Observable } from 'rxjs'
 import { Content } from 'src/app/shared/models/content.model'
 import { DataService } from 'src/app/shared/services/data.service'
 
