@@ -111,6 +111,13 @@
             "parent_page_id": 2,
             "ordre_affichage": 70,
             "url": "village"
+        },
+        {
+            "id": 32,
+            "page_name": "Se restaurer",
+            "parent_page_id": 2,
+            "ordre_affichage": 4,
+            "url": "restauration"
         }
     ],
     "public": true
