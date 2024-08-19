@@ -2,6 +2,7 @@
     "data": [
         {
             "id": 16,
+            "horraire_dossard": "2024-09-14 08:00:00",
             "date": "2024-09-14 09:00:00",
             "prix": 22,
             "type_de_course": "triathlon",
@@ -367,6 +368,7 @@
         },
         {
             "id": 17,
+            "horraire_dossard": "2024-09-14 08:00:00",
             "date": "2024-09-14 12:00:00",
             "prix": 6,
             "type_de_course": "aquathlon",
@@ -433,6 +435,7 @@
         },
         {
             "id": 18,
+            "horraire_dossard": "2024-09-14 08:00:00",
             "date": "2024-09-14 12:20:00",
             "prix": 12,
             "type_de_course": "aquathlon",
@@ -499,6 +502,7 @@
         },
         {
             "id": 19,
+            "horraire_dossard": "2024-09-14 08:00:00",
             "date": "2024-09-14 12:40:00",
             "prix": 6,
             "type_de_course": "aquathlon",
@@ -565,6 +569,7 @@
         },
         {
             "id": 23,
+            "horraire_dossard": "2024-09-14 08:00:00",
             "date": "2024-09-14 13:00:00",
             "prix": 12,
             "type_de_course": "aquathlon",
@@ -631,6 +636,7 @@
         },
         {
             "id": 7,
+            "horraire_dossard": "2024-09-14 08:00:00",
             "date": "2024-09-14 14:30:00",
             "prix": 33,
             "type_de_course": "triathlon",
@@ -996,6 +1002,7 @@
         },
         {
             "id": 8,
+            "horraire_dossard": "2024-09-14 08:00:00",
             "date": "2024-09-14 14:30:00",
             "prix": 50,
             "type_de_course": "triathlon",

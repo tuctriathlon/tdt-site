@@ -44,6 +44,10 @@
                             <div class="race-icon material-icons">face</div>
                             <div class="race-text">{{ race.age }} ans</div>
                         </li>
+                        <li *ngIf="race.horraire_dossard" title="Retrait dossard">
+                            <div class="race-icon material-icons">pending_actions</div>
+                            <div class="race-text">Retrait des dossards avant {{ race.horraire_dossard | date: 'EEEE HH:mm' }}</div>
+                        </li>
                     </ul>
                 </div>
             </div>
