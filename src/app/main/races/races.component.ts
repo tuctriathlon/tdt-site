@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core'
-import { Observable } from 'rxjs'
+import { combineLatest, filter, Observable } from 'rxjs'
 import { map } from 'rxjs/operators'
 import { Page } from 'src/app/shared/models/page.model'
 import { Race } from 'src/app/shared/models/race.model'
@@ -13,13 +13,17 @@ import { DataService } from 'src/app/shared/services/data.service'
 export class RacesComponent implements OnInit {
     public races$: Observable<Race[]>
     public menuItems$: Observable<Page[]>
+    private childPages$: Observable<Page[]>
 
     constructor(private dataService: DataService) {}
 
     ngOnInit() {
         this.races$ = this.dataService.getRaces()
-        this.menuItems$ = this.races$.pipe(
-            map((races) => {
+        this.childPages$ = this.dataService.getPages().pipe(
+            map((pages) => pages.filter((page) => page.parent_page_id === 1)),
+        )
+        this.menuItems$ = combineLatest([this.races$, this.childPages$]).pipe(
+            map(([races, childPages]) => {
                 const pages = races.map((race, index) => {
                     return {
                         id: index,
@@ -32,6 +36,7 @@ export class RacesComponent implements OnInit {
                     page_name: 'Programme',
                     url: '/courses/programme',
                 })
+                pages.push(...childPages)
                 return pages
             })
         )

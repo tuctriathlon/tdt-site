@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core'
 import { ActivatedRoute, Params } from '@angular/router'
-import { Observable } from 'rxjs'
+import { combineLatest, merge, Observable } from 'rxjs'
 import { Content } from 'src/app/shared/models/content.model'
 import { DataService } from 'src/app/shared/services/data.service'
 
@@ -19,8 +19,8 @@ export class GenericComponent implements OnInit {
     ) {}
 
     ngOnInit() {
-        this.route.params.subscribe((params: Params) => {
-            const url = params['slug']
+        combineLatest([this.route.params, this.route.data]).subscribe(([params, data]) => {
+            const url = params['slug'] || data['slug']
             if (url) {
                 this.dataService.getPages().subscribe((pages) => {
                     const currentPage = pages.find(
