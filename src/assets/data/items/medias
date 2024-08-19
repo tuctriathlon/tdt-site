@@ -1,0 +1,561 @@
+{
+    "data": [
+        {
+            "id": 10,
+            "annee": 2023,
+            "medias_details": [
+                {
+                    "id": 57,
+                    "media_id": 10,
+                    "title": "Relais Mixte XXS",
+                    "media_type": "photo",
+                    "url": "https:\/\/photos.app.goo.gl\/RjRq9vfJ3J8zidFt8",
+                    "ordre_affichage": 10
+                },
+                {
+                    "id": 58,
+                    "media_id": 10,
+                    "title": "Triathlon XS",
+                    "media_type": "photo",
+                    "url": "https:\/\/photos.app.goo.gl\/bQ43gMmH56RCG3Pk7",
+                    "ordre_affichage": 9
+                },
+                {
+                    "id": 59,
+                    "media_id": 10,
+                    "title": "Triathlon S",
+                    "media_type": "photo",
+                    "url": "https:\/\/photos.app.goo.gl\/FJ62Tr42iasHRKB47",
+                    "ordre_affichage": 8
+                },
+                {
+                    "id": 60,
+                    "media_id": 10,
+                    "title": "Triathlon M",
+                    "media_type": "photo",
+                    "url": "https:\/\/photos.app.goo.gl\/jUM4yuYKrnUDcwX98",
+                    "ordre_affichage": 7
+                },
+                {
+                    "id": 61,
+                    "media_id": 10,
+                    "title": "Aquathlons",
+                    "media_type": "photo",
+                    "url": "https:\/\/photos.app.goo.gl\/Gm45VyK1zvfHKqKLA",
+                    "ordre_affichage": 6
+                },
+                {
+                    "id": 62,
+                    "media_id": 10,
+                    "title": "SwimRun",
+                    "media_type": "photo",
+                    "url": "https:\/\/photos.app.goo.gl\/KcNPEVQhnMb1HHxh9",
+                    "ordre_affichage": 5
+                },
+                {
+                    "id": 63,
+                    "media_id": 10,
+                    "title": "Bénévoles",
+                    "media_type": "photo",
+                    "url": "https:\/\/photos.app.goo.gl\/rPTEZFeiQmJDRdei9",
+                    "ordre_affichage": 4
+                },
+                {
+                    "id": 64,
+                    "media_id": 10,
+                    "title": "Partenaires",
+                    "media_type": "photo",
+                    "url": "https:\/\/photos.app.goo.gl\/4bTm65iYX6vp5H4RA",
+                    "ordre_affichage": 3
+                },
+                {
+                    "id": 65,
+                    "media_id": 10,
+                    "title": "Vidéo officielle 2023",
+                    "media_type": "video",
+                    "url": "https:\/\/www.youtube.com\/embed\/SdiN0dgkL-E",
+                    "ordre_affichage": 0
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "annee": 2022,
+            "medias_details": [
+                {
+                    "id": 47,
+                    "media_id": 9,
+                    "title": "Relais Mixte XXS",
+                    "media_type": "photo",
+                    "url": "https:\/\/photos.app.goo.gl\/6GycXJhDQxEdBMhdA",
+                    "ordre_affichage": 1
+                },
+                {
+                    "id": 48,
+                    "media_id": 9,
+                    "title": "Triathlon S",
+                    "media_type": "photo",
+                    "url": "https:\/\/photos.app.goo.gl\/nZFVcq8JuNrKUGRt7",
+                    "ordre_affichage": 2
+                },
+                {
+                    "id": 49,
+                    "media_id": 9,
+                    "title": "SwimRun",
+                    "media_type": "photo",
+                    "url": "https:\/\/photos.app.goo.gl\/2YtCFyCLVbnYSNfL9",
+                    "ordre_affichage": 3
+                },
+                {
+                    "id": 50,
+                    "media_id": 9,
+                    "title": "Triathlon M",
+                    "media_type": "photo",
+                    "url": "https:\/\/photos.app.goo.gl\/5Uoe3SEbgifw3CLR8",
+                    "ordre_affichage": 4
+                },
+                {
+                    "id": 51,
+                    "media_id": 9,
+                    "title": "Aquathlons",
+                    "media_type": "photo",
+                    "url": "https:\/\/photos.app.goo.gl\/bFqvGAt57TnaBziWA",
+                    "ordre_affichage": 5
+                },
+                {
+                    "id": 52,
+                    "media_id": 9,
+                    "title": "Triathlons XS",
+                    "media_type": "photo",
+                    "url": "https:\/\/photos.app.goo.gl\/u9iwcPCbhbVKqmGx6",
+                    "ordre_affichage": 6
+                },
+                {
+                    "id": 53,
+                    "media_id": 9,
+                    "title": "Podiums",
+                    "media_type": "photo",
+                    "url": "https:\/\/photos.app.goo.gl\/VRKtUAfyveruUoJg7",
+                    "ordre_affichage": 7
+                },
+                {
+                    "id": 54,
+                    "media_id": 9,
+                    "title": "Bénévoles",
+                    "media_type": "photo",
+                    "url": "https:\/\/photos.app.goo.gl\/JeBrkRH7Mnxwogbo6",
+                    "ordre_affichage": 8
+                },
+                {
+                    "id": 55,
+                    "media_id": 9,
+                    "title": "Partenaires",
+                    "media_type": "photo",
+                    "url": "https:\/\/photos.app.goo.gl\/xD69ok5TMp638K2U9",
+                    "ordre_affichage": 9
+                },
+                {
+                    "id": 56,
+                    "media_id": 9,
+                    "title": "Vidéo Officielle 2022",
+                    "media_type": "video",
+                    "url": "https:\/\/www.youtube.com\/embed\/1TEUlhIrvLM",
+                    "ordre_affichage": 0
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "annee": 2021,
+            "medias_details": [
+                {
+                    "id": 33,
+                    "media_id": 8,
+                    "title": "Aquathlon",
+                    "media_type": "photo",
+                    "url": "https:\/\/mega.nz\/folder\/dZ1yXaCL#Xdk8cc0piNkCqTLSuzuCcg",
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 34,
+                    "media_id": 8,
+                    "title": "Bénévoles\/Organisation",
+                    "media_type": "photo",
+                    "url": "https:\/\/mega.nz\/folder\/5R1AwI7a#EE8FxjyRKII5RbzU3yRxug",
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 35,
+                    "media_id": 8,
+                    "title": "Partenaires",
+                    "media_type": "photo",
+                    "url": "https:\/\/mega.nz\/folder\/AFlyzabK#r2q11lJA1Mu5GQ__OBQmEw",
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 36,
+                    "media_id": 8,
+                    "title": "Relais Mixte XXS",
+                    "media_type": "photo",
+                    "url": "https:\/\/mega.nz\/folder\/0Z8WBYDA#_FFRVTZiw-SiyEv6xkr4GA",
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 37,
+                    "media_id": 8,
+                    "title": "Swimrun",
+                    "media_type": "photo",
+                    "url": "https:\/\/mega.nz\/folder\/0J9kUSrC#e_cucyOMfvDTooABc89sbg",
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 38,
+                    "media_id": 8,
+                    "title": "Triathlon XS Femmes",
+                    "media_type": "photo",
+                    "url": "https:\/\/photos.app.goo.gl\/Nz6uC3Hjz8RqGh1L9",
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 39,
+                    "media_id": 8,
+                    "title": "Triathlon XS Hommes",
+                    "media_type": "photo",
+                    "url": "https:\/\/photos.app.goo.gl\/WruuwaHVTj9puRkS8",
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 40,
+                    "media_id": 8,
+                    "title": "Triathlon M",
+                    "media_type": "photo",
+                    "url": "https:\/\/mega.nz\/folder\/4EkwUKYB#WOtJN1zAQnFJi76h4Jm3LA",
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 41,
+                    "media_id": 8,
+                    "title": "Triathlon S",
+                    "media_type": "photo",
+                    "url": "https:\/\/mega.nz\/folder\/RUVQQRoJ#Ouqlc7Kl10y20G3WXe4EDA",
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 43,
+                    "media_id": 8,
+                    "title": "Hommage Jérôme Costinot",
+                    "media_type": "photo",
+                    "url": "https:\/\/mega.nz\/folder\/tJswyZTD#WDawP1w8eyZExylN6omFQw",
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 44,
+                    "media_id": 8,
+                    "title": "Podiums",
+                    "media_type": "photo",
+                    "url": "https:\/\/mega.nz\/folder\/sNkWFbwQ#AAsNuVr8HyuDt5TkORdvmA",
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 46,
+                    "media_id": 8,
+                    "title": "Vidéo officielle",
+                    "media_type": "video",
+                    "url": "https:\/\/www.youtube.com\/watch?v=sJ1qYCZ6_sA",
+                    "ordre_affichage": 0
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "annee": 2019,
+            "medias_details": [
+                {
+                    "id": 14,
+                    "media_id": 7,
+                    "title": "XS Femmes",
+                    "media_type": "photo",
+                    "url": "https:\/\/photos.app.goo.gl\/DiKacfQXDXiLjGF39",
+                    "ordre_affichage": 1
+                },
+                {
+                    "id": 15,
+                    "media_id": 7,
+                    "title": "Vidéo Officielle Occitaman",
+                    "media_type": "video",
+                    "url": "https:\/\/www.youtube.com\/embed\/q0Qm4bC8Khc",
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 17,
+                    "media_id": 7,
+                    "title": "XS Hommes",
+                    "media_type": "photo",
+                    "url": "https:\/\/photos.app.goo.gl\/jDpcvEA2aee8BcB88",
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 18,
+                    "media_id": 7,
+                    "title": "Occitaman XXL",
+                    "media_type": "photo",
+                    "url": "https:\/\/photos.app.goo.gl\/Na8HVWMZ9ybbvXtdA",
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 19,
+                    "media_id": 7,
+                    "title": "Half-Occitaman Indiv\/Relais\/Duo",
+                    "media_type": "photo",
+                    "url": "https:\/\/photos.app.goo.gl\/cpD8Tiuu2yFmnrjE9",
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 20,
+                    "media_id": 7,
+                    "title": "S\/S Relais",
+                    "media_type": "photo",
+                    "url": "https:\/\/photos.app.goo.gl\/oD6VpLnpQsJ9DQRR8",
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 21,
+                    "media_id": 7,
+                    "title": "Bénévoles\/Organisation",
+                    "media_type": "photo",
+                    "url": "https:\/\/photos.app.goo.gl\/554pfHTpMeH5iAAu7",
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 22,
+                    "media_id": 7,
+                    "title": "Partenaires",
+                    "media_type": "photo",
+                    "url": "https:\/\/photos.app.goo.gl\/5gxM1DWZMT1R88Bq6",
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 23,
+                    "media_id": 7,
+                    "title": "Arrivées Samedi - Half-Occitaman\/ Occitaman",
+                    "media_type": "photo",
+                    "url": "https:\/\/photos.app.goo.gl\/u9jCg8bmPwJq2Vnq6",
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 24,
+                    "media_id": 7,
+                    "title": "Arrivées Dilmanche - S\/ S Relais - XS Homme\/ Femme",
+                    "media_type": "photo",
+                    "url": "https:\/\/photos.app.goo.gl\/pnM1oCDnf8UfPVSBA",
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 25,
+                    "media_id": 7,
+                    "title": "Podiums",
+                    "media_type": "photo",
+                    "url": "https:\/\/photos.app.goo.gl\/haiRUqKaGoBgKJre8",
+                    "ordre_affichage": 0
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "annee": 2018,
+            "medias_details": [
+                {
+                    "id": 12,
+                    "media_id": 6,
+                    "title": "Vidéo Officielle",
+                    "media_type": "video",
+                    "url": "https:\/\/www.youtube.com\/embed\/kFoHt3shWh8",
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 13,
+                    "media_id": 6,
+                    "title": "XS Femmes",
+                    "media_type": "photo",
+                    "url": "https:\/\/photos.app.goo.gl\/LTqXsauJh7LAvaj27",
+                    "ordre_affichage": 1
+                },
+                {
+                    "id": 26,
+                    "media_id": 6,
+                    "title": "XS Hommes",
+                    "media_type": "photo",
+                    "url": "https:\/\/photos.app.goo.gl\/4ZSwzK4Dpj9JgcuE9",
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 27,
+                    "media_id": 6,
+                    "title": "M\/ M Relais",
+                    "media_type": "photo",
+                    "url": "https:\/\/photos.app.goo.gl\/U5MC9wEKEL36yP596",
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 28,
+                    "media_id": 6,
+                    "title": "S\/ S Relais",
+                    "media_type": "photo",
+                    "url": "https:\/\/photos.app.goo.gl\/pxac63o3EGjkYaXJ8",
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 29,
+                    "media_id": 6,
+                    "title": "SwimRun XS \/ S",
+                    "media_type": "photo",
+                    "url": "https:\/\/photos.app.goo.gl\/kcZZg4vfHvz27sbT9",
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 30,
+                    "media_id": 6,
+                    "title": "S CLM",
+                    "media_type": "photo",
+                    "url": "https:\/\/photos.app.goo.gl\/JSrAnCW7QcdrHXS47",
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 31,
+                    "media_id": 6,
+                    "title": "Bénévoles\/ Organisation",
+                    "media_type": "photo",
+                    "url": "https:\/\/photos.app.goo.gl\/3sVgQY5CBiU6xDYXA",
+                    "ordre_affichage": 0
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "annee": 2017,
+            "medias_details": [
+                {
+                    "id": 9,
+                    "media_id": 5,
+                    "title": "Photos",
+                    "media_type": "photo",
+                    "url": "https:\/\/photos.app.goo.gl\/M8s4p8Koh5q7Fh2V2",
+                    "ordre_affichage": 2
+                },
+                {
+                    "id": 10,
+                    "media_id": 5,
+                    "title": "Teaser",
+                    "media_type": "video",
+                    "url": "https:\/\/www.youtube.com\/embed\/MQX36ZP959s",
+                    "ordre_affichage": 1
+                },
+                {
+                    "id": 11,
+                    "media_id": 5,
+                    "title": "Vidéo Officielle",
+                    "media_type": "video",
+                    "url": "https:\/\/www.youtube.com\/embed\/5lIZmiD2VOs",
+                    "ordre_affichage": 0
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "annee": 2016,
+            "medias_details": [
+                {
+                    "id": 6,
+                    "media_id": 4,
+                    "title": "Vidéo Officielle",
+                    "media_type": "video",
+                    "url": "https:\/\/www.youtube.com\/embed\/9BA1M-72Fko",
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 7,
+                    "media_id": 4,
+                    "title": "Yannick Riou Photo",
+                    "media_type": "photo",
+                    "url": "https:\/\/photos.app.goo.gl\/wjsyWyw04CacNIK52",
+                    "ordre_affichage": 2
+                },
+                {
+                    "id": 8,
+                    "media_id": 4,
+                    "title": "Teaser",
+                    "media_type": "video",
+                    "url": "https:\/\/www.youtube.com\/embed\/y5mGYORhLHQ",
+                    "ordre_affichage": 1
+                },
+                {
+                    "id": 32,
+                    "media_id": 4,
+                    "title": "Studio-Carl",
+                    "media_type": "photo",
+                    "url": "http:\/\/web.archive.org\/web\/20230000000000*\/http:\/\/www.studio-carl.com\/index.php?\/category\/Triathlon-TLSE-TUC-2016",
+                    "ordre_affichage": 0
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "annee": 2015,
+            "medias_details": [
+                {
+                    "id": 5,
+                    "media_id": 3,
+                    "title": "Photos",
+                    "media_type": "photo",
+                    "url": "http:\/\/web.archive.org\/web\/20230000000000*\/http:\/\/www.studio-carl.com\/index.php?\/category\/Triathlon-TLSE-TUC-2015",
+                    "ordre_affichage": 0
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "annee": 2014,
+            "medias_details": [
+                {
+                    "id": 2,
+                    "media_id": 2,
+                    "title": "Cliquez ici pour accéder aux photos",
+                    "media_type": "photo",
+                    "url": "http:\/\/web.archive.org\/web\/20230000000000*\/http:\/\/www.studio-carl.com\/index.php?\/category\/Triathlon-TLSE-TUC-2014",
+                    "ordre_affichage": 2
+                },
+                {
+                    "id": 3,
+                    "media_id": 2,
+                    "title": "Vidéo XS Découverte",
+                    "media_type": "video",
+                    "url": "https:\/\/player.vimeo.com\/video\/111644394",
+                    "ordre_affichage": 1
+                },
+                {
+                    "id": 4,
+                    "media_id": 2,
+                    "title": "Video officielle",
+                    "media_type": "video",
+                    "url": "https:\/\/player.vimeo.com\/video\/111363167",
+                    "ordre_affichage": 0
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "annee": 2013,
+            "medias_details": [
+                {
+                    "id": 1,
+                    "media_id": 1,
+                    "title": "Photos",
+                    "media_type": "photo",
+                    "url": "http:\/\/web.archive.org\/web\/20230000000000*\/http:\/\/www.studio-carl.com\/index.php?\/category\/Triathlon-TLSE-TUC-2013",
+                    "ordre_affichage": 0
+                }
+            ]
+        }
+    ],
+    "public": true
+}

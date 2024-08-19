@@ -1,0 +1,816 @@
+{
+    "data": [
+        {
+            "id": 30,
+            "annee": 2023,
+            "ordre_affichage": 23,
+            "resultats": [
+                {
+                    "id": 85,
+                    "nom_course": "Triathlon Relais Mixte 4",
+                    "annee_id": 30,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2023\/Résultats Relais Mixtes Triathlon de Toulouse 2023.pdf",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 86,
+                    "nom_course": "Triathlon Relais Mixte 4 (Challenge Entreprise)",
+                    "annee_id": 30,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2023\/Résultats Relais Mixtes Entreprises Triathlon de Toulouse 2023.pdf",
+                    "file": null,
+                    "ordre_affichage": 1
+                },
+                {
+                    "id": 87,
+                    "nom_course": "Triathlon XS Femme",
+                    "annee_id": 30,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2023\/Résultats XS Femmes Triathlon de Toulouse 2023.pdf",
+                    "file": null,
+                    "ordre_affichage": 2
+                },
+                {
+                    "id": 88,
+                    "nom_course": "Triathlon XS Homme",
+                    "annee_id": 30,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2023\/Résultats XS Hommes Triathlon de Toulouse 2023.pdf",
+                    "file": 290,
+                    "ordre_affichage": 3
+                },
+                {
+                    "id": 89,
+                    "nom_course": "Triathlon S Individuel",
+                    "annee_id": 30,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2023\/Résultats S Triathlon de Toulouse 2023.pdf",
+                    "file": null,
+                    "ordre_affichage": 4
+                },
+                {
+                    "id": 90,
+                    "nom_course": "Triathlon S Relais",
+                    "annee_id": 30,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2023\/Résultats S Relais Triathlon de Toulouse 2023.pdf",
+                    "file": null,
+                    "ordre_affichage": 5
+                },
+                {
+                    "id": 91,
+                    "nom_course": "Triathlon M Individuel",
+                    "annee_id": 30,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2023\/Résultats M Triathlon de Toulouse 2023.pdf",
+                    "file": null,
+                    "ordre_affichage": 6
+                },
+                {
+                    "id": 92,
+                    "nom_course": "Triathlon M Relais",
+                    "annee_id": 30,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2023\/Résultats M Relais Triathlon de Toulouse 2023.pdf",
+                    "file": null,
+                    "ordre_affichage": 7
+                },
+                {
+                    "id": 93,
+                    "nom_course": "Aquathlon 6-9",
+                    "annee_id": 30,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2023\/Résultats 6-9 ans Triathlon de Toulouse 2023.pdf",
+                    "file": null,
+                    "ordre_affichage": 8
+                },
+                {
+                    "id": 94,
+                    "nom_course": "Aquathlon 6-9 Équipe",
+                    "annee_id": 30,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2023\/Résultats 6-9 ans Equipes Triathlon de Toulouse 2023.pdf",
+                    "file": null,
+                    "ordre_affichage": 9
+                },
+                {
+                    "id": 95,
+                    "nom_course": "Aquathlon 10-13",
+                    "annee_id": 30,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2023\/Résultats 10-13 ans Triathlon de Toulouse 2023.pdf",
+                    "file": null,
+                    "ordre_affichage": 10
+                },
+                {
+                    "id": 96,
+                    "nom_course": "Aquathlon 10-13 Équipe",
+                    "annee_id": 30,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2023\/Résultats 10-13 ans Equipes Triathlon de Toulouse 2023.pdf",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 97,
+                    "nom_course": "Swimrun S",
+                    "annee_id": 30,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2023\/Résultats SwimRun Triathlon de Toulouse 2023.pdf",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 98,
+                    "nom_course": "Tous les résultats",
+                    "annee_id": 30,
+                    "url": "https:\/\/chronoweb.com\/files\/xls\/Rsultats_Triathlon_de_Toulouse_2023.xlsx",
+                    "file": null,
+                    "ordre_affichage": 0
+                }
+            ]
+        },
+        {
+            "id": 29,
+            "annee": 2022,
+            "ordre_affichage": 10,
+            "resultats": [
+                {
+                    "id": 66,
+                    "nom_course": "Triathlon Relais Mixte XXS - Equipes de 2",
+                    "annee_id": 29,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2022\/Resultats Relais à 2 Triathlon de Toulouse 2022.pdf",
+                    "file": null,
+                    "ordre_affichage": 2
+                },
+                {
+                    "id": 67,
+                    "nom_course": "Triathlon Relais Mixte XXS - Equipes de 4",
+                    "annee_id": 29,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2022\/Resultats Relais à 4 Triathlon de Toulouse 2022.pdf",
+                    "file": null,
+                    "ordre_affichage": 1
+                },
+                {
+                    "id": 68,
+                    "nom_course": "Triathlon M Individuel",
+                    "annee_id": 29,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2022\/Resultats M Triathlon de Toulouse 2022.pdf",
+                    "file": null,
+                    "ordre_affichage": 3
+                },
+                {
+                    "id": 69,
+                    "nom_course": "Triathlon M Relais",
+                    "annee_id": 29,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2022\/Resultats M Relais Triathlon de Toulouse 2022.pdf",
+                    "file": null,
+                    "ordre_affichage": 4
+                },
+                {
+                    "id": 70,
+                    "nom_course": "SwimRun XS",
+                    "annee_id": 29,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2022\/Resultats Swimrun XS Triathlon de Toulouse 2022.pdf",
+                    "file": null,
+                    "ordre_affichage": 5
+                },
+                {
+                    "id": 71,
+                    "nom_course": "SwimRun S",
+                    "annee_id": 29,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2022\/Resultats Swimrun S Triathlon de Toulouse 2022.pdf",
+                    "file": null,
+                    "ordre_affichage": 6
+                },
+                {
+                    "id": 72,
+                    "nom_course": "Triathlon S Individuel",
+                    "annee_id": 29,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2022\/Resultats S Triathlon de Toulouse 2022.pdf",
+                    "file": null,
+                    "ordre_affichage": 7
+                },
+                {
+                    "id": 73,
+                    "nom_course": "Triathlon S Relais",
+                    "annee_id": 29,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2022\/Resultats S Relais Triathlon de Toulouse 2022.pdf",
+                    "file": null,
+                    "ordre_affichage": 8
+                },
+                {
+                    "id": 74,
+                    "nom_course": "Aquathlon 6-9 ans Individuel",
+                    "annee_id": 29,
+                    "url": null,
+                    "file": 257,
+                    "ordre_affichage": 8
+                },
+                {
+                    "id": 75,
+                    "nom_course": "Aquathlon 6-9 ans équipes",
+                    "annee_id": 29,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2022\/Resultats Aquathlon 6-9 Equipes Triathlon de Toulouse 2022.pdf",
+                    "file": null,
+                    "ordre_affichage": 10
+                },
+                {
+                    "id": 76,
+                    "nom_course": "Aquathlon 10-13 ans individuel",
+                    "annee_id": 29,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2022\/Resultats Aquathlon 10-13 Triathlon de Toulouse 2022.pdf",
+                    "file": null,
+                    "ordre_affichage": 11
+                },
+                {
+                    "id": 77,
+                    "nom_course": "Aquathlon 10-13 ans équipes",
+                    "annee_id": 29,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2022\/Resultats Aquathlon 10-13 Equipes Triathlon de Toulouse 2022.pdf",
+                    "file": null,
+                    "ordre_affichage": 12
+                },
+                {
+                    "id": 78,
+                    "nom_course": "Triathlon XS Femmes",
+                    "annee_id": 29,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2022\/Resultats XS Femmes Triathlon de Toulouse 2022.pdf",
+                    "file": null,
+                    "ordre_affichage": 13
+                },
+                {
+                    "id": 79,
+                    "nom_course": "Triathlon XS Hommes",
+                    "annee_id": 29,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2022\/Resultats XS Hommes Triathlon de Toulouse 2022.pdf",
+                    "file": null,
+                    "ordre_affichage": 14
+                },
+                {
+                    "id": 80,
+                    "nom_course": "Aquathlon 6-9 ans Individuel",
+                    "annee_id": 29,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2022\/Resultats Aquathlon 6-9 Triathlon de Toulouse 2022.pdf",
+                    "file": null,
+                    "ordre_affichage": 9
+                }
+            ]
+        },
+        {
+            "id": 28,
+            "annee": 2021,
+            "ordre_affichage": 10,
+            "resultats": [
+                {
+                    "id": 52,
+                    "nom_course": "SwimRun XS",
+                    "annee_id": 28,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2021\/Résultats SwimRun XS de Toulouse 2021.pdf",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 53,
+                    "nom_course": "SwimRun S",
+                    "annee_id": 28,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2021\/Résultats SwimRun S de Toulouse 2021.pdf",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 54,
+                    "nom_course": "Triathlon S",
+                    "annee_id": 28,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2021\/Résultats S Triathlon de Toulouse 2021.pdf",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 55,
+                    "nom_course": "Triathlon S Relais",
+                    "annee_id": 28,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2021\/Résultats S Relais Triathlon de Toulouse 2021.pdf",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 56,
+                    "nom_course": "Triathlon Relais Mixte 4",
+                    "annee_id": 28,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2021\/Résultats Relais Mixte à 4 Triathlon de Toulouse 2021.pdf",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 57,
+                    "nom_course": "Triathlon Relaix Mixte 2",
+                    "annee_id": 28,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2021\/Résultats Relais Mixte à 2 Triathlon de Toulouse 2021.pdf",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 58,
+                    "nom_course": "Triathlon M",
+                    "annee_id": 28,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2021\/Résultats M Triathlon de Toulouse 2021.pdf",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 59,
+                    "nom_course": "Triathlon M Relais",
+                    "annee_id": 28,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2021\/Résultats M Relais Triathlon de Toulouse 2021.pdf",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 60,
+                    "nom_course": "Aquathlon 6-9 ans Equipe",
+                    "annee_id": 28,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2021\/Résultats 6-9 équipes Triathlon de Toulouse 2021.pdf",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 61,
+                    "nom_course": "Aquathlon 6-9 ans",
+                    "annee_id": 28,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2021\/Résultats 6-9 individuels Triathlon de Toulouse 2021.pdf",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 62,
+                    "nom_course": "Aquathlon 10-13 ans Equipe",
+                    "annee_id": 28,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2021\/Résultats 10-13 équipes Triathlon de Toulouse 2021.pdf",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 63,
+                    "nom_course": "Aquathlon 10-13 ans",
+                    "annee_id": 28,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2021\/Résultats 10-13 individuels Triathlon de Toulouse 2021.pdf",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 64,
+                    "nom_course": "Triathlon XS Femmes",
+                    "annee_id": 28,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2021\/Résultats XS Femmes Triathlon de Toulouse 2021.pdf",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 65,
+                    "nom_course": "Triathlon XS Hommes",
+                    "annee_id": 28,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2021\/Résultats XS Hommes Triathlon de Toulouse 2021.pdf",
+                    "file": null,
+                    "ordre_affichage": 0
+                }
+            ]
+        },
+        {
+            "id": 25,
+            "annee": 2019,
+            "ordre_affichage": 19,
+            "resultats": [
+                {
+                    "id": 16,
+                    "nom_course": "Occitaman - XXL",
+                    "annee_id": 25,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2019\/Occitaman-2019.pdf",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 17,
+                    "nom_course": "Half-Occitaman Relais",
+                    "annee_id": 25,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2019\/Half-Occitaman-Relais-2019.pdf",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 43,
+                    "nom_course": "Triathlon S individuel",
+                    "annee_id": 25,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2019\/TriathlonS-2019.pdf",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 44,
+                    "nom_course": "Triathlon XS femme",
+                    "annee_id": 25,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2019\/TriathlonXSFemme-2019.pdf",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 45,
+                    "nom_course": "Tous les résultats",
+                    "annee_id": 25,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2019\/Resultats-2019.xlsx",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 46,
+                    "nom_course": "Half-Occitaman Duo",
+                    "annee_id": 25,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2019\/Half-Occitaman-Duo-2019.pdf",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 47,
+                    "nom_course": "Half-Occitaman",
+                    "annee_id": 25,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2019\/Half-Occitaman-2019.pdf",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 48,
+                    "nom_course": "Triathlon S relais",
+                    "annee_id": 25,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2019\/TriathlonSRelais-2019.pdf",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 49,
+                    "nom_course": "Triathlon XS homme",
+                    "annee_id": 25,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2019\/TriathlonXSHomme-2019.pdf",
+                    "file": null,
+                    "ordre_affichage": 0
+                }
+            ]
+        },
+        {
+            "id": 23,
+            "annee": 2018,
+            "ordre_affichage": 18,
+            "resultats": [
+                {
+                    "id": 42,
+                    "nom_course": "Tous les résultats",
+                    "annee_id": 23,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2018\/tdt_all_2018.xlsx",
+                    "file": 211,
+                    "ordre_affichage": 0
+                }
+            ]
+        },
+        {
+            "id": 26,
+            "annee": 2017,
+            "ordre_affichage": 17,
+            "resultats": [
+                {
+                    "id": 18,
+                    "nom_course": "XS femme",
+                    "annee_id": 26,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2017\/tdt_xsf_2017.pdf",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 19,
+                    "nom_course": "S individuel",
+                    "annee_id": 26,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2017\/tdt_s_2017.pdf",
+                    "file": null,
+                    "ordre_affichage": 1
+                },
+                {
+                    "id": 20,
+                    "nom_course": "S équipe",
+                    "annee_id": 26,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2017\/tdt_s_equipe_2017.pdf",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 33,
+                    "nom_course": "M individuel",
+                    "annee_id": 26,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2017\/tdt_m_2017.pdf",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 34,
+                    "nom_course": "SwimRun",
+                    "annee_id": 26,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2017\/tdt_swimrun_2017.pdf",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 35,
+                    "nom_course": "Détails XS homme",
+                    "annee_id": 26,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2017\/tdt_xsh_2017_details.pdf",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 36,
+                    "nom_course": "Détails S équipe",
+                    "annee_id": 26,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2017\/tdt_s_equipe_2017_details.pdf",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 37,
+                    "nom_course": "M relais",
+                    "annee_id": 26,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2017\/tdt_m_relais_2017.pdf",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 38,
+                    "nom_course": "Détails XS femme",
+                    "annee_id": 26,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2017\/tdt_xsf_2017_details.pdf",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 39,
+                    "nom_course": "Détails S individuel",
+                    "annee_id": 26,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2017\/tdt_s_2017_details.pdf",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 40,
+                    "nom_course": "Détails M individuel",
+                    "annee_id": 26,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2017\/tdt_m_2017_details.pdf",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 41,
+                    "nom_course": "XS homme",
+                    "annee_id": 26,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2017\/tdt_xsh_2017.pdf",
+                    "file": null,
+                    "ordre_affichage": 0
+                }
+            ]
+        },
+        {
+            "id": 21,
+            "annee": 2016,
+            "ordre_affichage": 16,
+            "resultats": [
+                {
+                    "id": 26,
+                    "nom_course": "XS femme",
+                    "annee_id": 21,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2016\/tdt_xsf_2016.pdf",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 27,
+                    "nom_course": "S individuel",
+                    "annee_id": 21,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2016\/tdt_s_2016.pdf",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 28,
+                    "nom_course": "M individuel",
+                    "annee_id": 21,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2016\/tdt_m_2016.pdf",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 29,
+                    "nom_course": "SwimRun",
+                    "annee_id": 21,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2016\/tdt_swimrun_2016.pdf",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 30,
+                    "nom_course": "XS homme",
+                    "annee_id": 21,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2016\/tdt_xsh_2016.pdf",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 31,
+                    "nom_course": "S équipe",
+                    "annee_id": 21,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2016\/tdt_s_equipe_2016.pdf",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 32,
+                    "nom_course": "M relais",
+                    "annee_id": 21,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2016\/tdt_m_relais_2016.pdf",
+                    "file": null,
+                    "ordre_affichage": 0
+                }
+            ]
+        },
+        {
+            "id": 20,
+            "annee": 2015,
+            "ordre_affichage": 15,
+            "resultats": [
+                {
+                    "id": 12,
+                    "nom_course": "XS découverte",
+                    "annee_id": 20,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2015\/tdt_xs_2015.xlsx",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 14,
+                    "nom_course": "S équipe",
+                    "annee_id": 20,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2015\/tdt_s_equipe_2015.xlsx",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 24,
+                    "nom_course": "S individuel",
+                    "annee_id": 20,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2015\/tdt_s_2015.xlsx",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 25,
+                    "nom_course": "M individuel et relais",
+                    "annee_id": 20,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2015\/tdt_m_2015.xlsx",
+                    "file": null,
+                    "ordre_affichage": 0
+                }
+            ]
+        },
+        {
+            "id": 19,
+            "annee": 2014,
+            "ordre_affichage": 14,
+            "resultats": [
+                {
+                    "id": 11,
+                    "nom_course": "XS découverte",
+                    "annee_id": 19,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2014\/tdt_xs_2014.xls",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 13,
+                    "nom_course": "S équipe",
+                    "annee_id": 19,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2014\/tdt_s_equipe_2014.xls",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 22,
+                    "nom_course": "S individuel",
+                    "annee_id": 19,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2014\/tdt_s_2014.xls",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 23,
+                    "nom_course": "M individuel et relais",
+                    "annee_id": 19,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2014\/tdt_m_2014.xls",
+                    "file": null,
+                    "ordre_affichage": 0
+                }
+            ]
+        },
+        {
+            "id": 18,
+            "annee": 2013,
+            "ordre_affichage": 13,
+            "resultats": [
+                {
+                    "id": 7,
+                    "nom_course": "XS découverte",
+                    "annee_id": 18,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2013\/tdt_xs_2013.xls",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 8,
+                    "nom_course": "S individuel",
+                    "annee_id": 18,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2013\/tdt_s_2013.xls",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 9,
+                    "nom_course": "S équipe",
+                    "annee_id": 18,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2013\/tdt_s_equipe_2013.xls",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 10,
+                    "nom_course": "M individuel et relais",
+                    "annee_id": 18,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2013\/tdt_m_2013.xls",
+                    "file": null,
+                    "ordre_affichage": 0
+                }
+            ]
+        },
+        {
+            "id": 17,
+            "annee": 2012,
+            "ordre_affichage": 12,
+            "resultats": [
+                {
+                    "id": 5,
+                    "nom_course": "Sprint",
+                    "annee_id": 17,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2012\/tdt_sprint_2012.xls",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 6,
+                    "nom_course": "Courte distance",
+                    "annee_id": 17,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2012\/tdt_cd_2012.xls",
+                    "file": null,
+                    "ordre_affichage": 0
+                }
+            ]
+        },
+        {
+            "id": 16,
+            "annee": 2011,
+            "ordre_affichage": 11,
+            "resultats": [
+                {
+                    "id": 3,
+                    "nom_course": "Sprint",
+                    "annee_id": 16,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2011\/tdt_sprint_2011.xls",
+                    "file": null,
+                    "ordre_affichage": 0
+                },
+                {
+                    "id": 4,
+                    "nom_course": "Courte distance",
+                    "annee_id": 16,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2011\/tdt_cd_2011.xls",
+                    "file": null,
+                    "ordre_affichage": 0
+                }
+            ]
+        },
+        {
+            "id": 27,
+            "annee": 2010,
+            "ordre_affichage": 10,
+            "resultats": [
+                {
+                    "id": 50,
+                    "nom_course": "Sprint",
+                    "annee_id": 27,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2010\/tdt_sprint_2010.xls",
+                    "file": null,
+                    "ordre_affichage": 10
+                },
+                {
+                    "id": 51,
+                    "nom_course": "Courte Distance",
+                    "annee_id": 27,
+                    "url": "http:\/\/triathlondetoulouse.com\/assets\/results\/2010\/tdt_cd_2010.xls",
+                    "file": null,
+                    "ordre_affichage": 0
+                }
+            ]
+        }
+    ],
+    "public": true
+}
