@@ -38,7 +38,6 @@
                                 }
                             ],
                             "budgets": [
-
                                 {
                                     "type": "initial",
                                     "maximumWarning": "500kb",
@@ -72,8 +71,12 @@
                     "configurations": {
                         "production": {
                           "buildTarget": "frontend:build:production"
+                        },
+                        "development": {
+                            "buildTarget": "frontend:build:development"
                         }
-                    }
+                    },
+                    "defaultConfiguration": "development"
                 },
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",

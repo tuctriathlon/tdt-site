@@ -9,6 +9,7 @@ import { Page } from 'src/app/shared/models/page.model'
 import { Partner } from 'src/app/shared/models/partner.model'
 import { Race } from 'src/app/shared/models/race.model'
 import { SiteConfig } from 'src/app/shared/models/site-config.model'
+import { environment } from 'src/environments/environment'
 
 const DEFAULT_PRIMARY_COLOR = '#3F51B5'
 const DEFAULT_SECONDARY_COLOR = '#FFEB13'
@@ -27,6 +28,7 @@ export class DataService {
     metaData: BehaviorSubject<MetaDonnees[]> = new BehaviorSubject([])
 
     constructor(private http: HttpClient) {
+        window['dataService'] = this
         this.setColors()
 
         this.getData<Content>(`/items/information_content?sort=ordre_affichage`).subscribe(
@@ -52,6 +54,10 @@ export class DataService {
         this.getData<MetaDonneesPayload>(`/items/metadonnees?fields=*.*`).subscribe((payload) =>
             this.metaData.next(payload[0].metadonnees)
         )
+    }
+
+    static get prefix() {
+        return environment.production ? PREFIX : '/assets/data'
     }
 
     loadConfig() {
@@ -144,7 +150,7 @@ export class DataService {
 
     private getData<T>(url): Observable<T[]> {
         return this.http
-            .get<{ data: T[]; public: boolean }>(`${PREFIX}${url}`)
+            .get<{ data: T[]; public: boolean }>(`${DataService.prefix}${url}`)
             .pipe(map((res) => res.data))
     }
 
