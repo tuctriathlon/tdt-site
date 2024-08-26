@@ -1,0 +1,65 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "title": "Triathlon de Toulouse",
+            "metadonnees": [
+                {
+                    "id": 1,
+                    "name": "DESCRIPTION",
+                    "content": "Réservez dès à présent le week-end du 14 et 15 septembre 2024 pour participer aux épreuves du Triathlon de Toulouse : triathlons XS, S, M en individuel ou en relais, et swimrun.",
+                    "details_id": 1
+                },
+                {
+                    "id": 2,
+                    "name": "KEYWORDS",
+                    "content": "triathlon de toulouse, occitaman, triathlon, toulouse, tuc, swimrun, aquathlon",
+                    "details_id": 1
+                },
+                {
+                    "id": 3,
+                    "name": "SUBJECT",
+                    "content": "Triathlon de Toulouse",
+                    "details_id": 1
+                },
+                {
+                    "id": 4,
+                    "name": "CATEGORY",
+                    "content": "Sport, triathlon, occitaman, toulouse, swimrun, tournefeuille,laramée, vélo,course à pied, natation",
+                    "details_id": 1
+                },
+                {
+                    "id": 5,
+                    "name": "AUTHOR",
+                    "content": "TUC Triathlon",
+                    "details_id": 1
+                },
+                {
+                    "id": 6,
+                    "name": "REVISIT-AFTER",
+                    "content": "7 DAYS",
+                    "details_id": 1
+                },
+                {
+                    "id": 7,
+                    "name": "LANGUAGE",
+                    "content": "FR",
+                    "details_id": 1
+                },
+                {
+                    "id": 8,
+                    "name": "COPYRIGHT",
+                    "content": "TUC Triathlon",
+                    "details_id": 1
+                },
+                {
+                    "id": 9,
+                    "name": "ROBOTS",
+                    "content": "All",
+                    "details_id": 1
+                }
+            ]
+        }
+    ],
+    "public": true
+}

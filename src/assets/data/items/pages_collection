@@ -1,0 +1,124 @@
+{
+    "data": [
+        {
+            "id": 29,
+            "page_name": "Je m'inscris",
+            "parent_page_id": null,
+            "ordre_affichage": -1,
+            "url": "https:\/\/chrono-start.com\/events\/triathlon-de-toulouse\/"
+        },
+        {
+            "id": 13,
+            "page_name": "Inscription",
+            "parent_page_id": 2,
+            "ordre_affichage": 0,
+            "url": "inscription"
+        },
+        {
+            "id": 19,
+            "page_name": "FAQ",
+            "parent_page_id": 2,
+            "ordre_affichage": 1,
+            "url": "informations-faq"
+        },
+        {
+            "id": 27,
+            "page_name": "Challenge Entreprise",
+            "parent_page_id": 1,
+            "ordre_affichage": 2,
+            "url": "courses/challenge-entreprise"
+        },
+        {
+            "id": 26,
+            "page_name": "Hébergement",
+            "parent_page_id": 2,
+            "ordre_affichage": 3,
+            "url": "informations-hebergement"
+        },
+        {
+            "id": 1,
+            "page_name": "Courses",
+            "parent_page_id": null,
+            "ordre_affichage": 5,
+            "url": "courses"
+        },
+        {
+            "id": 2,
+            "page_name": "Informations",
+            "parent_page_id": null,
+            "ordre_affichage": 10,
+            "url": "informations-faq"
+        },
+        {
+            "id": 5,
+            "page_name": "Accès",
+            "parent_page_id": 2,
+            "ordre_affichage": 14,
+            "url": "informations-access"
+        },
+        {
+            "id": 8,
+            "page_name": "Règlement triathlon",
+            "parent_page_id": 2,
+            "ordre_affichage": 20,
+            "url": "informations-reglement"
+        },
+        {
+            "id": 9,
+            "page_name": "Briefing Triathlon",
+            "parent_page_id": 2,
+            "ordre_affichage": 23,
+            "url": "informations-briefing"
+        },
+        {
+            "id": 28,
+            "page_name": "Charte développement durable",
+            "parent_page_id": 2,
+            "ordre_affichage": 24,
+            "url": "charte-developpement-durable"
+        },
+        {
+            "id": 11,
+            "page_name": "Médias",
+            "parent_page_id": null,
+            "ordre_affichage": 30,
+            "url": "medias"
+        },
+        {
+            "id": 4,
+            "page_name": "Résultats",
+            "parent_page_id": null,
+            "ordre_affichage": 40,
+            "url": "resultats"
+        },
+        {
+            "id": 3,
+            "page_name": "Partenaires",
+            "parent_page_id": null,
+            "ordre_affichage": 50,
+            "url": "partenaires"
+        },
+        {
+            "id": 30,
+            "page_name": "Nouvelles",
+            "parent_page_id": 2,
+            "ordre_affichage": 60,
+            "url": "nouvelles"
+        },
+        {
+            "id": 31,
+            "page_name": "Le village",
+            "parent_page_id": 2,
+            "ordre_affichage": 70,
+            "url": "village"
+        },
+        {
+            "id": 32,
+            "page_name": "Se restaurer",
+            "parent_page_id": 2,
+            "ordre_affichage": 4,
+            "url": "restauration"
+        }
+    ],
+    "public": true
+}

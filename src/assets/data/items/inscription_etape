@@ -1,0 +1,54 @@
+{
+    "data": [
+        {
+            "id": 15,
+            "ordre_affichage": 0,
+            "couleur": "#00BCD4",
+            "titre": "Lien d'inscription",
+            "description": "https:\/\/chrono-start.com\/events\/triathlon-de-toulouse\/"
+        },
+        {
+            "id": 13,
+            "ordre_affichage": 1,
+            "couleur": "#2196F3",
+            "titre": "Je renseigne les informations requises",
+            "description": "(mail, nom, prénom, date de naissance...)"
+        },
+        {
+            "id": 12,
+            "ordre_affichage": 2,
+            "couleur": "#3F51B5",
+            "titre": "Je procède au paiement",
+            "description": ""
+        },
+        {
+            "id": 3,
+            "ordre_affichage": 3,
+            "couleur": "#00BCD4",
+            "titre": "Mon inscription est reservée",
+            "description": "Je reçois un mail avec mes identifiants\n"
+        },
+        {
+            "id": 4,
+            "ordre_affichage": 4,
+            "couleur": "#607D8B",
+            "titre": "Je dépose sur la plateforme des inscriptions mes documents justificatifs (avant la date limite donnée par le règlement)",
+            "description": null
+        },
+        {
+            "id": 5,
+            "ordre_affichage": 5,
+            "couleur": "#4CAF50",
+            "titre": "Vérification des documents par l'équipe organisatrice",
+            "description": "Mon inscription est validée (mon dossier affiche complet)"
+        },
+        {
+            "id": 8,
+            "ordre_affichage": 6,
+            "couleur": "#FF9800",
+            "titre": "Si MALHEUREUSEMENT, je ne peux pas participer au TDT, j'annule mon inscription.",
+            "description": "J'annule directement depuis la plate-forme d'inscription onglet \"Mon inscription\" avec mes identifiants (reçus dans mon mail d'inscription) et je préviens l'organisation par mail afin d'être remboursé(e) avant le 1er juillet 2024 selon le barème établi par le règlement. Si j'annule après le 1er juillet 2024, seul le pass compétition sera remboursé le cas échéant."
+        }
+    ],
+    "public": true
+}

@@ -1,0 +1,98 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "facebook_url": "https:\/\/www.facebook.com\/triathlonDeTlse\/",
+            "instagram_url": "https:\/\/www.instagram.com\/triathlondetoulouse\/",
+            "twitter_url": "",
+            "logo_tdt": {
+                "id": 316,
+                "storage": "local",
+                "private_hash": "cgir2r1e9ugc804g",
+                "filename_disk": "c4e0bffa-e3bd-4739-9392-a34972eaca34.png",
+                "filename_download": "logo-tdt-light.png",
+                "title": "Logo Tdt Light",
+                "type": "image\/png",
+                "uploaded_by": 12,
+                "uploaded_on": "2024-03-03T19:23:14+00:00",
+                "charset": "binary",
+                "filesize": 19695,
+                "width": 270,
+                "height": 90,
+                "duration": 0,
+                "embed": null,
+                "folder": null,
+                "description": "",
+                "location": "",
+                "tags": [],
+                "checksum": "c6795c63ff07c9ea5197dc53c14c95a5",
+                "metadata": null,
+                "data": {
+                    "full_url": "http:\/\/www.triathlondetoulouse.com\/assets\/uploads\/originals\/c4e0bffa-e3bd-4739-9392-a34972eaca34.png",
+                    "url": "http:\/\/www.triathlondetoulouse.com\/assets\/uploads\/originals\/c4e0bffa-e3bd-4739-9392-a34972eaca34.png",
+                    "thumbnails": [
+                        {
+                            "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/cgir2r1e9ugc804g?key=directus-small-crop",
+                            "relative_url": "\/tdt\/assets\/cgir2r1e9ugc804g?key=directus-small-crop",
+                            "dimension": "64x64",
+                            "width": 64,
+                            "height": 64
+                        },
+                        {
+                            "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/cgir2r1e9ugc804g?key=directus-small-contain",
+                            "relative_url": "\/tdt\/assets\/cgir2r1e9ugc804g?key=directus-small-contain",
+                            "dimension": "64x64",
+                            "width": 64,
+                            "height": 64
+                        },
+                        {
+                            "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/cgir2r1e9ugc804g?key=directus-medium-crop",
+                            "relative_url": "\/tdt\/assets\/cgir2r1e9ugc804g?key=directus-medium-crop",
+                            "dimension": "300x300",
+                            "width": 300,
+                            "height": 300
+                        },
+                        {
+                            "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/cgir2r1e9ugc804g?key=directus-medium-contain",
+                            "relative_url": "\/tdt\/assets\/cgir2r1e9ugc804g?key=directus-medium-contain",
+                            "dimension": "300x300",
+                            "width": 300,
+                            "height": 300
+                        },
+                        {
+                            "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/cgir2r1e9ugc804g?key=directus-large-crop",
+                            "relative_url": "\/tdt\/assets\/cgir2r1e9ugc804g?key=directus-large-crop",
+                            "dimension": "800x600",
+                            "width": 800,
+                            "height": 600
+                        },
+                        {
+                            "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/cgir2r1e9ugc804g?key=directus-large-contain",
+                            "relative_url": "\/tdt\/assets\/cgir2r1e9ugc804g?key=directus-large-contain",
+                            "dimension": "800x600",
+                            "width": 800,
+                            "height": 600
+                        },
+                        {
+                            "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/cgir2r1e9ugc804g?key=thumbnail",
+                            "relative_url": "\/tdt\/assets\/cgir2r1e9ugc804g?key=thumbnail",
+                            "dimension": "200x200",
+                            "width": 200,
+                            "height": 200
+                        }
+                    ],
+                    "embed": null
+                }
+            },
+            "titre_tdt": "Triathlon de Toulouse",
+            "contactez_nous": "contact@triathlondetoulouse.com",
+            "header_color": "#3F51B5",
+            "footer_color": "#3F51B5",
+            "linkedin_url": "https:\/\/www.linkedin.com\/company\/triathlondetoulouse",
+            "primary_color": "#3F51B5",
+            "secondary_color": "#FFEB13",
+            "date": "14 & 15 septembre 2024"
+        }
+    ],
+    "public": true
+}

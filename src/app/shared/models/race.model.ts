@@ -22,6 +22,7 @@ export interface Race {
     etapes: Etape[]
     yearLimit: number
     medias: Media[]
+    horraire_dossard: string
 }
 
 export interface Etape {

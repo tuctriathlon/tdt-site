@@ -30,6 +30,11 @@ const routes: Routes = [
                 component: RacesComponent,
                 children: [
                     {
+                        path: 'challenge-entreprise',
+                        component: GenericComponent,
+                        data: { slug: 'courses/challenge-entreprise' },
+                    },
+                    {
                         path: 'programme',
                         component: RacesOverviewComponent,
                     },
@@ -40,6 +45,7 @@ const routes: Routes = [
                     {
                         path: '',
                         redirectTo: 'programme',
+                        pathMatch: 'full',
                     },
                 ],
             },

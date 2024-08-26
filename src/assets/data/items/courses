@@ -1,0 +1,3128 @@
+{
+    "data": [
+        {
+            "id": 16,
+            "horraire_dossard": "2024-09-14 08:00:00",
+            "date": "2024-09-14 09:00:00",
+            "prix": 22,
+            "type_de_course": "triathlon",
+            "format": "xs",
+            "specificite": "equipe",
+            "complet": false,
+            "precision": "Contre la montre par équipe de 3 à 5 personnes (prix par personne) qui effectuent ensemble un triathlon XS",
+            "nombre_de_places": "120",
+            "age": 14,
+            "prix_pass_compet": 2,
+            "recompense": null,
+            "couleur": "#64E0BE",
+            "etapes": [
+                {
+                    "id": 45,
+                    "type": "Natation",
+                    "distance": 400,
+                    "course_id": {
+                        "id": 16,
+                        "date": "2024-09-14 09:00:00",
+                        "prix": 22,
+                        "type_de_course": "triathlon",
+                        "format": "xs",
+                        "specificite": "equipe",
+                        "complet": false,
+                        "precision": "Contre la montre par équipe de 3 à 5 personnes (prix par personne) qui effectuent ensemble un triathlon XS",
+                        "nombre_de_places": "120",
+                        "age": 14,
+                        "prix_pass_compet": 2,
+                        "recompense": null,
+                        "couleur": "#64E0BE"
+                    },
+                    "description": null,
+                    "affichage_distance": "m",
+                    "image": null,
+                    "icone": "pool"
+                },
+                {
+                    "id": 46,
+                    "type": "Velo",
+                    "distance": 12000,
+                    "course_id": {
+                        "id": 16,
+                        "date": "2024-09-14 09:00:00",
+                        "prix": 22,
+                        "type_de_course": "triathlon",
+                        "format": "xs",
+                        "specificite": "equipe",
+                        "complet": false,
+                        "precision": "Contre la montre par équipe de 3 à 5 personnes (prix par personne) qui effectuent ensemble un triathlon XS",
+                        "nombre_de_places": "120",
+                        "age": 14,
+                        "prix_pass_compet": 2,
+                        "recompense": null,
+                        "couleur": "#64E0BE"
+                    },
+                    "description": null,
+                    "affichage_distance": "km",
+                    "image": {
+                        "id": 193,
+                        "storage": "local",
+                        "private_hash": "hhh1y3lmq48w44wo",
+                        "filename_disk": "6cb73461-fdb3-44e6-92ed-28fdc1ac0cd4.png",
+                        "filename_download": "relais_mixte_vélo_2021.png",
+                        "title": "Relais Mixte Vélo 2021",
+                        "type": "image\/png",
+                        "uploaded_by": 2,
+                        "uploaded_on": "2021-09-07T20:24:24+00:00",
+                        "charset": "binary",
+                        "filesize": 190379,
+                        "width": 1366,
+                        "height": 768,
+                        "duration": 0,
+                        "embed": null,
+                        "folder": null,
+                        "description": "",
+                        "location": "",
+                        "tags": [],
+                        "checksum": "06b6b0b597bc218f5de0514f977533cd",
+                        "metadata": null,
+                        "data": {
+                            "full_url": "http:\/\/www.triathlondetoulouse.com\/assets\/uploads\/originals\/6cb73461-fdb3-44e6-92ed-28fdc1ac0cd4.png",
+                            "url": "http:\/\/www.triathlondetoulouse.com\/assets\/uploads\/originals\/6cb73461-fdb3-44e6-92ed-28fdc1ac0cd4.png",
+                            "thumbnails": [
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/hhh1y3lmq48w44wo?key=directus-small-crop",
+                                    "relative_url": "\/tdt\/assets\/hhh1y3lmq48w44wo?key=directus-small-crop",
+                                    "dimension": "64x64",
+                                    "width": 64,
+                                    "height": 64
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/hhh1y3lmq48w44wo?key=directus-small-contain",
+                                    "relative_url": "\/tdt\/assets\/hhh1y3lmq48w44wo?key=directus-small-contain",
+                                    "dimension": "64x64",
+                                    "width": 64,
+                                    "height": 64
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/hhh1y3lmq48w44wo?key=directus-medium-crop",
+                                    "relative_url": "\/tdt\/assets\/hhh1y3lmq48w44wo?key=directus-medium-crop",
+                                    "dimension": "300x300",
+                                    "width": 300,
+                                    "height": 300
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/hhh1y3lmq48w44wo?key=directus-medium-contain",
+                                    "relative_url": "\/tdt\/assets\/hhh1y3lmq48w44wo?key=directus-medium-contain",
+                                    "dimension": "300x300",
+                                    "width": 300,
+                                    "height": 300
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/hhh1y3lmq48w44wo?key=directus-large-crop",
+                                    "relative_url": "\/tdt\/assets\/hhh1y3lmq48w44wo?key=directus-large-crop",
+                                    "dimension": "800x600",
+                                    "width": 800,
+                                    "height": 600
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/hhh1y3lmq48w44wo?key=directus-large-contain",
+                                    "relative_url": "\/tdt\/assets\/hhh1y3lmq48w44wo?key=directus-large-contain",
+                                    "dimension": "800x600",
+                                    "width": 800,
+                                    "height": 600
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/hhh1y3lmq48w44wo?key=thumbnail",
+                                    "relative_url": "\/tdt\/assets\/hhh1y3lmq48w44wo?key=thumbnail",
+                                    "dimension": "200x200",
+                                    "width": 200,
+                                    "height": 200
+                                }
+                            ],
+                            "embed": null
+                        }
+                    },
+                    "icone": "directions_bike"
+                },
+                {
+                    "id": 47,
+                    "type": "CAP",
+                    "distance": 2500,
+                    "course_id": {
+                        "id": 16,
+                        "date": "2024-09-14 09:00:00",
+                        "prix": 22,
+                        "type_de_course": "triathlon",
+                        "format": "xs",
+                        "specificite": "equipe",
+                        "complet": false,
+                        "precision": "Contre la montre par équipe de 3 à 5 personnes (prix par personne) qui effectuent ensemble un triathlon XS",
+                        "nombre_de_places": "120",
+                        "age": 14,
+                        "prix_pass_compet": 2,
+                        "recompense": null,
+                        "couleur": "#64E0BE"
+                    },
+                    "description": null,
+                    "affichage_distance": "km",
+                    "image": null,
+                    "icone": "directions_run"
+                }
+            ],
+            "medias": [
+                {
+                    "id": 64,
+                    "description": "Parcours vélo XS équipe 2024",
+                    "course_id": {
+                        "id": 16,
+                        "date": "2024-09-14 09:00:00",
+                        "prix": 22,
+                        "type_de_course": "triathlon",
+                        "format": "xs",
+                        "specificite": "equipe",
+                        "complet": false,
+                        "precision": "Contre la montre par équipe de 3 à 5 personnes (prix par personne) qui effectuent ensemble un triathlon XS",
+                        "nombre_de_places": "120",
+                        "age": 14,
+                        "prix_pass_compet": 2,
+                        "recompense": null,
+                        "couleur": "#64E0BE"
+                    },
+                    "contenu": {
+                        "id": 344,
+                        "storage": "local",
+                        "private_hash": "d6aruch3jhss0o8s",
+                        "filename_disk": "b8a4f6e8-9ac5-4789-b921-2b67157a4b72.jpg",
+                        "filename_download": "Parcours vélo XS.jpg",
+                        "title": "Parcours Vélo Xs",
+                        "type": "image\/jpeg",
+                        "uploaded_by": 12,
+                        "uploaded_on": "2024-07-09T17:22:25+00:00",
+                        "charset": "binary",
+                        "filesize": 128202,
+                        "width": 888,
+                        "height": 576,
+                        "duration": 0,
+                        "embed": null,
+                        "folder": null,
+                        "description": "",
+                        "location": "",
+                        "tags": [],
+                        "checksum": "b29ef6250d8af30b28dcfb7c8c8b09b4",
+                        "metadata": null,
+                        "data": {
+                            "full_url": "http:\/\/www.triathlondetoulouse.com\/assets\/uploads\/originals\/b8a4f6e8-9ac5-4789-b921-2b67157a4b72.jpg",
+                            "url": "http:\/\/www.triathlondetoulouse.com\/assets\/uploads\/originals\/b8a4f6e8-9ac5-4789-b921-2b67157a4b72.jpg",
+                            "thumbnails": [
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/d6aruch3jhss0o8s?key=directus-small-crop",
+                                    "relative_url": "\/tdt\/assets\/d6aruch3jhss0o8s?key=directus-small-crop",
+                                    "dimension": "64x64",
+                                    "width": 64,
+                                    "height": 64
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/d6aruch3jhss0o8s?key=directus-small-contain",
+                                    "relative_url": "\/tdt\/assets\/d6aruch3jhss0o8s?key=directus-small-contain",
+                                    "dimension": "64x64",
+                                    "width": 64,
+                                    "height": 64
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/d6aruch3jhss0o8s?key=directus-medium-crop",
+                                    "relative_url": "\/tdt\/assets\/d6aruch3jhss0o8s?key=directus-medium-crop",
+                                    "dimension": "300x300",
+                                    "width": 300,
+                                    "height": 300
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/d6aruch3jhss0o8s?key=directus-medium-contain",
+                                    "relative_url": "\/tdt\/assets\/d6aruch3jhss0o8s?key=directus-medium-contain",
+                                    "dimension": "300x300",
+                                    "width": 300,
+                                    "height": 300
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/d6aruch3jhss0o8s?key=directus-large-crop",
+                                    "relative_url": "\/tdt\/assets\/d6aruch3jhss0o8s?key=directus-large-crop",
+                                    "dimension": "800x600",
+                                    "width": 800,
+                                    "height": 600
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/d6aruch3jhss0o8s?key=directus-large-contain",
+                                    "relative_url": "\/tdt\/assets\/d6aruch3jhss0o8s?key=directus-large-contain",
+                                    "dimension": "800x600",
+                                    "width": 800,
+                                    "height": 600
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/d6aruch3jhss0o8s?key=thumbnail",
+                                    "relative_url": "\/tdt\/assets\/d6aruch3jhss0o8s?key=thumbnail",
+                                    "dimension": "200x200",
+                                    "width": 200,
+                                    "height": 200
+                                }
+                            ],
+                            "embed": null
+                        }
+                    }
+                },
+                {
+                    "id": 77,
+                    "description": "parcours course à pied XS équipe 2024",
+                    "course_id": {
+                        "id": 16,
+                        "date": "2024-09-14 09:00:00",
+                        "prix": 22,
+                        "type_de_course": "triathlon",
+                        "format": "xs",
+                        "specificite": "equipe",
+                        "complet": false,
+                        "precision": "Contre la montre par équipe de 3 à 5 personnes (prix par personne) qui effectuent ensemble un triathlon XS",
+                        "nombre_de_places": "120",
+                        "age": 14,
+                        "prix_pass_compet": 2,
+                        "recompense": null,
+                        "couleur": "#64E0BE"
+                    },
+                    "contenu": {
+                        "id": 360,
+                        "storage": "local",
+                        "private_hash": "jtal3350fdccc88s",
+                        "filename_disk": "67785438-839a-4cf6-9404-c9ce4a9095aa.jpg",
+                        "filename_download": "Parcours cap XS.jpg",
+                        "title": "Parcours Cap Xs",
+                        "type": "image\/jpeg",
+                        "uploaded_by": 12,
+                        "uploaded_on": "2024-07-11T15:35:45+00:00",
+                        "charset": "binary",
+                        "filesize": 94493,
+                        "width": 990,
+                        "height": 718,
+                        "duration": 0,
+                        "embed": null,
+                        "folder": null,
+                        "description": "",
+                        "location": "",
+                        "tags": [],
+                        "checksum": "bdebaa74a50353892dbca85347e0292e",
+                        "metadata": null,
+                        "data": {
+                            "full_url": "http:\/\/www.triathlondetoulouse.com\/assets\/uploads\/originals\/67785438-839a-4cf6-9404-c9ce4a9095aa.jpg",
+                            "url": "http:\/\/www.triathlondetoulouse.com\/assets\/uploads\/originals\/67785438-839a-4cf6-9404-c9ce4a9095aa.jpg",
+                            "thumbnails": [
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/jtal3350fdccc88s?key=directus-small-crop",
+                                    "relative_url": "\/tdt\/assets\/jtal3350fdccc88s?key=directus-small-crop",
+                                    "dimension": "64x64",
+                                    "width": 64,
+                                    "height": 64
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/jtal3350fdccc88s?key=directus-small-contain",
+                                    "relative_url": "\/tdt\/assets\/jtal3350fdccc88s?key=directus-small-contain",
+                                    "dimension": "64x64",
+                                    "width": 64,
+                                    "height": 64
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/jtal3350fdccc88s?key=directus-medium-crop",
+                                    "relative_url": "\/tdt\/assets\/jtal3350fdccc88s?key=directus-medium-crop",
+                                    "dimension": "300x300",
+                                    "width": 300,
+                                    "height": 300
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/jtal3350fdccc88s?key=directus-medium-contain",
+                                    "relative_url": "\/tdt\/assets\/jtal3350fdccc88s?key=directus-medium-contain",
+                                    "dimension": "300x300",
+                                    "width": 300,
+                                    "height": 300
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/jtal3350fdccc88s?key=directus-large-crop",
+                                    "relative_url": "\/tdt\/assets\/jtal3350fdccc88s?key=directus-large-crop",
+                                    "dimension": "800x600",
+                                    "width": 800,
+                                    "height": 600
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/jtal3350fdccc88s?key=directus-large-contain",
+                                    "relative_url": "\/tdt\/assets\/jtal3350fdccc88s?key=directus-large-contain",
+                                    "dimension": "800x600",
+                                    "width": 800,
+                                    "height": 600
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/jtal3350fdccc88s?key=thumbnail",
+                                    "relative_url": "\/tdt\/assets\/jtal3350fdccc88s?key=thumbnail",
+                                    "dimension": "200x200",
+                                    "width": 200,
+                                    "height": 200
+                                }
+                            ],
+                            "embed": null
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": 17,
+            "horraire_dossard": "2024-09-14 08:00:00",
+            "date": "2024-09-14 12:00:00",
+            "prix": 6,
+            "type_de_course": "aquathlon",
+            "format": "6-9",
+            "specificite": null,
+            "complet": false,
+            "precision": "Individuel 6-9 ans",
+            "nombre_de_places": "50",
+            "age": 6,
+            "prix_pass_compet": 2,
+            "recompense": null,
+            "couleur": "#8CE0EA",
+            "etapes": [
+                {
+                    "id": 48,
+                    "type": "Natation",
+                    "distance": 50,
+                    "course_id": {
+                        "id": 17,
+                        "date": "2024-09-14 12:00:00",
+                        "prix": 6,
+                        "type_de_course": "aquathlon",
+                        "format": "6-9",
+                        "specificite": null,
+                        "complet": false,
+                        "precision": "Individuel 6-9 ans",
+                        "nombre_de_places": "50",
+                        "age": 6,
+                        "prix_pass_compet": 2,
+                        "recompense": null,
+                        "couleur": "#8CE0EA"
+                    },
+                    "description": null,
+                    "affichage_distance": "m",
+                    "image": null,
+                    "icone": "pool"
+                },
+                {
+                    "id": 49,
+                    "type": "CAP",
+                    "distance": 500,
+                    "course_id": {
+                        "id": 17,
+                        "date": "2024-09-14 12:00:00",
+                        "prix": 6,
+                        "type_de_course": "aquathlon",
+                        "format": "6-9",
+                        "specificite": null,
+                        "complet": false,
+                        "precision": "Individuel 6-9 ans",
+                        "nombre_de_places": "50",
+                        "age": 6,
+                        "prix_pass_compet": 2,
+                        "recompense": null,
+                        "couleur": "#8CE0EA"
+                    },
+                    "description": null,
+                    "affichage_distance": "m",
+                    "image": null,
+                    "icone": "directions_run"
+                }
+            ],
+            "medias": []
+        },
+        {
+            "id": 18,
+            "horraire_dossard": "2024-09-14 08:00:00",
+            "date": "2024-09-14 12:20:00",
+            "prix": 12,
+            "type_de_course": "aquathlon",
+            "format": "6-9",
+            "specificite": "equipe",
+            "complet": false,
+            "precision": "Equipe enfant-parent  - 6-9 ans (prix par équipe)",
+            "nombre_de_places": "50",
+            "age": 6,
+            "prix_pass_compet": 2,
+            "recompense": null,
+            "couleur": "#54C3D6",
+            "etapes": [
+                {
+                    "id": 50,
+                    "type": "Natation",
+                    "distance": 50,
+                    "course_id": {
+                        "id": 18,
+                        "date": "2024-09-14 12:20:00",
+                        "prix": 12,
+                        "type_de_course": "aquathlon",
+                        "format": "6-9",
+                        "specificite": "equipe",
+                        "complet": false,
+                        "precision": "Equipe enfant-parent  - 6-9 ans (prix par équipe)",
+                        "nombre_de_places": "50",
+                        "age": 6,
+                        "prix_pass_compet": 2,
+                        "recompense": null,
+                        "couleur": "#54C3D6"
+                    },
+                    "description": null,
+                    "affichage_distance": "m",
+                    "image": null,
+                    "icone": "pool"
+                },
+                {
+                    "id": 51,
+                    "type": "CAP",
+                    "distance": 500,
+                    "course_id": {
+                        "id": 18,
+                        "date": "2024-09-14 12:20:00",
+                        "prix": 12,
+                        "type_de_course": "aquathlon",
+                        "format": "6-9",
+                        "specificite": "equipe",
+                        "complet": false,
+                        "precision": "Equipe enfant-parent  - 6-9 ans (prix par équipe)",
+                        "nombre_de_places": "50",
+                        "age": 6,
+                        "prix_pass_compet": 2,
+                        "recompense": null,
+                        "couleur": "#54C3D6"
+                    },
+                    "description": null,
+                    "affichage_distance": "m",
+                    "image": null,
+                    "icone": "directions_run"
+                }
+            ],
+            "medias": []
+        },
+        {
+            "id": 19,
+            "horraire_dossard": "2024-09-14 08:00:00",
+            "date": "2024-09-14 12:40:00",
+            "prix": 6,
+            "type_de_course": "aquathlon",
+            "format": "10-13",
+            "specificite": null,
+            "complet": false,
+            "precision": "Individuel 10-13 ans",
+            "nombre_de_places": "50",
+            "age": 10,
+            "prix_pass_compet": 2,
+            "recompense": null,
+            "couleur": "#8CE0EA",
+            "etapes": [
+                {
+                    "id": 52,
+                    "type": "Natation",
+                    "distance": 200,
+                    "course_id": {
+                        "id": 19,
+                        "date": "2024-09-14 12:40:00",
+                        "prix": 6,
+                        "type_de_course": "aquathlon",
+                        "format": "10-13",
+                        "specificite": null,
+                        "complet": false,
+                        "precision": "Individuel 10-13 ans",
+                        "nombre_de_places": "50",
+                        "age": 10,
+                        "prix_pass_compet": 2,
+                        "recompense": null,
+                        "couleur": "#8CE0EA"
+                    },
+                    "description": null,
+                    "affichage_distance": "m",
+                    "image": null,
+                    "icone": "pool"
+                },
+                {
+                    "id": 53,
+                    "type": "CAP",
+                    "distance": 1500,
+                    "course_id": {
+                        "id": 19,
+                        "date": "2024-09-14 12:40:00",
+                        "prix": 6,
+                        "type_de_course": "aquathlon",
+                        "format": "10-13",
+                        "specificite": null,
+                        "complet": false,
+                        "precision": "Individuel 10-13 ans",
+                        "nombre_de_places": "50",
+                        "age": 10,
+                        "prix_pass_compet": 2,
+                        "recompense": null,
+                        "couleur": "#8CE0EA"
+                    },
+                    "description": null,
+                    "affichage_distance": "m",
+                    "image": null,
+                    "icone": "directions_run"
+                }
+            ],
+            "medias": []
+        },
+        {
+            "id": 23,
+            "horraire_dossard": "2024-09-14 08:00:00",
+            "date": "2024-09-14 13:00:00",
+            "prix": 12,
+            "type_de_course": "aquathlon",
+            "format": "10-13",
+            "specificite": "equipe",
+            "complet": false,
+            "precision": "Equipe enfant-parent - 10-13 ans (prix par équipe)",
+            "nombre_de_places": "50",
+            "age": 10,
+            "prix_pass_compet": 2,
+            "recompense": null,
+            "couleur": "#54C3D6",
+            "etapes": [
+                {
+                    "id": 65,
+                    "type": "Natation",
+                    "distance": 200,
+                    "course_id": {
+                        "id": 23,
+                        "date": "2024-09-14 13:00:00",
+                        "prix": 12,
+                        "type_de_course": "aquathlon",
+                        "format": "10-13",
+                        "specificite": "equipe",
+                        "complet": false,
+                        "precision": "Equipe enfant-parent - 10-13 ans (prix par équipe)",
+                        "nombre_de_places": "50",
+                        "age": 10,
+                        "prix_pass_compet": 2,
+                        "recompense": null,
+                        "couleur": "#54C3D6"
+                    },
+                    "description": null,
+                    "affichage_distance": "m",
+                    "image": null,
+                    "icone": "pool"
+                },
+                {
+                    "id": 66,
+                    "type": "CAP",
+                    "distance": 1500,
+                    "course_id": {
+                        "id": 23,
+                        "date": "2024-09-14 13:00:00",
+                        "prix": 12,
+                        "type_de_course": "aquathlon",
+                        "format": "10-13",
+                        "specificite": "equipe",
+                        "complet": false,
+                        "precision": "Equipe enfant-parent - 10-13 ans (prix par équipe)",
+                        "nombre_de_places": "50",
+                        "age": 10,
+                        "prix_pass_compet": 2,
+                        "recompense": null,
+                        "couleur": "#54C3D6"
+                    },
+                    "description": null,
+                    "affichage_distance": "m",
+                    "image": null,
+                    "icone": "directions_run"
+                }
+            ],
+            "medias": []
+        },
+        {
+            "id": 7,
+            "horraire_dossard": "2024-09-14 08:00:00",
+            "date": "2024-09-14 14:30:00",
+            "prix": 33,
+            "type_de_course": "triathlon",
+            "format": "s",
+            "specificite": null,
+            "complet": false,
+            "precision": "Individuel",
+            "nombre_de_places": "600",
+            "age": 16,
+            "prix_pass_compet": 5,
+            "recompense": "<p>A venir<\/p>",
+            "couleur": "#FBC547",
+            "etapes": [
+                {
+                    "id": 17,
+                    "type": "Natation",
+                    "distance": 750,
+                    "course_id": {
+                        "id": 7,
+                        "date": "2024-09-14 14:30:00",
+                        "prix": 33,
+                        "type_de_course": "triathlon",
+                        "format": "s",
+                        "specificite": null,
+                        "complet": false,
+                        "precision": "Individuel",
+                        "nombre_de_places": "600",
+                        "age": 16,
+                        "prix_pass_compet": 5,
+                        "recompense": "<p>A venir<\/p>",
+                        "couleur": "#FBC547"
+                    },
+                    "description": null,
+                    "affichage_distance": "m",
+                    "image": null,
+                    "icone": "pool"
+                },
+                {
+                    "id": 18,
+                    "type": "Velo",
+                    "distance": 23000,
+                    "course_id": {
+                        "id": 7,
+                        "date": "2024-09-14 14:30:00",
+                        "prix": 33,
+                        "type_de_course": "triathlon",
+                        "format": "s",
+                        "specificite": null,
+                        "complet": false,
+                        "precision": "Individuel",
+                        "nombre_de_places": "600",
+                        "age": 16,
+                        "prix_pass_compet": 5,
+                        "recompense": "<p>A venir<\/p>",
+                        "couleur": "#FBC547"
+                    },
+                    "description": null,
+                    "affichage_distance": "km",
+                    "image": {
+                        "id": 200,
+                        "storage": "local",
+                        "private_hash": "l7shumq4wb48sg4o",
+                        "filename_disk": "c3cea64a-8cf2-4302-866d-6b96a533033a.png",
+                        "filename_download": "ParcoursVelo_XS_S.png",
+                        "title": "Parcoursvelo Xs S",
+                        "type": "image\/png",
+                        "uploaded_by": 2,
+                        "uploaded_on": "2021-09-07T20:30:04+00:00",
+                        "charset": "binary",
+                        "filesize": 256944,
+                        "width": 721,
+                        "height": 633,
+                        "duration": 0,
+                        "embed": null,
+                        "folder": null,
+                        "description": "",
+                        "location": "",
+                        "tags": [],
+                        "checksum": "0f28fe0a8fe431e42869d589eda4090e",
+                        "metadata": null,
+                        "data": {
+                            "full_url": "http:\/\/www.triathlondetoulouse.com\/assets\/uploads\/originals\/c3cea64a-8cf2-4302-866d-6b96a533033a.png",
+                            "url": "http:\/\/www.triathlondetoulouse.com\/assets\/uploads\/originals\/c3cea64a-8cf2-4302-866d-6b96a533033a.png",
+                            "thumbnails": [
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/l7shumq4wb48sg4o?key=directus-small-crop",
+                                    "relative_url": "\/tdt\/assets\/l7shumq4wb48sg4o?key=directus-small-crop",
+                                    "dimension": "64x64",
+                                    "width": 64,
+                                    "height": 64
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/l7shumq4wb48sg4o?key=directus-small-contain",
+                                    "relative_url": "\/tdt\/assets\/l7shumq4wb48sg4o?key=directus-small-contain",
+                                    "dimension": "64x64",
+                                    "width": 64,
+                                    "height": 64
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/l7shumq4wb48sg4o?key=directus-medium-crop",
+                                    "relative_url": "\/tdt\/assets\/l7shumq4wb48sg4o?key=directus-medium-crop",
+                                    "dimension": "300x300",
+                                    "width": 300,
+                                    "height": 300
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/l7shumq4wb48sg4o?key=directus-medium-contain",
+                                    "relative_url": "\/tdt\/assets\/l7shumq4wb48sg4o?key=directus-medium-contain",
+                                    "dimension": "300x300",
+                                    "width": 300,
+                                    "height": 300
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/l7shumq4wb48sg4o?key=directus-large-crop",
+                                    "relative_url": "\/tdt\/assets\/l7shumq4wb48sg4o?key=directus-large-crop",
+                                    "dimension": "800x600",
+                                    "width": 800,
+                                    "height": 600
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/l7shumq4wb48sg4o?key=directus-large-contain",
+                                    "relative_url": "\/tdt\/assets\/l7shumq4wb48sg4o?key=directus-large-contain",
+                                    "dimension": "800x600",
+                                    "width": 800,
+                                    "height": 600
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/l7shumq4wb48sg4o?key=thumbnail",
+                                    "relative_url": "\/tdt\/assets\/l7shumq4wb48sg4o?key=thumbnail",
+                                    "dimension": "200x200",
+                                    "width": 200,
+                                    "height": 200
+                                }
+                            ],
+                            "embed": null
+                        }
+                    },
+                    "icone": "directions_bike"
+                },
+                {
+                    "id": 19,
+                    "type": "CAP",
+                    "distance": 5000,
+                    "course_id": {
+                        "id": 7,
+                        "date": "2024-09-14 14:30:00",
+                        "prix": 33,
+                        "type_de_course": "triathlon",
+                        "format": "s",
+                        "specificite": null,
+                        "complet": false,
+                        "precision": "Individuel",
+                        "nombre_de_places": "600",
+                        "age": 16,
+                        "prix_pass_compet": 5,
+                        "recompense": "<p>A venir<\/p>",
+                        "couleur": "#FBC547"
+                    },
+                    "description": null,
+                    "affichage_distance": "km",
+                    "image": null,
+                    "icone": "directions_run"
+                }
+            ],
+            "medias": [
+                {
+                    "id": 62,
+                    "description": "Parcours vélo S 2024",
+                    "course_id": {
+                        "id": 7,
+                        "date": "2024-09-14 14:30:00",
+                        "prix": 33,
+                        "type_de_course": "triathlon",
+                        "format": "s",
+                        "specificite": null,
+                        "complet": false,
+                        "precision": "Individuel",
+                        "nombre_de_places": "600",
+                        "age": 16,
+                        "prix_pass_compet": 5,
+                        "recompense": "<p>A venir<\/p>",
+                        "couleur": "#FBC547"
+                    },
+                    "contenu": {
+                        "id": 342,
+                        "storage": "local",
+                        "private_hash": "8cltn1jv9d44ckow",
+                        "filename_disk": "2596b1e4-b1a6-434f-bb9e-cadbf2120b8d.jpg",
+                        "filename_download": "Parcours vélo S.jpg",
+                        "title": "Parcours Vélo S",
+                        "type": "image\/jpeg",
+                        "uploaded_by": 12,
+                        "uploaded_on": "2024-07-09T17:17:38+00:00",
+                        "charset": "binary",
+                        "filesize": 129490,
+                        "width": 888,
+                        "height": 576,
+                        "duration": 0,
+                        "embed": null,
+                        "folder": null,
+                        "description": "",
+                        "location": "",
+                        "tags": [],
+                        "checksum": "7a3c5257a1a7f52e663c0da611ec8b68",
+                        "metadata": null,
+                        "data": {
+                            "full_url": "http:\/\/www.triathlondetoulouse.com\/assets\/uploads\/originals\/2596b1e4-b1a6-434f-bb9e-cadbf2120b8d.jpg",
+                            "url": "http:\/\/www.triathlondetoulouse.com\/assets\/uploads\/originals\/2596b1e4-b1a6-434f-bb9e-cadbf2120b8d.jpg",
+                            "thumbnails": [
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/8cltn1jv9d44ckow?key=directus-small-crop",
+                                    "relative_url": "\/tdt\/assets\/8cltn1jv9d44ckow?key=directus-small-crop",
+                                    "dimension": "64x64",
+                                    "width": 64,
+                                    "height": 64
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/8cltn1jv9d44ckow?key=directus-small-contain",
+                                    "relative_url": "\/tdt\/assets\/8cltn1jv9d44ckow?key=directus-small-contain",
+                                    "dimension": "64x64",
+                                    "width": 64,
+                                    "height": 64
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/8cltn1jv9d44ckow?key=directus-medium-crop",
+                                    "relative_url": "\/tdt\/assets\/8cltn1jv9d44ckow?key=directus-medium-crop",
+                                    "dimension": "300x300",
+                                    "width": 300,
+                                    "height": 300
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/8cltn1jv9d44ckow?key=directus-medium-contain",
+                                    "relative_url": "\/tdt\/assets\/8cltn1jv9d44ckow?key=directus-medium-contain",
+                                    "dimension": "300x300",
+                                    "width": 300,
+                                    "height": 300
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/8cltn1jv9d44ckow?key=directus-large-crop",
+                                    "relative_url": "\/tdt\/assets\/8cltn1jv9d44ckow?key=directus-large-crop",
+                                    "dimension": "800x600",
+                                    "width": 800,
+                                    "height": 600
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/8cltn1jv9d44ckow?key=directus-large-contain",
+                                    "relative_url": "\/tdt\/assets\/8cltn1jv9d44ckow?key=directus-large-contain",
+                                    "dimension": "800x600",
+                                    "width": 800,
+                                    "height": 600
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/8cltn1jv9d44ckow?key=thumbnail",
+                                    "relative_url": "\/tdt\/assets\/8cltn1jv9d44ckow?key=thumbnail",
+                                    "dimension": "200x200",
+                                    "width": 200,
+                                    "height": 200
+                                }
+                            ],
+                            "embed": null
+                        }
+                    }
+                },
+                {
+                    "id": 78,
+                    "description": "Parcours course à pied S 2024",
+                    "course_id": {
+                        "id": 7,
+                        "date": "2024-09-14 14:30:00",
+                        "prix": 33,
+                        "type_de_course": "triathlon",
+                        "format": "s",
+                        "specificite": null,
+                        "complet": false,
+                        "precision": "Individuel",
+                        "nombre_de_places": "600",
+                        "age": 16,
+                        "prix_pass_compet": 5,
+                        "recompense": "<p>A venir<\/p>",
+                        "couleur": "#FBC547"
+                    },
+                    "contenu": {
+                        "id": 361,
+                        "storage": "local",
+                        "private_hash": "pamchxvcoms8s4k4",
+                        "filename_disk": "53ac3340-9913-4f8b-8d5e-96c7fe0bd1b8.jpg",
+                        "filename_download": "Parcours cap S.jpg",
+                        "title": "Parcours Cap S",
+                        "type": "image\/jpeg",
+                        "uploaded_by": 12,
+                        "uploaded_on": "2024-07-11T15:37:39+00:00",
+                        "charset": "binary",
+                        "filesize": 122289,
+                        "width": 997,
+                        "height": 721,
+                        "duration": 0,
+                        "embed": null,
+                        "folder": null,
+                        "description": "",
+                        "location": "",
+                        "tags": [],
+                        "checksum": "27a1433054bde7c495d3b5b7ac8e6c0d",
+                        "metadata": null,
+                        "data": {
+                            "full_url": "http:\/\/www.triathlondetoulouse.com\/assets\/uploads\/originals\/53ac3340-9913-4f8b-8d5e-96c7fe0bd1b8.jpg",
+                            "url": "http:\/\/www.triathlondetoulouse.com\/assets\/uploads\/originals\/53ac3340-9913-4f8b-8d5e-96c7fe0bd1b8.jpg",
+                            "thumbnails": [
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/pamchxvcoms8s4k4?key=directus-small-crop",
+                                    "relative_url": "\/tdt\/assets\/pamchxvcoms8s4k4?key=directus-small-crop",
+                                    "dimension": "64x64",
+                                    "width": 64,
+                                    "height": 64
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/pamchxvcoms8s4k4?key=directus-small-contain",
+                                    "relative_url": "\/tdt\/assets\/pamchxvcoms8s4k4?key=directus-small-contain",
+                                    "dimension": "64x64",
+                                    "width": 64,
+                                    "height": 64
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/pamchxvcoms8s4k4?key=directus-medium-crop",
+                                    "relative_url": "\/tdt\/assets\/pamchxvcoms8s4k4?key=directus-medium-crop",
+                                    "dimension": "300x300",
+                                    "width": 300,
+                                    "height": 300
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/pamchxvcoms8s4k4?key=directus-medium-contain",
+                                    "relative_url": "\/tdt\/assets\/pamchxvcoms8s4k4?key=directus-medium-contain",
+                                    "dimension": "300x300",
+                                    "width": 300,
+                                    "height": 300
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/pamchxvcoms8s4k4?key=directus-large-crop",
+                                    "relative_url": "\/tdt\/assets\/pamchxvcoms8s4k4?key=directus-large-crop",
+                                    "dimension": "800x600",
+                                    "width": 800,
+                                    "height": 600
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/pamchxvcoms8s4k4?key=directus-large-contain",
+                                    "relative_url": "\/tdt\/assets\/pamchxvcoms8s4k4?key=directus-large-contain",
+                                    "dimension": "800x600",
+                                    "width": 800,
+                                    "height": 600
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/pamchxvcoms8s4k4?key=thumbnail",
+                                    "relative_url": "\/tdt\/assets\/pamchxvcoms8s4k4?key=thumbnail",
+                                    "dimension": "200x200",
+                                    "width": 200,
+                                    "height": 200
+                                }
+                            ],
+                            "embed": null
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "horraire_dossard": "2024-09-14 08:00:00",
+            "date": "2024-09-14 14:30:00",
+            "prix": 50,
+            "type_de_course": "triathlon",
+            "format": "s",
+            "specificite": "relais",
+            "complet": false,
+            "precision": "Relais de 2 ou 3 personnes (prix par équipe)",
+            "nombre_de_places": "100",
+            "age": 16,
+            "prix_pass_compet": 2,
+            "recompense": "<p>A venir<\/p>",
+            "couleur": "#FFE74F",
+            "etapes": [
+                {
+                    "id": 20,
+                    "type": "Natation",
+                    "distance": 750,
+                    "course_id": {
+                        "id": 8,
+                        "date": "2024-09-14 14:30:00",
+                        "prix": 50,
+                        "type_de_course": "triathlon",
+                        "format": "s",
+                        "specificite": "relais",
+                        "complet": false,
+                        "precision": "Relais de 2 ou 3 personnes (prix par équipe)",
+                        "nombre_de_places": "100",
+                        "age": 16,
+                        "prix_pass_compet": 2,
+                        "recompense": "<p>A venir<\/p>",
+                        "couleur": "#FFE74F"
+                    },
+                    "description": null,
+                    "affichage_distance": "m",
+                    "image": null,
+                    "icone": "pool"
+                },
+                {
+                    "id": 21,
+                    "type": "Velo",
+                    "distance": 23000,
+                    "course_id": {
+                        "id": 8,
+                        "date": "2024-09-14 14:30:00",
+                        "prix": 50,
+                        "type_de_course": "triathlon",
+                        "format": "s",
+                        "specificite": "relais",
+                        "complet": false,
+                        "precision": "Relais de 2 ou 3 personnes (prix par équipe)",
+                        "nombre_de_places": "100",
+                        "age": 16,
+                        "prix_pass_compet": 2,
+                        "recompense": "<p>A venir<\/p>",
+                        "couleur": "#FFE74F"
+                    },
+                    "description": null,
+                    "affichage_distance": "km",
+                    "image": {
+                        "id": 203,
+                        "storage": "local",
+                        "private_hash": "mykr30wyoogs8c8k",
+                        "filename_disk": "6f6ac9ec-0217-4ad3-8d9f-086e4c8e22b3.png",
+                        "filename_download": "ParcoursVelo_XS_S.png",
+                        "title": "Parcoursvelo Xs S",
+                        "type": "image\/png",
+                        "uploaded_by": 2,
+                        "uploaded_on": "2021-09-07T20:30:39+00:00",
+                        "charset": "binary",
+                        "filesize": 256944,
+                        "width": 721,
+                        "height": 633,
+                        "duration": 0,
+                        "embed": null,
+                        "folder": null,
+                        "description": "",
+                        "location": "",
+                        "tags": [],
+                        "checksum": "0f28fe0a8fe431e42869d589eda4090e",
+                        "metadata": null,
+                        "data": {
+                            "full_url": "http:\/\/www.triathlondetoulouse.com\/assets\/uploads\/originals\/6f6ac9ec-0217-4ad3-8d9f-086e4c8e22b3.png",
+                            "url": "http:\/\/www.triathlondetoulouse.com\/assets\/uploads\/originals\/6f6ac9ec-0217-4ad3-8d9f-086e4c8e22b3.png",
+                            "thumbnails": [
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/mykr30wyoogs8c8k?key=directus-small-crop",
+                                    "relative_url": "\/tdt\/assets\/mykr30wyoogs8c8k?key=directus-small-crop",
+                                    "dimension": "64x64",
+                                    "width": 64,
+                                    "height": 64
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/mykr30wyoogs8c8k?key=directus-small-contain",
+                                    "relative_url": "\/tdt\/assets\/mykr30wyoogs8c8k?key=directus-small-contain",
+                                    "dimension": "64x64",
+                                    "width": 64,
+                                    "height": 64
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/mykr30wyoogs8c8k?key=directus-medium-crop",
+                                    "relative_url": "\/tdt\/assets\/mykr30wyoogs8c8k?key=directus-medium-crop",
+                                    "dimension": "300x300",
+                                    "width": 300,
+                                    "height": 300
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/mykr30wyoogs8c8k?key=directus-medium-contain",
+                                    "relative_url": "\/tdt\/assets\/mykr30wyoogs8c8k?key=directus-medium-contain",
+                                    "dimension": "300x300",
+                                    "width": 300,
+                                    "height": 300
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/mykr30wyoogs8c8k?key=directus-large-crop",
+                                    "relative_url": "\/tdt\/assets\/mykr30wyoogs8c8k?key=directus-large-crop",
+                                    "dimension": "800x600",
+                                    "width": 800,
+                                    "height": 600
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/mykr30wyoogs8c8k?key=directus-large-contain",
+                                    "relative_url": "\/tdt\/assets\/mykr30wyoogs8c8k?key=directus-large-contain",
+                                    "dimension": "800x600",
+                                    "width": 800,
+                                    "height": 600
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/mykr30wyoogs8c8k?key=thumbnail",
+                                    "relative_url": "\/tdt\/assets\/mykr30wyoogs8c8k?key=thumbnail",
+                                    "dimension": "200x200",
+                                    "width": 200,
+                                    "height": 200
+                                }
+                            ],
+                            "embed": null
+                        }
+                    },
+                    "icone": "directions_bike"
+                },
+                {
+                    "id": 22,
+                    "type": "CAP",
+                    "distance": 5000,
+                    "course_id": {
+                        "id": 8,
+                        "date": "2024-09-14 14:30:00",
+                        "prix": 50,
+                        "type_de_course": "triathlon",
+                        "format": "s",
+                        "specificite": "relais",
+                        "complet": false,
+                        "precision": "Relais de 2 ou 3 personnes (prix par équipe)",
+                        "nombre_de_places": "100",
+                        "age": 16,
+                        "prix_pass_compet": 2,
+                        "recompense": "<p>A venir<\/p>",
+                        "couleur": "#FFE74F"
+                    },
+                    "description": null,
+                    "affichage_distance": "km",
+                    "image": null,
+                    "icone": "directions_run"
+                }
+            ],
+            "medias": [
+                {
+                    "id": 67,
+                    "description": "Parcours vélo S relais 2024",
+                    "course_id": {
+                        "id": 8,
+                        "date": "2024-09-14 14:30:00",
+                        "prix": 50,
+                        "type_de_course": "triathlon",
+                        "format": "s",
+                        "specificite": "relais",
+                        "complet": false,
+                        "precision": "Relais de 2 ou 3 personnes (prix par équipe)",
+                        "nombre_de_places": "100",
+                        "age": 16,
+                        "prix_pass_compet": 2,
+                        "recompense": "<p>A venir<\/p>",
+                        "couleur": "#FFE74F"
+                    },
+                    "contenu": {
+                        "id": 349,
+                        "storage": "local",
+                        "private_hash": "mg6j87inpz4wsc0g",
+                        "filename_disk": "39567161-d686-4075-afb5-b71449d1f62d.jpg",
+                        "filename_download": "Parcours vélo S.jpg",
+                        "title": "Parcours Vélo S",
+                        "type": "image\/jpeg",
+                        "uploaded_by": 12,
+                        "uploaded_on": "2024-07-11T15:27:03+00:00",
+                        "charset": "binary",
+                        "filesize": 129490,
+                        "width": 888,
+                        "height": 576,
+                        "duration": 0,
+                        "embed": null,
+                        "folder": null,
+                        "description": "",
+                        "location": "",
+                        "tags": [],
+                        "checksum": "7a3c5257a1a7f52e663c0da611ec8b68",
+                        "metadata": null,
+                        "data": {
+                            "full_url": "http:\/\/www.triathlondetoulouse.com\/assets\/uploads\/originals\/39567161-d686-4075-afb5-b71449d1f62d.jpg",
+                            "url": "http:\/\/www.triathlondetoulouse.com\/assets\/uploads\/originals\/39567161-d686-4075-afb5-b71449d1f62d.jpg",
+                            "thumbnails": [
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/mg6j87inpz4wsc0g?key=directus-small-crop",
+                                    "relative_url": "\/tdt\/assets\/mg6j87inpz4wsc0g?key=directus-small-crop",
+                                    "dimension": "64x64",
+                                    "width": 64,
+                                    "height": 64
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/mg6j87inpz4wsc0g?key=directus-small-contain",
+                                    "relative_url": "\/tdt\/assets\/mg6j87inpz4wsc0g?key=directus-small-contain",
+                                    "dimension": "64x64",
+                                    "width": 64,
+                                    "height": 64
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/mg6j87inpz4wsc0g?key=directus-medium-crop",
+                                    "relative_url": "\/tdt\/assets\/mg6j87inpz4wsc0g?key=directus-medium-crop",
+                                    "dimension": "300x300",
+                                    "width": 300,
+                                    "height": 300
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/mg6j87inpz4wsc0g?key=directus-medium-contain",
+                                    "relative_url": "\/tdt\/assets\/mg6j87inpz4wsc0g?key=directus-medium-contain",
+                                    "dimension": "300x300",
+                                    "width": 300,
+                                    "height": 300
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/mg6j87inpz4wsc0g?key=directus-large-crop",
+                                    "relative_url": "\/tdt\/assets\/mg6j87inpz4wsc0g?key=directus-large-crop",
+                                    "dimension": "800x600",
+                                    "width": 800,
+                                    "height": 600
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/mg6j87inpz4wsc0g?key=directus-large-contain",
+                                    "relative_url": "\/tdt\/assets\/mg6j87inpz4wsc0g?key=directus-large-contain",
+                                    "dimension": "800x600",
+                                    "width": 800,
+                                    "height": 600
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/mg6j87inpz4wsc0g?key=thumbnail",
+                                    "relative_url": "\/tdt\/assets\/mg6j87inpz4wsc0g?key=thumbnail",
+                                    "dimension": "200x200",
+                                    "width": 200,
+                                    "height": 200
+                                }
+                            ],
+                            "embed": null
+                        }
+                    }
+                },
+                {
+                    "id": 68,
+                    "description": "Parcours course à pied S relais 2024",
+                    "course_id": {
+                        "id": 8,
+                        "date": "2024-09-14 14:30:00",
+                        "prix": 50,
+                        "type_de_course": "triathlon",
+                        "format": "s",
+                        "specificite": "relais",
+                        "complet": false,
+                        "precision": "Relais de 2 ou 3 personnes (prix par équipe)",
+                        "nombre_de_places": "100",
+                        "age": 16,
+                        "prix_pass_compet": 2,
+                        "recompense": "<p>A venir<\/p>",
+                        "couleur": "#FFE74F"
+                    },
+                    "contenu": {
+                        "id": 350,
+                        "storage": "local",
+                        "private_hash": "2k7gwt8lwda8wgw0",
+                        "filename_disk": "35d2f995-2433-48e1-948a-4239da78387e.jpg",
+                        "filename_download": "Parcours cap S.jpg",
+                        "title": "Parcours Cap S",
+                        "type": "image\/jpeg",
+                        "uploaded_by": 12,
+                        "uploaded_on": "2024-07-11T15:27:22+00:00",
+                        "charset": "binary",
+                        "filesize": 122289,
+                        "width": 997,
+                        "height": 721,
+                        "duration": 0,
+                        "embed": null,
+                        "folder": null,
+                        "description": "",
+                        "location": "",
+                        "tags": [],
+                        "checksum": "27a1433054bde7c495d3b5b7ac8e6c0d",
+                        "metadata": null,
+                        "data": {
+                            "full_url": "http:\/\/www.triathlondetoulouse.com\/assets\/uploads\/originals\/35d2f995-2433-48e1-948a-4239da78387e.jpg",
+                            "url": "http:\/\/www.triathlondetoulouse.com\/assets\/uploads\/originals\/35d2f995-2433-48e1-948a-4239da78387e.jpg",
+                            "thumbnails": [
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/2k7gwt8lwda8wgw0?key=directus-small-crop",
+                                    "relative_url": "\/tdt\/assets\/2k7gwt8lwda8wgw0?key=directus-small-crop",
+                                    "dimension": "64x64",
+                                    "width": 64,
+                                    "height": 64
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/2k7gwt8lwda8wgw0?key=directus-small-contain",
+                                    "relative_url": "\/tdt\/assets\/2k7gwt8lwda8wgw0?key=directus-small-contain",
+                                    "dimension": "64x64",
+                                    "width": 64,
+                                    "height": 64
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/2k7gwt8lwda8wgw0?key=directus-medium-crop",
+                                    "relative_url": "\/tdt\/assets\/2k7gwt8lwda8wgw0?key=directus-medium-crop",
+                                    "dimension": "300x300",
+                                    "width": 300,
+                                    "height": 300
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/2k7gwt8lwda8wgw0?key=directus-medium-contain",
+                                    "relative_url": "\/tdt\/assets\/2k7gwt8lwda8wgw0?key=directus-medium-contain",
+                                    "dimension": "300x300",
+                                    "width": 300,
+                                    "height": 300
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/2k7gwt8lwda8wgw0?key=directus-large-crop",
+                                    "relative_url": "\/tdt\/assets\/2k7gwt8lwda8wgw0?key=directus-large-crop",
+                                    "dimension": "800x600",
+                                    "width": 800,
+                                    "height": 600
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/2k7gwt8lwda8wgw0?key=directus-large-contain",
+                                    "relative_url": "\/tdt\/assets\/2k7gwt8lwda8wgw0?key=directus-large-contain",
+                                    "dimension": "800x600",
+                                    "width": 800,
+                                    "height": 600
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/2k7gwt8lwda8wgw0?key=thumbnail",
+                                    "relative_url": "\/tdt\/assets\/2k7gwt8lwda8wgw0?key=thumbnail",
+                                    "dimension": "200x200",
+                                    "width": 200,
+                                    "height": 200
+                                }
+                            ],
+                            "embed": null
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "date": "2024-09-14 18:00:00",
+            "prix": 33,
+            "type_de_course": "swimrun",
+            "format": "s",
+            "specificite": null,
+            "complet": false,
+            "precision": "Equipe de 2 personnes (prix par équipe)",
+            "nombre_de_places": "150",
+            "age": 16,
+            "prix_pass_compet": 2,
+            "recompense": "",
+            "couleur": "#A2D5E6",
+            "etapes": [
+                {
+                    "id": 32,
+                    "type": "CAP",
+                    "distance": 6440,
+                    "course_id": {
+                        "id": 12,
+                        "date": "2024-09-14 18:00:00",
+                        "prix": 33,
+                        "type_de_course": "swimrun",
+                        "format": "s",
+                        "specificite": null,
+                        "complet": false,
+                        "precision": "Equipe de 2 personnes (prix par équipe)",
+                        "nombre_de_places": "150",
+                        "age": 16,
+                        "prix_pass_compet": 2,
+                        "recompense": "",
+                        "couleur": "#A2D5E6"
+                    },
+                    "description": null,
+                    "affichage_distance": "km",
+                    "image": null,
+                    "icone": "directions_run"
+                },
+                {
+                    "id": 67,
+                    "type": "Natation",
+                    "distance": 1680,
+                    "course_id": {
+                        "id": 12,
+                        "date": "2024-09-14 18:00:00",
+                        "prix": 33,
+                        "type_de_course": "swimrun",
+                        "format": "s",
+                        "specificite": null,
+                        "complet": false,
+                        "precision": "Equipe de 2 personnes (prix par équipe)",
+                        "nombre_de_places": "150",
+                        "age": 16,
+                        "prix_pass_compet": 2,
+                        "recompense": "",
+                        "couleur": "#A2D5E6"
+                    },
+                    "description": null,
+                    "affichage_distance": "m",
+                    "image": null,
+                    "icone": "pool"
+                }
+            ],
+            "medias": [
+                {
+                    "id": 76,
+                    "description": "Parcours swim run 2024",
+                    "course_id": {
+                        "id": 12,
+                        "date": "2024-09-14 18:00:00",
+                        "prix": 33,
+                        "type_de_course": "swimrun",
+                        "format": "s",
+                        "specificite": null,
+                        "complet": false,
+                        "precision": "Equipe de 2 personnes (prix par équipe)",
+                        "nombre_de_places": "150",
+                        "age": 16,
+                        "prix_pass_compet": 2,
+                        "recompense": "",
+                        "couleur": "#A2D5E6"
+                    },
+                    "contenu": {
+                        "id": 358,
+                        "storage": "local",
+                        "private_hash": "dxpyttbj4qgwww48",
+                        "filename_disk": "2ea70d09-476c-4b07-9e09-756f296e184d.jpg",
+                        "filename_download": "Parcours SwimRun.jpg",
+                        "title": "Parcours Swimrun",
+                        "type": "image\/jpeg",
+                        "uploaded_by": 12,
+                        "uploaded_on": "2024-07-11T15:33:10+00:00",
+                        "charset": "binary",
+                        "filesize": 137546,
+                        "width": 717,
+                        "height": 718,
+                        "duration": 0,
+                        "embed": null,
+                        "folder": null,
+                        "description": "",
+                        "location": "",
+                        "tags": [],
+                        "checksum": "d3c63c5935f7e13c9ea5a65d0b43fc62",
+                        "metadata": null,
+                        "data": {
+                            "full_url": "http:\/\/www.triathlondetoulouse.com\/assets\/uploads\/originals\/2ea70d09-476c-4b07-9e09-756f296e184d.jpg",
+                            "url": "http:\/\/www.triathlondetoulouse.com\/assets\/uploads\/originals\/2ea70d09-476c-4b07-9e09-756f296e184d.jpg",
+                            "thumbnails": [
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/dxpyttbj4qgwww48?key=directus-small-crop",
+                                    "relative_url": "\/tdt\/assets\/dxpyttbj4qgwww48?key=directus-small-crop",
+                                    "dimension": "64x64",
+                                    "width": 64,
+                                    "height": 64
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/dxpyttbj4qgwww48?key=directus-small-contain",
+                                    "relative_url": "\/tdt\/assets\/dxpyttbj4qgwww48?key=directus-small-contain",
+                                    "dimension": "64x64",
+                                    "width": 64,
+                                    "height": 64
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/dxpyttbj4qgwww48?key=directus-medium-crop",
+                                    "relative_url": "\/tdt\/assets\/dxpyttbj4qgwww48?key=directus-medium-crop",
+                                    "dimension": "300x300",
+                                    "width": 300,
+                                    "height": 300
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/dxpyttbj4qgwww48?key=directus-medium-contain",
+                                    "relative_url": "\/tdt\/assets\/dxpyttbj4qgwww48?key=directus-medium-contain",
+                                    "dimension": "300x300",
+                                    "width": 300,
+                                    "height": 300
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/dxpyttbj4qgwww48?key=directus-large-crop",
+                                    "relative_url": "\/tdt\/assets\/dxpyttbj4qgwww48?key=directus-large-crop",
+                                    "dimension": "800x600",
+                                    "width": 800,
+                                    "height": 600
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/dxpyttbj4qgwww48?key=directus-large-contain",
+                                    "relative_url": "\/tdt\/assets\/dxpyttbj4qgwww48?key=directus-large-contain",
+                                    "dimension": "800x600",
+                                    "width": 800,
+                                    "height": 600
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/dxpyttbj4qgwww48?key=thumbnail",
+                                    "relative_url": "\/tdt\/assets\/dxpyttbj4qgwww48?key=thumbnail",
+                                    "dimension": "200x200",
+                                    "width": 200,
+                                    "height": 200
+                                }
+                            ],
+                            "embed": null
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": 13,
+            "date": "2024-09-15 08:30:00",
+            "prix": 45,
+            "type_de_course": "triathlon",
+            "format": "m",
+            "specificite": null,
+            "complet": false,
+            "precision": "Individuel",
+            "nombre_de_places": "400",
+            "age": 18,
+            "prix_pass_compet": 20,
+            "recompense": "",
+            "couleur": "#FBC547",
+            "etapes": [
+                {
+                    "id": 33,
+                    "type": "Natation",
+                    "distance": 1500,
+                    "course_id": {
+                        "id": 13,
+                        "date": "2024-09-15 08:30:00",
+                        "prix": 45,
+                        "type_de_course": "triathlon",
+                        "format": "m",
+                        "specificite": null,
+                        "complet": false,
+                        "precision": "Individuel",
+                        "nombre_de_places": "400",
+                        "age": 18,
+                        "prix_pass_compet": 20,
+                        "recompense": "",
+                        "couleur": "#FBC547"
+                    },
+                    "description": null,
+                    "affichage_distance": "km",
+                    "image": null,
+                    "icone": "pool"
+                },
+                {
+                    "id": 34,
+                    "type": "Velo",
+                    "distance": 40000,
+                    "course_id": {
+                        "id": 13,
+                        "date": "2024-09-15 08:30:00",
+                        "prix": 45,
+                        "type_de_course": "triathlon",
+                        "format": "m",
+                        "specificite": null,
+                        "complet": false,
+                        "precision": "Individuel",
+                        "nombre_de_places": "400",
+                        "age": 18,
+                        "prix_pass_compet": 20,
+                        "recompense": "",
+                        "couleur": "#FBC547"
+                    },
+                    "description": null,
+                    "affichage_distance": "km",
+                    "image": {
+                        "id": 194,
+                        "storage": "local",
+                        "private_hash": "fdxt8g8b3g8w00cs",
+                        "filename_disk": "3aafa5f7-a262-4a8f-955e-037d6cd75b0e.png",
+                        "filename_download": "M_vélo_2021.png",
+                        "title": "M Vélo 2021",
+                        "type": "image\/png",
+                        "uploaded_by": 2,
+                        "uploaded_on": "2021-09-07T20:28:25+00:00",
+                        "charset": "binary",
+                        "filesize": 190562,
+                        "width": 1366,
+                        "height": 768,
+                        "duration": 0,
+                        "embed": null,
+                        "folder": null,
+                        "description": "",
+                        "location": "",
+                        "tags": [],
+                        "checksum": "37e5153aac5a934587230752dd4c8894",
+                        "metadata": null,
+                        "data": {
+                            "full_url": "http:\/\/www.triathlondetoulouse.com\/assets\/uploads\/originals\/3aafa5f7-a262-4a8f-955e-037d6cd75b0e.png",
+                            "url": "http:\/\/www.triathlondetoulouse.com\/assets\/uploads\/originals\/3aafa5f7-a262-4a8f-955e-037d6cd75b0e.png",
+                            "thumbnails": [
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/fdxt8g8b3g8w00cs?key=directus-small-crop",
+                                    "relative_url": "\/tdt\/assets\/fdxt8g8b3g8w00cs?key=directus-small-crop",
+                                    "dimension": "64x64",
+                                    "width": 64,
+                                    "height": 64
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/fdxt8g8b3g8w00cs?key=directus-small-contain",
+                                    "relative_url": "\/tdt\/assets\/fdxt8g8b3g8w00cs?key=directus-small-contain",
+                                    "dimension": "64x64",
+                                    "width": 64,
+                                    "height": 64
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/fdxt8g8b3g8w00cs?key=directus-medium-crop",
+                                    "relative_url": "\/tdt\/assets\/fdxt8g8b3g8w00cs?key=directus-medium-crop",
+                                    "dimension": "300x300",
+                                    "width": 300,
+                                    "height": 300
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/fdxt8g8b3g8w00cs?key=directus-medium-contain",
+                                    "relative_url": "\/tdt\/assets\/fdxt8g8b3g8w00cs?key=directus-medium-contain",
+                                    "dimension": "300x300",
+                                    "width": 300,
+                                    "height": 300
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/fdxt8g8b3g8w00cs?key=directus-large-crop",
+                                    "relative_url": "\/tdt\/assets\/fdxt8g8b3g8w00cs?key=directus-large-crop",
+                                    "dimension": "800x600",
+                                    "width": 800,
+                                    "height": 600
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/fdxt8g8b3g8w00cs?key=directus-large-contain",
+                                    "relative_url": "\/tdt\/assets\/fdxt8g8b3g8w00cs?key=directus-large-contain",
+                                    "dimension": "800x600",
+                                    "width": 800,
+                                    "height": 600
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/fdxt8g8b3g8w00cs?key=thumbnail",
+                                    "relative_url": "\/tdt\/assets\/fdxt8g8b3g8w00cs?key=thumbnail",
+                                    "dimension": "200x200",
+                                    "width": 200,
+                                    "height": 200
+                                }
+                            ],
+                            "embed": null
+                        }
+                    },
+                    "icone": "directions_bike"
+                },
+                {
+                    "id": 35,
+                    "type": "CAP",
+                    "distance": 10000,
+                    "course_id": {
+                        "id": 13,
+                        "date": "2024-09-15 08:30:00",
+                        "prix": 45,
+                        "type_de_course": "triathlon",
+                        "format": "m",
+                        "specificite": null,
+                        "complet": false,
+                        "precision": "Individuel",
+                        "nombre_de_places": "400",
+                        "age": 18,
+                        "prix_pass_compet": 20,
+                        "recompense": "",
+                        "couleur": "#FBC547"
+                    },
+                    "description": null,
+                    "affichage_distance": "km",
+                    "image": null,
+                    "icone": "directions_run"
+                }
+            ],
+            "medias": [
+                {
+                    "id": 74,
+                    "description": "Parcours vélo M 2024",
+                    "course_id": {
+                        "id": 13,
+                        "date": "2024-09-15 08:30:00",
+                        "prix": 45,
+                        "type_de_course": "triathlon",
+                        "format": "m",
+                        "specificite": null,
+                        "complet": false,
+                        "precision": "Individuel",
+                        "nombre_de_places": "400",
+                        "age": 18,
+                        "prix_pass_compet": 20,
+                        "recompense": "",
+                        "couleur": "#FBC547"
+                    },
+                    "contenu": {
+                        "id": 356,
+                        "storage": "local",
+                        "private_hash": "1925j1p0ova8cog0",
+                        "filename_disk": "177757b8-3e86-4a64-be04-6fddfdf31f4f.jpg",
+                        "filename_download": "Parcours vélo M.jpg",
+                        "title": "Parcours Vélo M",
+                        "type": "image\/jpeg",
+                        "uploaded_by": 12,
+                        "uploaded_on": "2024-07-11T15:31:55+00:00",
+                        "charset": "binary",
+                        "filesize": 131435,
+                        "width": 889,
+                        "height": 574,
+                        "duration": 0,
+                        "embed": null,
+                        "folder": null,
+                        "description": "",
+                        "location": "",
+                        "tags": [],
+                        "checksum": "754cb0ff4b1ee042b7ad1816d5b27b75",
+                        "metadata": null,
+                        "data": {
+                            "full_url": "http:\/\/www.triathlondetoulouse.com\/assets\/uploads\/originals\/177757b8-3e86-4a64-be04-6fddfdf31f4f.jpg",
+                            "url": "http:\/\/www.triathlondetoulouse.com\/assets\/uploads\/originals\/177757b8-3e86-4a64-be04-6fddfdf31f4f.jpg",
+                            "thumbnails": [
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/1925j1p0ova8cog0?key=directus-small-crop",
+                                    "relative_url": "\/tdt\/assets\/1925j1p0ova8cog0?key=directus-small-crop",
+                                    "dimension": "64x64",
+                                    "width": 64,
+                                    "height": 64
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/1925j1p0ova8cog0?key=directus-small-contain",
+                                    "relative_url": "\/tdt\/assets\/1925j1p0ova8cog0?key=directus-small-contain",
+                                    "dimension": "64x64",
+                                    "width": 64,
+                                    "height": 64
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/1925j1p0ova8cog0?key=directus-medium-crop",
+                                    "relative_url": "\/tdt\/assets\/1925j1p0ova8cog0?key=directus-medium-crop",
+                                    "dimension": "300x300",
+                                    "width": 300,
+                                    "height": 300
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/1925j1p0ova8cog0?key=directus-medium-contain",
+                                    "relative_url": "\/tdt\/assets\/1925j1p0ova8cog0?key=directus-medium-contain",
+                                    "dimension": "300x300",
+                                    "width": 300,
+                                    "height": 300
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/1925j1p0ova8cog0?key=directus-large-crop",
+                                    "relative_url": "\/tdt\/assets\/1925j1p0ova8cog0?key=directus-large-crop",
+                                    "dimension": "800x600",
+                                    "width": 800,
+                                    "height": 600
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/1925j1p0ova8cog0?key=directus-large-contain",
+                                    "relative_url": "\/tdt\/assets\/1925j1p0ova8cog0?key=directus-large-contain",
+                                    "dimension": "800x600",
+                                    "width": 800,
+                                    "height": 600
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/1925j1p0ova8cog0?key=thumbnail",
+                                    "relative_url": "\/tdt\/assets\/1925j1p0ova8cog0?key=thumbnail",
+                                    "dimension": "200x200",
+                                    "width": 200,
+                                    "height": 200
+                                }
+                            ],
+                            "embed": null
+                        }
+                    }
+                },
+                {
+                    "id": 75,
+                    "description": "Parcours course à pied M 2024",
+                    "course_id": {
+                        "id": 13,
+                        "date": "2024-09-15 08:30:00",
+                        "prix": 45,
+                        "type_de_course": "triathlon",
+                        "format": "m",
+                        "specificite": null,
+                        "complet": false,
+                        "precision": "Individuel",
+                        "nombre_de_places": "400",
+                        "age": 18,
+                        "prix_pass_compet": 20,
+                        "recompense": "",
+                        "couleur": "#FBC547"
+                    },
+                    "contenu": {
+                        "id": 357,
+                        "storage": "local",
+                        "private_hash": "fxkp6s3oiqoks0cc",
+                        "filename_disk": "2b63b606-4c91-4412-8d7d-b2624505e580.jpg",
+                        "filename_download": "Parcours cap M.jpg",
+                        "title": "Parcours Cap M",
+                        "type": "image\/jpeg",
+                        "uploaded_by": 12,
+                        "uploaded_on": "2024-07-11T15:32:13+00:00",
+                        "charset": "binary",
+                        "filesize": 130401,
+                        "width": 1012,
+                        "height": 717,
+                        "duration": 0,
+                        "embed": null,
+                        "folder": null,
+                        "description": "",
+                        "location": "",
+                        "tags": [],
+                        "checksum": "31da31d2e2678c7934b2bfac4acb9330",
+                        "metadata": null,
+                        "data": {
+                            "full_url": "http:\/\/www.triathlondetoulouse.com\/assets\/uploads\/originals\/2b63b606-4c91-4412-8d7d-b2624505e580.jpg",
+                            "url": "http:\/\/www.triathlondetoulouse.com\/assets\/uploads\/originals\/2b63b606-4c91-4412-8d7d-b2624505e580.jpg",
+                            "thumbnails": [
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/fxkp6s3oiqoks0cc?key=directus-small-crop",
+                                    "relative_url": "\/tdt\/assets\/fxkp6s3oiqoks0cc?key=directus-small-crop",
+                                    "dimension": "64x64",
+                                    "width": 64,
+                                    "height": 64
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/fxkp6s3oiqoks0cc?key=directus-small-contain",
+                                    "relative_url": "\/tdt\/assets\/fxkp6s3oiqoks0cc?key=directus-small-contain",
+                                    "dimension": "64x64",
+                                    "width": 64,
+                                    "height": 64
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/fxkp6s3oiqoks0cc?key=directus-medium-crop",
+                                    "relative_url": "\/tdt\/assets\/fxkp6s3oiqoks0cc?key=directus-medium-crop",
+                                    "dimension": "300x300",
+                                    "width": 300,
+                                    "height": 300
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/fxkp6s3oiqoks0cc?key=directus-medium-contain",
+                                    "relative_url": "\/tdt\/assets\/fxkp6s3oiqoks0cc?key=directus-medium-contain",
+                                    "dimension": "300x300",
+                                    "width": 300,
+                                    "height": 300
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/fxkp6s3oiqoks0cc?key=directus-large-crop",
+                                    "relative_url": "\/tdt\/assets\/fxkp6s3oiqoks0cc?key=directus-large-crop",
+                                    "dimension": "800x600",
+                                    "width": 800,
+                                    "height": 600
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/fxkp6s3oiqoks0cc?key=directus-large-contain",
+                                    "relative_url": "\/tdt\/assets\/fxkp6s3oiqoks0cc?key=directus-large-contain",
+                                    "dimension": "800x600",
+                                    "width": 800,
+                                    "height": 600
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/fxkp6s3oiqoks0cc?key=thumbnail",
+                                    "relative_url": "\/tdt\/assets\/fxkp6s3oiqoks0cc?key=thumbnail",
+                                    "dimension": "200x200",
+                                    "width": 200,
+                                    "height": 200
+                                }
+                            ],
+                            "embed": null
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": 14,
+            "date": "2024-09-15 08:30:00",
+            "prix": 60,
+            "type_de_course": "triathlon",
+            "format": "m",
+            "specificite": "relais",
+            "complet": false,
+            "precision": "Relais de 2 ou 3 personnes (prix par équipe)",
+            "nombre_de_places": "100",
+            "age": 18,
+            "prix_pass_compet": 2,
+            "recompense": null,
+            "couleur": "#FFE74F",
+            "etapes": [
+                {
+                    "id": 36,
+                    "type": "Natation",
+                    "distance": 1500,
+                    "course_id": {
+                        "id": 14,
+                        "date": "2024-09-15 08:30:00",
+                        "prix": 60,
+                        "type_de_course": "triathlon",
+                        "format": "m",
+                        "specificite": "relais",
+                        "complet": false,
+                        "precision": "Relais de 2 ou 3 personnes (prix par équipe)",
+                        "nombre_de_places": "100",
+                        "age": 18,
+                        "prix_pass_compet": 2,
+                        "recompense": null,
+                        "couleur": "#FFE74F"
+                    },
+                    "description": null,
+                    "affichage_distance": "km",
+                    "image": null,
+                    "icone": "pool"
+                },
+                {
+                    "id": 37,
+                    "type": "Velo",
+                    "distance": 40000,
+                    "course_id": {
+                        "id": 14,
+                        "date": "2024-09-15 08:30:00",
+                        "prix": 60,
+                        "type_de_course": "triathlon",
+                        "format": "m",
+                        "specificite": "relais",
+                        "complet": false,
+                        "precision": "Relais de 2 ou 3 personnes (prix par équipe)",
+                        "nombre_de_places": "100",
+                        "age": 18,
+                        "prix_pass_compet": 2,
+                        "recompense": null,
+                        "couleur": "#FFE74F"
+                    },
+                    "description": null,
+                    "affichage_distance": "km",
+                    "image": {
+                        "id": 195,
+                        "storage": "local",
+                        "private_hash": "qf4dou8l8qsko8cs",
+                        "filename_disk": "7ca4455c-8094-43e3-96f5-cb988ea5226f.png",
+                        "filename_download": "M_vélo_2021.png",
+                        "title": "M Vélo 2021",
+                        "type": "image\/png",
+                        "uploaded_by": 2,
+                        "uploaded_on": "2021-09-07T20:28:40+00:00",
+                        "charset": "binary",
+                        "filesize": 190562,
+                        "width": 1366,
+                        "height": 768,
+                        "duration": 0,
+                        "embed": null,
+                        "folder": null,
+                        "description": "",
+                        "location": "",
+                        "tags": [],
+                        "checksum": "37e5153aac5a934587230752dd4c8894",
+                        "metadata": null,
+                        "data": {
+                            "full_url": "http:\/\/www.triathlondetoulouse.com\/assets\/uploads\/originals\/7ca4455c-8094-43e3-96f5-cb988ea5226f.png",
+                            "url": "http:\/\/www.triathlondetoulouse.com\/assets\/uploads\/originals\/7ca4455c-8094-43e3-96f5-cb988ea5226f.png",
+                            "thumbnails": [
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/qf4dou8l8qsko8cs?key=directus-small-crop",
+                                    "relative_url": "\/tdt\/assets\/qf4dou8l8qsko8cs?key=directus-small-crop",
+                                    "dimension": "64x64",
+                                    "width": 64,
+                                    "height": 64
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/qf4dou8l8qsko8cs?key=directus-small-contain",
+                                    "relative_url": "\/tdt\/assets\/qf4dou8l8qsko8cs?key=directus-small-contain",
+                                    "dimension": "64x64",
+                                    "width": 64,
+                                    "height": 64
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/qf4dou8l8qsko8cs?key=directus-medium-crop",
+                                    "relative_url": "\/tdt\/assets\/qf4dou8l8qsko8cs?key=directus-medium-crop",
+                                    "dimension": "300x300",
+                                    "width": 300,
+                                    "height": 300
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/qf4dou8l8qsko8cs?key=directus-medium-contain",
+                                    "relative_url": "\/tdt\/assets\/qf4dou8l8qsko8cs?key=directus-medium-contain",
+                                    "dimension": "300x300",
+                                    "width": 300,
+                                    "height": 300
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/qf4dou8l8qsko8cs?key=directus-large-crop",
+                                    "relative_url": "\/tdt\/assets\/qf4dou8l8qsko8cs?key=directus-large-crop",
+                                    "dimension": "800x600",
+                                    "width": 800,
+                                    "height": 600
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/qf4dou8l8qsko8cs?key=directus-large-contain",
+                                    "relative_url": "\/tdt\/assets\/qf4dou8l8qsko8cs?key=directus-large-contain",
+                                    "dimension": "800x600",
+                                    "width": 800,
+                                    "height": 600
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/qf4dou8l8qsko8cs?key=thumbnail",
+                                    "relative_url": "\/tdt\/assets\/qf4dou8l8qsko8cs?key=thumbnail",
+                                    "dimension": "200x200",
+                                    "width": 200,
+                                    "height": 200
+                                }
+                            ],
+                            "embed": null
+                        }
+                    },
+                    "icone": "directions_bike"
+                },
+                {
+                    "id": 38,
+                    "type": "CAP",
+                    "distance": 10000,
+                    "course_id": {
+                        "id": 14,
+                        "date": "2024-09-15 08:30:00",
+                        "prix": 60,
+                        "type_de_course": "triathlon",
+                        "format": "m",
+                        "specificite": "relais",
+                        "complet": false,
+                        "precision": "Relais de 2 ou 3 personnes (prix par équipe)",
+                        "nombre_de_places": "100",
+                        "age": 18,
+                        "prix_pass_compet": 2,
+                        "recompense": null,
+                        "couleur": "#FFE74F"
+                    },
+                    "description": null,
+                    "affichage_distance": "km",
+                    "image": null,
+                    "icone": "directions_run"
+                }
+            ],
+            "medias": [
+                {
+                    "id": 60,
+                    "description": "Parcours vélo M relais 2024",
+                    "course_id": {
+                        "id": 14,
+                        "date": "2024-09-15 08:30:00",
+                        "prix": 60,
+                        "type_de_course": "triathlon",
+                        "format": "m",
+                        "specificite": "relais",
+                        "complet": false,
+                        "precision": "Relais de 2 ou 3 personnes (prix par équipe)",
+                        "nombre_de_places": "100",
+                        "age": 18,
+                        "prix_pass_compet": 2,
+                        "recompense": null,
+                        "couleur": "#FFE74F"
+                    },
+                    "contenu": {
+                        "id": 340,
+                        "storage": "local",
+                        "private_hash": "qo7nv5p5js0kwsk0",
+                        "filename_disk": "506ea188-34f0-4101-8539-185e2cf05c7c.jpg",
+                        "filename_download": "Parcours vélo M.jpg",
+                        "title": "Parcours Vélo M",
+                        "type": "image\/jpeg",
+                        "uploaded_by": 12,
+                        "uploaded_on": "2024-07-09T17:13:08+00:00",
+                        "charset": "binary",
+                        "filesize": 131435,
+                        "width": 889,
+                        "height": 574,
+                        "duration": 0,
+                        "embed": null,
+                        "folder": null,
+                        "description": "",
+                        "location": "",
+                        "tags": [],
+                        "checksum": "754cb0ff4b1ee042b7ad1816d5b27b75",
+                        "metadata": null,
+                        "data": {
+                            "full_url": "http:\/\/www.triathlondetoulouse.com\/assets\/uploads\/originals\/506ea188-34f0-4101-8539-185e2cf05c7c.jpg",
+                            "url": "http:\/\/www.triathlondetoulouse.com\/assets\/uploads\/originals\/506ea188-34f0-4101-8539-185e2cf05c7c.jpg",
+                            "thumbnails": [
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/qo7nv5p5js0kwsk0?key=directus-small-crop",
+                                    "relative_url": "\/tdt\/assets\/qo7nv5p5js0kwsk0?key=directus-small-crop",
+                                    "dimension": "64x64",
+                                    "width": 64,
+                                    "height": 64
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/qo7nv5p5js0kwsk0?key=directus-small-contain",
+                                    "relative_url": "\/tdt\/assets\/qo7nv5p5js0kwsk0?key=directus-small-contain",
+                                    "dimension": "64x64",
+                                    "width": 64,
+                                    "height": 64
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/qo7nv5p5js0kwsk0?key=directus-medium-crop",
+                                    "relative_url": "\/tdt\/assets\/qo7nv5p5js0kwsk0?key=directus-medium-crop",
+                                    "dimension": "300x300",
+                                    "width": 300,
+                                    "height": 300
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/qo7nv5p5js0kwsk0?key=directus-medium-contain",
+                                    "relative_url": "\/tdt\/assets\/qo7nv5p5js0kwsk0?key=directus-medium-contain",
+                                    "dimension": "300x300",
+                                    "width": 300,
+                                    "height": 300
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/qo7nv5p5js0kwsk0?key=directus-large-crop",
+                                    "relative_url": "\/tdt\/assets\/qo7nv5p5js0kwsk0?key=directus-large-crop",
+                                    "dimension": "800x600",
+                                    "width": 800,
+                                    "height": 600
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/qo7nv5p5js0kwsk0?key=directus-large-contain",
+                                    "relative_url": "\/tdt\/assets\/qo7nv5p5js0kwsk0?key=directus-large-contain",
+                                    "dimension": "800x600",
+                                    "width": 800,
+                                    "height": 600
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/qo7nv5p5js0kwsk0?key=thumbnail",
+                                    "relative_url": "\/tdt\/assets\/qo7nv5p5js0kwsk0?key=thumbnail",
+                                    "dimension": "200x200",
+                                    "width": 200,
+                                    "height": 200
+                                }
+                            ],
+                            "embed": null
+                        }
+                    }
+                },
+                {
+                    "id": 73,
+                    "description": "Parcours course à pied M relais 2024",
+                    "course_id": {
+                        "id": 14,
+                        "date": "2024-09-15 08:30:00",
+                        "prix": 60,
+                        "type_de_course": "triathlon",
+                        "format": "m",
+                        "specificite": "relais",
+                        "complet": false,
+                        "precision": "Relais de 2 ou 3 personnes (prix par équipe)",
+                        "nombre_de_places": "100",
+                        "age": 18,
+                        "prix_pass_compet": 2,
+                        "recompense": null,
+                        "couleur": "#FFE74F"
+                    },
+                    "contenu": {
+                        "id": 355,
+                        "storage": "local",
+                        "private_hash": "p279rdo0ipco084c",
+                        "filename_disk": "731ce31c-6e7b-48e8-98df-31ea341642f8.jpg",
+                        "filename_download": "Parcours cap M.jpg",
+                        "title": "Parcours Cap M",
+                        "type": "image\/jpeg",
+                        "uploaded_by": 12,
+                        "uploaded_on": "2024-07-11T15:31:14+00:00",
+                        "charset": "binary",
+                        "filesize": 130401,
+                        "width": 1012,
+                        "height": 717,
+                        "duration": 0,
+                        "embed": null,
+                        "folder": null,
+                        "description": "",
+                        "location": "",
+                        "tags": [],
+                        "checksum": "31da31d2e2678c7934b2bfac4acb9330",
+                        "metadata": null,
+                        "data": {
+                            "full_url": "http:\/\/www.triathlondetoulouse.com\/assets\/uploads\/originals\/731ce31c-6e7b-48e8-98df-31ea341642f8.jpg",
+                            "url": "http:\/\/www.triathlondetoulouse.com\/assets\/uploads\/originals\/731ce31c-6e7b-48e8-98df-31ea341642f8.jpg",
+                            "thumbnails": [
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/p279rdo0ipco084c?key=directus-small-crop",
+                                    "relative_url": "\/tdt\/assets\/p279rdo0ipco084c?key=directus-small-crop",
+                                    "dimension": "64x64",
+                                    "width": 64,
+                                    "height": 64
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/p279rdo0ipco084c?key=directus-small-contain",
+                                    "relative_url": "\/tdt\/assets\/p279rdo0ipco084c?key=directus-small-contain",
+                                    "dimension": "64x64",
+                                    "width": 64,
+                                    "height": 64
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/p279rdo0ipco084c?key=directus-medium-crop",
+                                    "relative_url": "\/tdt\/assets\/p279rdo0ipco084c?key=directus-medium-crop",
+                                    "dimension": "300x300",
+                                    "width": 300,
+                                    "height": 300
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/p279rdo0ipco084c?key=directus-medium-contain",
+                                    "relative_url": "\/tdt\/assets\/p279rdo0ipco084c?key=directus-medium-contain",
+                                    "dimension": "300x300",
+                                    "width": 300,
+                                    "height": 300
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/p279rdo0ipco084c?key=directus-large-crop",
+                                    "relative_url": "\/tdt\/assets\/p279rdo0ipco084c?key=directus-large-crop",
+                                    "dimension": "800x600",
+                                    "width": 800,
+                                    "height": 600
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/p279rdo0ipco084c?key=directus-large-contain",
+                                    "relative_url": "\/tdt\/assets\/p279rdo0ipco084c?key=directus-large-contain",
+                                    "dimension": "800x600",
+                                    "width": 800,
+                                    "height": 600
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/p279rdo0ipco084c?key=thumbnail",
+                                    "relative_url": "\/tdt\/assets\/p279rdo0ipco084c?key=thumbnail",
+                                    "dimension": "200x200",
+                                    "width": 200,
+                                    "height": 200
+                                }
+                            ],
+                            "embed": null
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": 24,
+            "date": "2024-09-15 12:30:00",
+            "prix": 2,
+            "type_de_course": "enfant",
+            "format": "2-3",
+            "specificite": null,
+            "complet": false,
+            "precision": null,
+            "nombre_de_places": "50",
+            "age": 2,
+            "prix_pass_compet": 0,
+            "recompense": "",
+            "couleur": "#00DAB8",
+            "etapes": [
+                {
+                    "id": 68,
+                    "type": "Velo",
+                    "distance": 250,
+                    "course_id": {
+                        "id": 24,
+                        "date": "2024-09-15 12:30:00",
+                        "prix": 2,
+                        "type_de_course": "enfant",
+                        "format": "2-3",
+                        "specificite": null,
+                        "complet": false,
+                        "precision": null,
+                        "nombre_de_places": "50",
+                        "age": 2,
+                        "prix_pass_compet": 0,
+                        "recompense": "",
+                        "couleur": "#00DAB8"
+                    },
+                    "description": null,
+                    "affichage_distance": "m",
+                    "image": null,
+                    "icone": "directions_bike"
+                },
+                {
+                    "id": 69,
+                    "type": "CAP",
+                    "distance": 20,
+                    "course_id": {
+                        "id": 24,
+                        "date": "2024-09-15 12:30:00",
+                        "prix": 2,
+                        "type_de_course": "enfant",
+                        "format": "2-3",
+                        "specificite": null,
+                        "complet": false,
+                        "precision": null,
+                        "nombre_de_places": "50",
+                        "age": 2,
+                        "prix_pass_compet": 0,
+                        "recompense": "",
+                        "couleur": "#00DAB8"
+                    },
+                    "description": null,
+                    "affichage_distance": "m",
+                    "image": null,
+                    "icone": "directions_run"
+                }
+            ],
+            "medias": []
+        },
+        {
+            "id": 25,
+            "date": "2024-09-15 13:00:00",
+            "prix": 2,
+            "type_de_course": "enfant",
+            "format": "4-5",
+            "specificite": null,
+            "complet": false,
+            "precision": null,
+            "nombre_de_places": "50",
+            "age": 4,
+            "prix_pass_compet": 0,
+            "recompense": null,
+            "couleur": "#64E0BE",
+            "etapes": [
+                {
+                    "id": 70,
+                    "type": "Velo",
+                    "distance": 400,
+                    "course_id": {
+                        "id": 25,
+                        "date": "2024-09-15 13:00:00",
+                        "prix": 2,
+                        "type_de_course": "enfant",
+                        "format": "4-5",
+                        "specificite": null,
+                        "complet": false,
+                        "precision": null,
+                        "nombre_de_places": "50",
+                        "age": 4,
+                        "prix_pass_compet": 0,
+                        "recompense": null,
+                        "couleur": "#64E0BE"
+                    },
+                    "description": null,
+                    "affichage_distance": "m",
+                    "image": null,
+                    "icone": "directions_bike"
+                },
+                {
+                    "id": 71,
+                    "type": "CAP",
+                    "distance": 50,
+                    "course_id": {
+                        "id": 25,
+                        "date": "2024-09-15 13:00:00",
+                        "prix": 2,
+                        "type_de_course": "enfant",
+                        "format": "4-5",
+                        "specificite": null,
+                        "complet": false,
+                        "precision": null,
+                        "nombre_de_places": "50",
+                        "age": 4,
+                        "prix_pass_compet": 0,
+                        "recompense": null,
+                        "couleur": "#64E0BE"
+                    },
+                    "description": null,
+                    "affichage_distance": "m",
+                    "image": null,
+                    "icone": "directions_run"
+                }
+            ],
+            "medias": []
+        },
+        {
+            "id": 9,
+            "date": "2024-09-15 14:30:00",
+            "prix": 22,
+            "type_de_course": "triathlon",
+            "format": "xs",
+            "specificite": "femme",
+            "complet": false,
+            "precision": "Individuel",
+            "nombre_de_places": "250",
+            "age": 14,
+            "prix_pass_compet": 2,
+            "recompense": "<p>A venir<\/p>",
+            "couleur": "#00DAB8",
+            "etapes": [
+                {
+                    "id": 23,
+                    "type": "Natation",
+                    "distance": 400,
+                    "course_id": {
+                        "id": 9,
+                        "date": "2024-09-15 14:30:00",
+                        "prix": 22,
+                        "type_de_course": "triathlon",
+                        "format": "xs",
+                        "specificite": "femme",
+                        "complet": false,
+                        "precision": "Individuel",
+                        "nombre_de_places": "250",
+                        "age": 14,
+                        "prix_pass_compet": 2,
+                        "recompense": "<p>A venir<\/p>",
+                        "couleur": "#00DAB8"
+                    },
+                    "description": null,
+                    "affichage_distance": "m",
+                    "image": null,
+                    "icone": "pool"
+                },
+                {
+                    "id": 56,
+                    "type": "Velo",
+                    "distance": 12000,
+                    "course_id": {
+                        "id": 9,
+                        "date": "2024-09-15 14:30:00",
+                        "prix": 22,
+                        "type_de_course": "triathlon",
+                        "format": "xs",
+                        "specificite": "femme",
+                        "complet": false,
+                        "precision": "Individuel",
+                        "nombre_de_places": "250",
+                        "age": 14,
+                        "prix_pass_compet": 2,
+                        "recompense": "<p>A venir<\/p>",
+                        "couleur": "#00DAB8"
+                    },
+                    "description": null,
+                    "affichage_distance": "km",
+                    "image": {
+                        "id": 205,
+                        "storage": "local",
+                        "private_hash": "jaeurgomm20oo00g",
+                        "filename_disk": "d152078e-b503-4ddd-8a8d-7c016eb93e0a.png",
+                        "filename_download": "ParcoursVelo_XS_S.png",
+                        "title": "Parcoursvelo Xs S",
+                        "type": "image\/png",
+                        "uploaded_by": 2,
+                        "uploaded_on": "2021-09-07T20:31:03+00:00",
+                        "charset": "binary",
+                        "filesize": 256944,
+                        "width": 721,
+                        "height": 633,
+                        "duration": 0,
+                        "embed": null,
+                        "folder": null,
+                        "description": "",
+                        "location": "",
+                        "tags": [],
+                        "checksum": "0f28fe0a8fe431e42869d589eda4090e",
+                        "metadata": null,
+                        "data": {
+                            "full_url": "http:\/\/www.triathlondetoulouse.com\/assets\/uploads\/originals\/d152078e-b503-4ddd-8a8d-7c016eb93e0a.png",
+                            "url": "http:\/\/www.triathlondetoulouse.com\/assets\/uploads\/originals\/d152078e-b503-4ddd-8a8d-7c016eb93e0a.png",
+                            "thumbnails": [
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/jaeurgomm20oo00g?key=directus-small-crop",
+                                    "relative_url": "\/tdt\/assets\/jaeurgomm20oo00g?key=directus-small-crop",
+                                    "dimension": "64x64",
+                                    "width": 64,
+                                    "height": 64
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/jaeurgomm20oo00g?key=directus-small-contain",
+                                    "relative_url": "\/tdt\/assets\/jaeurgomm20oo00g?key=directus-small-contain",
+                                    "dimension": "64x64",
+                                    "width": 64,
+                                    "height": 64
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/jaeurgomm20oo00g?key=directus-medium-crop",
+                                    "relative_url": "\/tdt\/assets\/jaeurgomm20oo00g?key=directus-medium-crop",
+                                    "dimension": "300x300",
+                                    "width": 300,
+                                    "height": 300
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/jaeurgomm20oo00g?key=directus-medium-contain",
+                                    "relative_url": "\/tdt\/assets\/jaeurgomm20oo00g?key=directus-medium-contain",
+                                    "dimension": "300x300",
+                                    "width": 300,
+                                    "height": 300
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/jaeurgomm20oo00g?key=directus-large-crop",
+                                    "relative_url": "\/tdt\/assets\/jaeurgomm20oo00g?key=directus-large-crop",
+                                    "dimension": "800x600",
+                                    "width": 800,
+                                    "height": 600
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/jaeurgomm20oo00g?key=directus-large-contain",
+                                    "relative_url": "\/tdt\/assets\/jaeurgomm20oo00g?key=directus-large-contain",
+                                    "dimension": "800x600",
+                                    "width": 800,
+                                    "height": 600
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/jaeurgomm20oo00g?key=thumbnail",
+                                    "relative_url": "\/tdt\/assets\/jaeurgomm20oo00g?key=thumbnail",
+                                    "dimension": "200x200",
+                                    "width": 200,
+                                    "height": 200
+                                }
+                            ],
+                            "embed": null
+                        }
+                    },
+                    "icone": "directions_bike"
+                },
+                {
+                    "id": 58,
+                    "type": "CAP",
+                    "distance": 2500,
+                    "course_id": {
+                        "id": 9,
+                        "date": "2024-09-15 14:30:00",
+                        "prix": 22,
+                        "type_de_course": "triathlon",
+                        "format": "xs",
+                        "specificite": "femme",
+                        "complet": false,
+                        "precision": "Individuel",
+                        "nombre_de_places": "250",
+                        "age": 14,
+                        "prix_pass_compet": 2,
+                        "recompense": "<p>A venir<\/p>",
+                        "couleur": "#00DAB8"
+                    },
+                    "description": null,
+                    "affichage_distance": "km",
+                    "image": null,
+                    "icone": "directions_run"
+                }
+            ],
+            "medias": [
+                {
+                    "id": 69,
+                    "description": "Parcours vélo XS femme 2024",
+                    "course_id": {
+                        "id": 9,
+                        "date": "2024-09-15 14:30:00",
+                        "prix": 22,
+                        "type_de_course": "triathlon",
+                        "format": "xs",
+                        "specificite": "femme",
+                        "complet": false,
+                        "precision": "Individuel",
+                        "nombre_de_places": "250",
+                        "age": 14,
+                        "prix_pass_compet": 2,
+                        "recompense": "<p>A venir<\/p>",
+                        "couleur": "#00DAB8"
+                    },
+                    "contenu": {
+                        "id": 351,
+                        "storage": "local",
+                        "private_hash": "f01lab1mgg840wcg",
+                        "filename_disk": "7e541d34-aadc-4587-8a25-056d53380029.jpg",
+                        "filename_download": "Parcours vélo XS.jpg",
+                        "title": "Parcours Vélo Xs",
+                        "type": "image\/jpeg",
+                        "uploaded_by": 12,
+                        "uploaded_on": "2024-07-11T15:28:13+00:00",
+                        "charset": "binary",
+                        "filesize": 128202,
+                        "width": 888,
+                        "height": 576,
+                        "duration": 0,
+                        "embed": null,
+                        "folder": null,
+                        "description": "",
+                        "location": "",
+                        "tags": [],
+                        "checksum": "b29ef6250d8af30b28dcfb7c8c8b09b4",
+                        "metadata": null,
+                        "data": {
+                            "full_url": "http:\/\/www.triathlondetoulouse.com\/assets\/uploads\/originals\/7e541d34-aadc-4587-8a25-056d53380029.jpg",
+                            "url": "http:\/\/www.triathlondetoulouse.com\/assets\/uploads\/originals\/7e541d34-aadc-4587-8a25-056d53380029.jpg",
+                            "thumbnails": [
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/f01lab1mgg840wcg?key=directus-small-crop",
+                                    "relative_url": "\/tdt\/assets\/f01lab1mgg840wcg?key=directus-small-crop",
+                                    "dimension": "64x64",
+                                    "width": 64,
+                                    "height": 64
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/f01lab1mgg840wcg?key=directus-small-contain",
+                                    "relative_url": "\/tdt\/assets\/f01lab1mgg840wcg?key=directus-small-contain",
+                                    "dimension": "64x64",
+                                    "width": 64,
+                                    "height": 64
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/f01lab1mgg840wcg?key=directus-medium-crop",
+                                    "relative_url": "\/tdt\/assets\/f01lab1mgg840wcg?key=directus-medium-crop",
+                                    "dimension": "300x300",
+                                    "width": 300,
+                                    "height": 300
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/f01lab1mgg840wcg?key=directus-medium-contain",
+                                    "relative_url": "\/tdt\/assets\/f01lab1mgg840wcg?key=directus-medium-contain",
+                                    "dimension": "300x300",
+                                    "width": 300,
+                                    "height": 300
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/f01lab1mgg840wcg?key=directus-large-crop",
+                                    "relative_url": "\/tdt\/assets\/f01lab1mgg840wcg?key=directus-large-crop",
+                                    "dimension": "800x600",
+                                    "width": 800,
+                                    "height": 600
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/f01lab1mgg840wcg?key=directus-large-contain",
+                                    "relative_url": "\/tdt\/assets\/f01lab1mgg840wcg?key=directus-large-contain",
+                                    "dimension": "800x600",
+                                    "width": 800,
+                                    "height": 600
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/f01lab1mgg840wcg?key=thumbnail",
+                                    "relative_url": "\/tdt\/assets\/f01lab1mgg840wcg?key=thumbnail",
+                                    "dimension": "200x200",
+                                    "width": 200,
+                                    "height": 200
+                                }
+                            ],
+                            "embed": null
+                        }
+                    }
+                },
+                {
+                    "id": 70,
+                    "description": "Parcours course à pied XS femme 2024",
+                    "course_id": {
+                        "id": 9,
+                        "date": "2024-09-15 14:30:00",
+                        "prix": 22,
+                        "type_de_course": "triathlon",
+                        "format": "xs",
+                        "specificite": "femme",
+                        "complet": false,
+                        "precision": "Individuel",
+                        "nombre_de_places": "250",
+                        "age": 14,
+                        "prix_pass_compet": 2,
+                        "recompense": "<p>A venir<\/p>",
+                        "couleur": "#00DAB8"
+                    },
+                    "contenu": {
+                        "id": 352,
+                        "storage": "local",
+                        "private_hash": "q6k5n8c6w7k88skw",
+                        "filename_disk": "88921dfb-6306-4371-9971-c7f5334502c6.jpg",
+                        "filename_download": "Parcours cap XS.jpg",
+                        "title": "Parcours Cap Xs",
+                        "type": "image\/jpeg",
+                        "uploaded_by": 12,
+                        "uploaded_on": "2024-07-11T15:28:35+00:00",
+                        "charset": "binary",
+                        "filesize": 94493,
+                        "width": 990,
+                        "height": 718,
+                        "duration": 0,
+                        "embed": null,
+                        "folder": null,
+                        "description": "",
+                        "location": "",
+                        "tags": [],
+                        "checksum": "bdebaa74a50353892dbca85347e0292e",
+                        "metadata": null,
+                        "data": {
+                            "full_url": "http:\/\/www.triathlondetoulouse.com\/assets\/uploads\/originals\/88921dfb-6306-4371-9971-c7f5334502c6.jpg",
+                            "url": "http:\/\/www.triathlondetoulouse.com\/assets\/uploads\/originals\/88921dfb-6306-4371-9971-c7f5334502c6.jpg",
+                            "thumbnails": [
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/q6k5n8c6w7k88skw?key=directus-small-crop",
+                                    "relative_url": "\/tdt\/assets\/q6k5n8c6w7k88skw?key=directus-small-crop",
+                                    "dimension": "64x64",
+                                    "width": 64,
+                                    "height": 64
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/q6k5n8c6w7k88skw?key=directus-small-contain",
+                                    "relative_url": "\/tdt\/assets\/q6k5n8c6w7k88skw?key=directus-small-contain",
+                                    "dimension": "64x64",
+                                    "width": 64,
+                                    "height": 64
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/q6k5n8c6w7k88skw?key=directus-medium-crop",
+                                    "relative_url": "\/tdt\/assets\/q6k5n8c6w7k88skw?key=directus-medium-crop",
+                                    "dimension": "300x300",
+                                    "width": 300,
+                                    "height": 300
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/q6k5n8c6w7k88skw?key=directus-medium-contain",
+                                    "relative_url": "\/tdt\/assets\/q6k5n8c6w7k88skw?key=directus-medium-contain",
+                                    "dimension": "300x300",
+                                    "width": 300,
+                                    "height": 300
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/q6k5n8c6w7k88skw?key=directus-large-crop",
+                                    "relative_url": "\/tdt\/assets\/q6k5n8c6w7k88skw?key=directus-large-crop",
+                                    "dimension": "800x600",
+                                    "width": 800,
+                                    "height": 600
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/q6k5n8c6w7k88skw?key=directus-large-contain",
+                                    "relative_url": "\/tdt\/assets\/q6k5n8c6w7k88skw?key=directus-large-contain",
+                                    "dimension": "800x600",
+                                    "width": 800,
+                                    "height": 600
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/q6k5n8c6w7k88skw?key=thumbnail",
+                                    "relative_url": "\/tdt\/assets\/q6k5n8c6w7k88skw?key=thumbnail",
+                                    "dimension": "200x200",
+                                    "width": 200,
+                                    "height": 200
+                                }
+                            ],
+                            "embed": null
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "date": "2024-09-15 15:45:00",
+            "prix": 22,
+            "type_de_course": "triathlon",
+            "format": "xs",
+            "specificite": "homme",
+            "complet": false,
+            "precision": "Individuel",
+            "nombre_de_places": "250",
+            "age": 14,
+            "prix_pass_compet": 2,
+            "recompense": "<p>A venir<\/p>",
+            "couleur": "#00C18C",
+            "etapes": [
+                {
+                    "id": 26,
+                    "type": "Natation",
+                    "distance": 400,
+                    "course_id": {
+                        "id": 10,
+                        "date": "2024-09-15 15:45:00",
+                        "prix": 22,
+                        "type_de_course": "triathlon",
+                        "format": "xs",
+                        "specificite": "homme",
+                        "complet": false,
+                        "precision": "Individuel",
+                        "nombre_de_places": "250",
+                        "age": 14,
+                        "prix_pass_compet": 2,
+                        "recompense": "<p>A venir<\/p>",
+                        "couleur": "#00C18C"
+                    },
+                    "description": null,
+                    "affichage_distance": "m",
+                    "image": null,
+                    "icone": "pool"
+                },
+                {
+                    "id": 57,
+                    "type": "Velo",
+                    "distance": 12000,
+                    "course_id": {
+                        "id": 10,
+                        "date": "2024-09-15 15:45:00",
+                        "prix": 22,
+                        "type_de_course": "triathlon",
+                        "format": "xs",
+                        "specificite": "homme",
+                        "complet": false,
+                        "precision": "Individuel",
+                        "nombre_de_places": "250",
+                        "age": 14,
+                        "prix_pass_compet": 2,
+                        "recompense": "<p>A venir<\/p>",
+                        "couleur": "#00C18C"
+                    },
+                    "description": null,
+                    "affichage_distance": "km",
+                    "image": {
+                        "id": 207,
+                        "storage": "local",
+                        "private_hash": "67ogikav0j4s0s8g",
+                        "filename_disk": "b4007ecc-b5d8-4920-88c8-81015ad44007.png",
+                        "filename_download": "ParcoursVelo_XS_S.png",
+                        "title": "Parcoursvelo Xs S",
+                        "type": "image\/png",
+                        "uploaded_by": 2,
+                        "uploaded_on": "2021-09-07T20:31:26+00:00",
+                        "charset": "binary",
+                        "filesize": 256944,
+                        "width": 721,
+                        "height": 633,
+                        "duration": 0,
+                        "embed": null,
+                        "folder": null,
+                        "description": "",
+                        "location": "",
+                        "tags": [],
+                        "checksum": "0f28fe0a8fe431e42869d589eda4090e",
+                        "metadata": null,
+                        "data": {
+                            "full_url": "http:\/\/www.triathlondetoulouse.com\/assets\/uploads\/originals\/b4007ecc-b5d8-4920-88c8-81015ad44007.png",
+                            "url": "http:\/\/www.triathlondetoulouse.com\/assets\/uploads\/originals\/b4007ecc-b5d8-4920-88c8-81015ad44007.png",
+                            "thumbnails": [
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/67ogikav0j4s0s8g?key=directus-small-crop",
+                                    "relative_url": "\/tdt\/assets\/67ogikav0j4s0s8g?key=directus-small-crop",
+                                    "dimension": "64x64",
+                                    "width": 64,
+                                    "height": 64
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/67ogikav0j4s0s8g?key=directus-small-contain",
+                                    "relative_url": "\/tdt\/assets\/67ogikav0j4s0s8g?key=directus-small-contain",
+                                    "dimension": "64x64",
+                                    "width": 64,
+                                    "height": 64
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/67ogikav0j4s0s8g?key=directus-medium-crop",
+                                    "relative_url": "\/tdt\/assets\/67ogikav0j4s0s8g?key=directus-medium-crop",
+                                    "dimension": "300x300",
+                                    "width": 300,
+                                    "height": 300
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/67ogikav0j4s0s8g?key=directus-medium-contain",
+                                    "relative_url": "\/tdt\/assets\/67ogikav0j4s0s8g?key=directus-medium-contain",
+                                    "dimension": "300x300",
+                                    "width": 300,
+                                    "height": 300
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/67ogikav0j4s0s8g?key=directus-large-crop",
+                                    "relative_url": "\/tdt\/assets\/67ogikav0j4s0s8g?key=directus-large-crop",
+                                    "dimension": "800x600",
+                                    "width": 800,
+                                    "height": 600
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/67ogikav0j4s0s8g?key=directus-large-contain",
+                                    "relative_url": "\/tdt\/assets\/67ogikav0j4s0s8g?key=directus-large-contain",
+                                    "dimension": "800x600",
+                                    "width": 800,
+                                    "height": 600
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/67ogikav0j4s0s8g?key=thumbnail",
+                                    "relative_url": "\/tdt\/assets\/67ogikav0j4s0s8g?key=thumbnail",
+                                    "dimension": "200x200",
+                                    "width": 200,
+                                    "height": 200
+                                }
+                            ],
+                            "embed": null
+                        }
+                    },
+                    "icone": "directions_bike"
+                },
+                {
+                    "id": 59,
+                    "type": "CAP",
+                    "distance": 2500,
+                    "course_id": {
+                        "id": 10,
+                        "date": "2024-09-15 15:45:00",
+                        "prix": 22,
+                        "type_de_course": "triathlon",
+                        "format": "xs",
+                        "specificite": "homme",
+                        "complet": false,
+                        "precision": "Individuel",
+                        "nombre_de_places": "250",
+                        "age": 14,
+                        "prix_pass_compet": 2,
+                        "recompense": "<p>A venir<\/p>",
+                        "couleur": "#00C18C"
+                    },
+                    "description": null,
+                    "affichage_distance": "km",
+                    "image": null,
+                    "icone": "directions_run"
+                }
+            ],
+            "medias": [
+                {
+                    "id": 71,
+                    "description": "Parcours vélo XS homme 2024",
+                    "course_id": {
+                        "id": 10,
+                        "date": "2024-09-15 15:45:00",
+                        "prix": 22,
+                        "type_de_course": "triathlon",
+                        "format": "xs",
+                        "specificite": "homme",
+                        "complet": false,
+                        "precision": "Individuel",
+                        "nombre_de_places": "250",
+                        "age": 14,
+                        "prix_pass_compet": 2,
+                        "recompense": "<p>A venir<\/p>",
+                        "couleur": "#00C18C"
+                    },
+                    "contenu": {
+                        "id": 353,
+                        "storage": "local",
+                        "private_hash": "jqtauws8i5ssckg8",
+                        "filename_disk": "6b472986-3d10-4dd2-baf7-f3020a51da24.jpg",
+                        "filename_download": "Parcours vélo XS.jpg",
+                        "title": "Parcours Vélo Xs",
+                        "type": "image\/jpeg",
+                        "uploaded_by": 12,
+                        "uploaded_on": "2024-07-11T15:29:04+00:00",
+                        "charset": "binary",
+                        "filesize": 128202,
+                        "width": 888,
+                        "height": 576,
+                        "duration": 0,
+                        "embed": null,
+                        "folder": null,
+                        "description": "",
+                        "location": "",
+                        "tags": [],
+                        "checksum": "b29ef6250d8af30b28dcfb7c8c8b09b4",
+                        "metadata": null,
+                        "data": {
+                            "full_url": "http:\/\/www.triathlondetoulouse.com\/assets\/uploads\/originals\/6b472986-3d10-4dd2-baf7-f3020a51da24.jpg",
+                            "url": "http:\/\/www.triathlondetoulouse.com\/assets\/uploads\/originals\/6b472986-3d10-4dd2-baf7-f3020a51da24.jpg",
+                            "thumbnails": [
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/jqtauws8i5ssckg8?key=directus-small-crop",
+                                    "relative_url": "\/tdt\/assets\/jqtauws8i5ssckg8?key=directus-small-crop",
+                                    "dimension": "64x64",
+                                    "width": 64,
+                                    "height": 64
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/jqtauws8i5ssckg8?key=directus-small-contain",
+                                    "relative_url": "\/tdt\/assets\/jqtauws8i5ssckg8?key=directus-small-contain",
+                                    "dimension": "64x64",
+                                    "width": 64,
+                                    "height": 64
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/jqtauws8i5ssckg8?key=directus-medium-crop",
+                                    "relative_url": "\/tdt\/assets\/jqtauws8i5ssckg8?key=directus-medium-crop",
+                                    "dimension": "300x300",
+                                    "width": 300,
+                                    "height": 300
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/jqtauws8i5ssckg8?key=directus-medium-contain",
+                                    "relative_url": "\/tdt\/assets\/jqtauws8i5ssckg8?key=directus-medium-contain",
+                                    "dimension": "300x300",
+                                    "width": 300,
+                                    "height": 300
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/jqtauws8i5ssckg8?key=directus-large-crop",
+                                    "relative_url": "\/tdt\/assets\/jqtauws8i5ssckg8?key=directus-large-crop",
+                                    "dimension": "800x600",
+                                    "width": 800,
+                                    "height": 600
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/jqtauws8i5ssckg8?key=directus-large-contain",
+                                    "relative_url": "\/tdt\/assets\/jqtauws8i5ssckg8?key=directus-large-contain",
+                                    "dimension": "800x600",
+                                    "width": 800,
+                                    "height": 600
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/jqtauws8i5ssckg8?key=thumbnail",
+                                    "relative_url": "\/tdt\/assets\/jqtauws8i5ssckg8?key=thumbnail",
+                                    "dimension": "200x200",
+                                    "width": 200,
+                                    "height": 200
+                                }
+                            ],
+                            "embed": null
+                        }
+                    }
+                },
+                {
+                    "id": 72,
+                    "description": "Parcours course à pied XS homme 2024",
+                    "course_id": {
+                        "id": 10,
+                        "date": "2024-09-15 15:45:00",
+                        "prix": 22,
+                        "type_de_course": "triathlon",
+                        "format": "xs",
+                        "specificite": "homme",
+                        "complet": false,
+                        "precision": "Individuel",
+                        "nombre_de_places": "250",
+                        "age": 14,
+                        "prix_pass_compet": 2,
+                        "recompense": "<p>A venir<\/p>",
+                        "couleur": "#00C18C"
+                    },
+                    "contenu": {
+                        "id": 354,
+                        "storage": "local",
+                        "private_hash": "mzn3xr31k80g4go0",
+                        "filename_disk": "d3fc11db-eba2-4c34-bd84-8ce769f5b5d8.jpg",
+                        "filename_download": "Parcours cap XS.jpg",
+                        "title": "Parcours Cap Xs",
+                        "type": "image\/jpeg",
+                        "uploaded_by": 12,
+                        "uploaded_on": "2024-07-11T15:29:25+00:00",
+                        "charset": "binary",
+                        "filesize": 94493,
+                        "width": 990,
+                        "height": 718,
+                        "duration": 0,
+                        "embed": null,
+                        "folder": null,
+                        "description": "",
+                        "location": "",
+                        "tags": [],
+                        "checksum": "bdebaa74a50353892dbca85347e0292e",
+                        "metadata": null,
+                        "data": {
+                            "full_url": "http:\/\/www.triathlondetoulouse.com\/assets\/uploads\/originals\/d3fc11db-eba2-4c34-bd84-8ce769f5b5d8.jpg",
+                            "url": "http:\/\/www.triathlondetoulouse.com\/assets\/uploads\/originals\/d3fc11db-eba2-4c34-bd84-8ce769f5b5d8.jpg",
+                            "thumbnails": [
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/mzn3xr31k80g4go0?key=directus-small-crop",
+                                    "relative_url": "\/tdt\/assets\/mzn3xr31k80g4go0?key=directus-small-crop",
+                                    "dimension": "64x64",
+                                    "width": 64,
+                                    "height": 64
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/mzn3xr31k80g4go0?key=directus-small-contain",
+                                    "relative_url": "\/tdt\/assets\/mzn3xr31k80g4go0?key=directus-small-contain",
+                                    "dimension": "64x64",
+                                    "width": 64,
+                                    "height": 64
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/mzn3xr31k80g4go0?key=directus-medium-crop",
+                                    "relative_url": "\/tdt\/assets\/mzn3xr31k80g4go0?key=directus-medium-crop",
+                                    "dimension": "300x300",
+                                    "width": 300,
+                                    "height": 300
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/mzn3xr31k80g4go0?key=directus-medium-contain",
+                                    "relative_url": "\/tdt\/assets\/mzn3xr31k80g4go0?key=directus-medium-contain",
+                                    "dimension": "300x300",
+                                    "width": 300,
+                                    "height": 300
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/mzn3xr31k80g4go0?key=directus-large-crop",
+                                    "relative_url": "\/tdt\/assets\/mzn3xr31k80g4go0?key=directus-large-crop",
+                                    "dimension": "800x600",
+                                    "width": 800,
+                                    "height": 600
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/mzn3xr31k80g4go0?key=directus-large-contain",
+                                    "relative_url": "\/tdt\/assets\/mzn3xr31k80g4go0?key=directus-large-contain",
+                                    "dimension": "800x600",
+                                    "width": 800,
+                                    "height": 600
+                                },
+                                {
+                                    "url": "https:\/\/admin.triathlondetoulouse.com\/tdt\/assets\/mzn3xr31k80g4go0?key=thumbnail",
+                                    "relative_url": "\/tdt\/assets\/mzn3xr31k80g4go0?key=thumbnail",
+                                    "dimension": "200x200",
+                                    "width": 200,
+                                    "height": 200
+                                }
+                            ],
+                            "embed": null
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "public": true
+}

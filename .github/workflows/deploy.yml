@@ -14,6 +14,14 @@ on:
                 options:
                     - triathlondetoulouse/master/public
                     - francis
+            deploy-environment:
+                description: "Environment to deploy"
+                required: true
+                type: choice
+                default: production
+                options:
+                    - production
+                    - development
 
 jobs:
     build-and-test:
@@ -38,7 +46,12 @@ jobs:
               run: yarn install --immutable
 
             - name: Build
+              if: ${{ github.event.inputs.deploy-environment == 'production' || github.event.inputs.deploy-path == 'triathlondetoulouse/master/public' }}
               run: yarn build
+
+            - name: Build dev mode
+              if: ${{ github.event.inputs.deploy-environment == 'development' }}
+              run: yarn build --configuration development
 
             - name: Backup web
               uses: appleboy/ssh-action@v1.0.3
