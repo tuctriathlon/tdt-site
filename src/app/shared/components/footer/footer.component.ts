@@ -1,3 +1,4 @@
+import { AsyncPipe, NgForOf } from '@angular/common'
 import { Component, OnInit } from '@angular/core'
 import { BehaviorSubject, Observable } from 'rxjs'
 import { map } from 'rxjs/operators'
@@ -6,10 +7,14 @@ import { Partner } from 'src/app/shared/models/partner.model'
 import { SiteConfig } from 'src/app/shared/models/site-config.model'
 import { DataService } from 'src/app/shared/services/data.service'
 
-@Component({
+@Component( {
     selector: 'tdt-footer',
     templateUrl: './footer.component.html',
     styleUrls: ['./footer.component.scss'],
+    imports: [
+        AsyncPipe,
+        NgForOf,
+    ],
 })
 export class FooterComponent implements OnInit {
     public config$: BehaviorSubject<SiteConfig>

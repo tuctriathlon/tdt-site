@@ -1,4 +1,4 @@
-@import '../shared/styles/colors.scss';
+@use '../shared/styles/colors.scss' as *;
 :host {
     width: 100%;
   min-height: 500px;
