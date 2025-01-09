@@ -1,4 +1,4 @@
-import { AsyncPipe, CommonModule, DatePipe, NgForOf, NgIf, NgOptimizedImage } from '@angular/common'
+import { CommonModule } from '@angular/common'
 import { Component, OnInit } from '@angular/core'
 import { ActivatedRoute } from '@angular/router'
 import { combineLatest, Observable } from 'rxjs'
@@ -7,7 +7,6 @@ import { Content } from 'src/app/shared/models/content.model'
 import { SafeHtmlPipe } from 'src/app/shared/pipes/safe-html.pipe'
 import { SafeUrlPipe } from 'src/app/shared/pipes/safe-url.pipe'
 import { DataService } from 'src/app/shared/services/data.service'
-import { SharedModule } from 'src/app/shared/shared.module'
 
 @Component( {
     selector: 'tdt-generic-page',
@@ -18,7 +17,6 @@ import { SharedModule } from 'src/app/shared/shared.module'
         SubmenuComponent,
         SafeHtmlPipe,
         SafeUrlPipe,
-        NgOptimizedImage,
     ],
 })
 export class GenericComponent implements OnInit {

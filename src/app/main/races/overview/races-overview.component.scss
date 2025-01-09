@@ -100,7 +100,6 @@ h1 {
     text-align: center;
     line-height: 20px;
     transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
     width: 80px;
     display: block;
     background: -webkit-linear-gradient(color.adjust($warn, $lightness: 20%) 0%, $warn 100%);
