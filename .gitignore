@@ -42,3 +42,9 @@ Thumbs.db
 
 # angular cli
 .angular
+
+# yarn
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+.pnp.*
