@@ -1,14 +1,22 @@
+import { AsyncPipe } from '@angular/common'
 import { Component, OnInit } from '@angular/core'
+import { RouterOutlet } from '@angular/router'
 import { combineLatest, Observable } from 'rxjs'
 import { map } from 'rxjs/operators'
+import { SubmenuComponent } from 'src/app/shared/components/submenu/submenu.component'
 import { Page } from 'src/app/shared/models/page.model'
 import { Race } from 'src/app/shared/models/race.model'
 import { DataService } from 'src/app/shared/services/data.service'
 
-@Component({
+@Component( {
     selector: 'tdt-races-page',
     templateUrl: './races.component.html',
     styleUrls: ['./races.component.scss'],
+    imports: [
+        SubmenuComponent,
+        AsyncPipe,
+        RouterOutlet,
+    ],
 })
 export class RacesComponent implements OnInit {
     public races$: Observable<Race[]>

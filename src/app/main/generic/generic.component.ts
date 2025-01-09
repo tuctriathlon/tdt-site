@@ -1,13 +1,25 @@
+import { AsyncPipe, CommonModule, DatePipe, NgForOf, NgIf, NgOptimizedImage } from '@angular/common'
 import { Component, OnInit } from '@angular/core'
 import { ActivatedRoute } from '@angular/router'
 import { combineLatest, Observable } from 'rxjs'
+import { SubmenuComponent } from 'src/app/shared/components/submenu/submenu.component'
 import { Content } from 'src/app/shared/models/content.model'
+import { SafeHtmlPipe } from 'src/app/shared/pipes/safe-html.pipe'
+import { SafeUrlPipe } from 'src/app/shared/pipes/safe-url.pipe'
 import { DataService } from 'src/app/shared/services/data.service'
+import { SharedModule } from 'src/app/shared/shared.module'
 
-@Component({
+@Component( {
     selector: 'tdt-generic-page',
     templateUrl: './generic.component.html',
     styleUrls: ['./generic.component.scss'],
+    imports: [
+        CommonModule,
+        SubmenuComponent,
+        SafeHtmlPipe,
+        SafeUrlPipe,
+        NgOptimizedImage,
+    ],
 })
 export class GenericComponent implements OnInit {
     public subPages = []

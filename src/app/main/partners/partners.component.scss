@@ -1,4 +1,4 @@
-@import '../../shared/styles/colors.scss';
+@use '../../shared/styles/colors.scss' as *;
 ul {
     list-style: none;
 }

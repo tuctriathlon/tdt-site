@@ -1,20 +1,30 @@
+import { AsyncPipe, NgForOf, NgIf, NgOptimizedImage } from '@angular/common'
 import { Component, HostListener, OnInit } from '@angular/core'
-import { NavigationEnd, Router } from '@angular/router'
+import { NavigationEnd, Router, RouterLink, RouterLinkActive } from '@angular/router'
 import { BehaviorSubject, Observable } from 'rxjs'
 import { map } from 'rxjs/operators'
 import { ThumbnailNames } from 'src/app/shared/models/file.model'
+import { Page } from 'src/app/shared/models/page.model'
 import { SiteConfig } from 'src/app/shared/models/site-config.model'
 
 import { DataService } from 'src/app/shared/services/data.service'
 
-@Component({
+@Component( {
     selector: 'tdt-navbar',
     templateUrl: './navbar.component.html',
     styleUrls: ['./navbar.component.scss'],
+    imports: [
+        AsyncPipe,
+        RouterLink,
+        NgOptimizedImage,
+        RouterLinkActive,
+        NgIf,
+        NgForOf,
+    ],
 })
 export class NavbarComponent implements OnInit {
     public config$: BehaviorSubject<SiteConfig>
-    public pages$
+    public pages$: Observable<Page[]>
     public logoUrl$: Observable<string>
     public day$: Observable<string>
     public month$: Observable<string>

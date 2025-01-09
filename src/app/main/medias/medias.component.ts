@@ -1,11 +1,19 @@
+import { AsyncPipe, NgForOf, NgIf } from '@angular/common'
 import { Component, OnInit } from '@angular/core'
+import { SafeUrlPipe } from 'src/app/shared/pipes/safe-url.pipe'
 import { DataService } from 'src/app/shared/services/data.service'
 import { map } from 'rxjs/operators'
 
-@Component({
+@Component( {
     selector: 'tdt-medias-page',
     templateUrl: './medias.component.html',
     styleUrls: ['./medias.component.scss'],
+    imports: [
+        AsyncPipe,
+        NgForOf,
+        NgIf,
+        SafeUrlPipe,
+    ],
 })
 export class MediasComponent implements OnInit {
     public medias$

@@ -1,9 +1,12 @@
 import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http'
 import { BrowserModule } from '@angular/platform-browser'
-import { APP_INITIALIZER, LOCALE_ID, NgModule } from '@angular/core'
+import { LOCALE_ID, NgModule, inject, provideAppInitializer } from '@angular/core'
 import { FormsModule } from '@angular/forms'
 import { RouterModule } from '@angular/router'
 import { firstValueFrom } from 'rxjs'
+import { FooterComponent } from 'src/app/shared/components/footer/footer.component'
+import { NavbarComponent } from 'src/app/shared/components/navbar/navbar.component'
+import { SlideshowComponent } from 'src/app/shared/components/slideshow/slideshow.component'
 import { DataService } from 'src/app/shared/services/data.service'
 import { SharedModule } from 'src/app/shared/shared.module'
 import { MainModule } from 'src/app/main/main.module'
@@ -19,13 +22,12 @@ function initializeAppFactory(dataService: DataService): () => Promise<void> {
 }
 
 @NgModule({ declarations: [AppComponent],
-    bootstrap: [AppComponent], imports: [RouterModule, BrowserModule, FormsModule, SharedModule, MainModule], providers: [
-        {
-            provide: APP_INITIALIZER,
-            useFactory: initializeAppFactory,
-            deps: [DataService],
-            multi: true,
-        },
+    bootstrap: [AppComponent],
+    imports: [RouterModule, BrowserModule, FormsModule, SharedModule, MainModule, NavbarComponent, SlideshowComponent, FooterComponent], providers: [
+        provideAppInitializer(() => {
+        const initializerFn = (initializeAppFactory)(inject(DataService));
+        return initializerFn();
+      }),
         {
             provide: LOCALE_ID,
             useValue: 'fr-FR',
