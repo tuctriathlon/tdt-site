@@ -1,4 +1,4 @@
-import { HttpClientModule } from '@angular/common/http'
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http'
 import { BrowserModule } from '@angular/platform-browser'
 import { APP_INITIALIZER, LOCALE_ID, NgModule } from '@angular/core'
 import { FormsModule } from '@angular/forms'
@@ -18,10 +18,8 @@ function initializeAppFactory(dataService: DataService): () => Promise<void> {
     return () => firstValueFrom(dataService.loadConfig())
 }
 
-@NgModule({
-    declarations: [AppComponent],
-    imports: [RouterModule, BrowserModule, FormsModule, HttpClientModule, SharedModule, MainModule],
-    providers: [
+@NgModule({ declarations: [AppComponent],
+    bootstrap: [AppComponent], imports: [RouterModule, BrowserModule, FormsModule, SharedModule, MainModule], providers: [
         {
             provide: APP_INITIALIZER,
             useFactory: initializeAppFactory,
@@ -32,7 +30,6 @@ function initializeAppFactory(dataService: DataService): () => Promise<void> {
             provide: LOCALE_ID,
             useValue: 'fr-FR',
         },
-    ],
-    bootstrap: [AppComponent],
-})
+        provideHttpClient(withInterceptorsFromDi()),
+    ] })
 export class AppModule {}
