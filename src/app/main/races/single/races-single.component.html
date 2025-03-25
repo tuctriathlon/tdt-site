@@ -34,7 +34,7 @@
                     <div class="content" [innerHTML]="race?.description | safeHtml"></div>
                 </div>
             </li>
-            <li *ngFor="let step of race?.etapes">
+            <li *ngFor="let step of race?.etapes | orderBy: 'ordre'">
                 <div class="icons">
                     <i class="icon material-icons">{{ step.icone }}</i>
                 </div>
