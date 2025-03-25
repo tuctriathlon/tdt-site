@@ -19,9 +19,9 @@ export class RacesComponent implements OnInit {
 
     ngOnInit() {
         this.races$ = this.dataService.getRaces()
-        this.childPages$ = this.dataService.getPages().pipe(
-            map((pages) => pages.filter((page) => page.parent_page_id === 1)),
-        )
+        this.childPages$ = this.dataService
+            .getPages()
+            .pipe(map((pages) => pages.filter((page) => page.parent_page_id === 1)))
         this.menuItems$ = combineLatest([this.races$, this.childPages$]).pipe(
             map(([races, childPages]) => {
                 const pages = races.map((race, index) => {

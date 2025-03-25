@@ -35,6 +35,7 @@ export interface Etape {
     image: null
     type: string
     computedDistance: string
+    ordre: number
 }
 
 export interface Course {
