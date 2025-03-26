@@ -23,7 +23,7 @@ on:
                     - production
                     - development
             git-ref:
-                description: "Git ref to deploy"
+                description: "Git ref (branch, sha, tag) to deploy"
                 required: true
                 type: string
                 default: master
@@ -34,7 +34,7 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
-            - name: Checkout
+            - name: Checkout ${{ github.event.inputs.git-ref }}
               uses: actions/checkout@v4
               with:
                   ref: ${{ github.event.inputs.git-ref }}
