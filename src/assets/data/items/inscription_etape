@@ -5,7 +5,7 @@
             "ordre_affichage": 0,
             "couleur": "#00BCD4",
             "titre": "Lien d'inscription",
-            "description": "https:\/\/chrono-start.com\/events\/triathlon-de-toulouse\/"
+            "description": "<a href=\"https:\/\/chrono-start.com\/events\/triathlon-de-toulouse\/\" target=\"_blank\" style=\"color:white\">Triathlon & swimrun</a><br/><a href=\"https:\/\/www.helloasso.com\/associations\/tuc-triathlon\/evenements\/triathlon-de-toulouse-2025-bb-tri-draisienne\" target=\"_blank\" style=\"color:white\">Animathlon</a>"
         },
         {
             "id": 13,

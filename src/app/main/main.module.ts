@@ -1,6 +1,7 @@
 import { CommonModule, DatePipe, NgOptimizedImage } from '@angular/common'
 import { NgModule } from '@angular/core'
 import { FormsModule } from '@angular/forms'
+import { AccessibleColorDirective } from 'src/app/shared/pipes/accessible-color.pipe'
 
 import { SharedModule } from 'src/app/shared/shared.module'
 import { GenericComponent } from 'src/app/main/generic/generic.component'
@@ -16,7 +17,7 @@ import { RacesSingleComponent } from 'src/app/main/races/single/races-single.com
 import { ResultsComponent } from 'src/app/main/results/results.component'
 
 @NgModule({
-    imports: [CommonModule, SharedModule, FormsModule, MainRoutingModule, NgOptimizedImage],
+    imports: [CommonModule, SharedModule, FormsModule, MainRoutingModule, NgOptimizedImage, AccessibleColorDirective],
     declarations: [
         MainComponent,
         GenericComponent,

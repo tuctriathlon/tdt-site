@@ -89,8 +89,8 @@
             "header_color": "#3F51B5",
             "footer_color": "#3F51B5",
             "linkedin_url": "https:\/\/www.linkedin.com\/company\/triathlondetoulouse",
-            "primary_color": "#3F51B5",
-            "secondary_color": "#FFEB13",
+            "primary_color": "rgb(255,118,100)",
+            "secondary_color": "#008585",
             "date": "14 & 15 septembre 2024"
         }
     ],
