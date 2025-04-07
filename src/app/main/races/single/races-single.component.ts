@@ -7,17 +7,11 @@ import { Race } from 'src/app/shared/models/race.model'
 import { SafeHtmlPipe } from 'src/app/shared/pipes/safe-html.pipe'
 import { DataService } from 'src/app/shared/services/data.service'
 
-@Component( {
+@Component({
     selector: 'tdt-races-single-page',
     templateUrl: './races-single.component.html',
     styleUrls: ['./races-single.component.scss'],
-    imports: [
-        NgIf,
-        AsyncPipe,
-        DatePipe,
-        SafeHtmlPipe,
-        NgForOf,
-    ],
+    imports: [NgIf, AsyncPipe, DatePipe, SafeHtmlPipe, NgForOf],
 })
 export class RacesSingleComponent {
     public race$: Observable<Race>

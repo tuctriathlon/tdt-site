@@ -21,17 +21,29 @@ function initializeAppFactory(dataService: DataService): () => Promise<void> {
     return () => firstValueFrom(dataService.loadConfig())
 }
 
-@NgModule({ declarations: [AppComponent],
+@NgModule({
+    declarations: [AppComponent],
     bootstrap: [AppComponent],
-    imports: [RouterModule, BrowserModule, FormsModule, SharedModule, MainModule, NavbarComponent, SlideshowComponent, FooterComponent], providers: [
+    imports: [
+        RouterModule,
+        BrowserModule,
+        FormsModule,
+        SharedModule,
+        MainModule,
+        NavbarComponent,
+        SlideshowComponent,
+        FooterComponent,
+    ],
+    providers: [
         provideAppInitializer(() => {
-        const initializerFn = (initializeAppFactory)(inject(DataService));
-        return initializerFn();
-      }),
+            const initializerFn = initializeAppFactory(inject(DataService))
+            return initializerFn()
+        }),
         {
             provide: LOCALE_ID,
             useValue: 'fr-FR',
         },
         provideHttpClient(withInterceptorsFromDi()),
-    ] })
+    ],
+})
 export class AppModule {}

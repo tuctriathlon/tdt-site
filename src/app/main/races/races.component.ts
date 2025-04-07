@@ -8,15 +8,11 @@ import { Page } from 'src/app/shared/models/page.model'
 import { Race } from 'src/app/shared/models/race.model'
 import { DataService } from 'src/app/shared/services/data.service'
 
-@Component( {
+@Component({
     selector: 'tdt-races-page',
     templateUrl: './races.component.html',
     styleUrls: ['./races.component.scss'],
-    imports: [
-        SubmenuComponent,
-        AsyncPipe,
-        RouterOutlet,
-    ],
+    imports: [SubmenuComponent, AsyncPipe, RouterOutlet],
 })
 export class RacesComponent implements OnInit {
     public races$: Observable<Race[]>

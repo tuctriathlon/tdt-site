@@ -9,18 +9,11 @@ import { SiteConfig } from 'src/app/shared/models/site-config.model'
 
 import { DataService } from 'src/app/shared/services/data.service'
 
-@Component( {
+@Component({
     selector: 'tdt-navbar',
     templateUrl: './navbar.component.html',
     styleUrls: ['./navbar.component.scss'],
-    imports: [
-        AsyncPipe,
-        RouterLink,
-        NgOptimizedImage,
-        RouterLinkActive,
-        NgIf,
-        NgForOf,
-    ],
+    imports: [AsyncPipe, RouterLink, NgOptimizedImage, RouterLinkActive, NgIf, NgForOf],
 })
 export class NavbarComponent implements OnInit {
     public config$: BehaviorSubject<SiteConfig>

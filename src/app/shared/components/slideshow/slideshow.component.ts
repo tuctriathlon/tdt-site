@@ -1,13 +1,11 @@
 import { NgForOf } from '@angular/common'
 import { Component } from '@angular/core'
 
-@Component( {
+@Component({
     selector: 'tdt-slideshow',
     templateUrl: './slideshow.component.html',
     styleUrls: ['./slideshow.component.scss'],
-    imports: [
-        NgForOf,
-    ],
+    imports: [NgForOf],
 })
 export class SlideshowComponent {
     public slideshow = [

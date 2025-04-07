@@ -8,16 +8,11 @@ import { SafeHtmlPipe } from 'src/app/shared/pipes/safe-html.pipe'
 import { SafeUrlPipe } from 'src/app/shared/pipes/safe-url.pipe'
 import { DataService } from 'src/app/shared/services/data.service'
 
-@Component( {
+@Component({
     selector: 'tdt-generic-page',
     templateUrl: './generic.component.html',
     styleUrls: ['./generic.component.scss'],
-    imports: [
-        CommonModule,
-        SubmenuComponent,
-        SafeHtmlPipe,
-        SafeUrlPipe,
-    ],
+    imports: [CommonModule, SubmenuComponent, SafeHtmlPipe, SafeUrlPipe],
 })
 export class GenericComponent implements OnInit {
     public subPages = []
