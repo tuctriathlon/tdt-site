@@ -1,4 +1,4 @@
-<nav [class.opened]="open" [class.expanded]="expanded">
+<nav class="nav-bar" [class.opened]="open" [class.expanded]="expanded">
     <div class="logo-container">
         <img
             [ngSrc]="logoUrl$ | async"
@@ -24,22 +24,60 @@
         <li [hidden]="open">
             <a routerLink="/"><i class="icon material-icons">home</i></a>
         </li>
-        <li *ngFor="let page of pages$ | async">
-            <a
-                *ngIf="page.url.startsWith('http')"
-                target="_blank"
-                [attr.href]="page.url"
-                class="focus"
-                >{{ page.page_name }}</a
-            >
-            <a
-                *ngIf="!page.url.startsWith('http')"
-                routerLink="{{ page.url }}"
-                routerLinkActive="selected"
-                (click)="open = !open"
-                >{{ page.page_name }}</a
-            >
-        </li>
+        @for (page of pages$ | async; track $index) {
+            <li>
+                @if (page.url.startsWith('http')) {
+                    <a
+                        class="nav-item external-link"
+                        target="_blank"
+                        [attr.href]="page.url"
+                        >{{ page.page_name }}</a
+                    >
+                } @else if ((getSubpages(page.id) | async).length > 0 && !page.url.startsWith('courses')) {
+                    <button
+                        class="nav-item dropdown"
+                        (click)="toggleSubmenu(page.url)"
+                    >
+                        {{ page.page_name }}
+                        @if (activeSubmenu() === page.url) {
+                            <i class="icon material-icons">expand_more</i>
+                        } @else {
+                            <i class="icon material-icons">expand_less</i>
+                        }
+                    </button>
+                    <ul class="submenu" [class.active]="activeSubmenu() === page.url">
+                        @for (subpage of getSubpages(page.id) | async; track subpage.id) {
+                            <li>
+                                @if (subpage.url.startsWith('http')) {
+                                    <a
+                                        class="nav-item external-link"
+                                        target="_blank"
+                                        [attr.href]="subpage.url"
+                                    >{{ subpage.page_name }}</a
+                                    >
+                                } @else {
+                                    <a
+                                        class="nav-item"
+                                        routerLinkActive="selected"
+                                        [routerLink]="subpage.url"
+                                        (click)="open = !open">{{ subpage.page_name }}</a>
+                                }
+                            </li>
+                        }
+
+                    </ul>
+
+                } @else {
+                    <a
+                        class="nav-item internal-link"
+                        routerLinkActive="selected"
+                        [routerLink]="page.url"
+                        (click)="open = !open"
+                        >{{ page.page_name }}</a
+                    >
+                }
+            </li>
+        }
     </ul>
     <ul class="social">
         <li *ngIf="(config$ | async)?.facebook_url">

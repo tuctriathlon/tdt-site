@@ -1,11 +1,8 @@
-import { AsyncPipe, NgForOf, NgIf, NgOptimizedImage } from '@angular/common'
-import { Component, HostListener, OnInit } from '@angular/core'
+import { AsyncPipe, NgIf, NgOptimizedImage } from '@angular/common'
+import { Component, HostListener, signal } from '@angular/core'
 import { NavigationEnd, Router, RouterLink, RouterLinkActive } from '@angular/router'
-import { BehaviorSubject, Observable } from 'rxjs'
 import { map } from 'rxjs/operators'
 import { ThumbnailNames } from 'src/app/shared/models/file.model'
-import { Page } from 'src/app/shared/models/page.model'
-import { SiteConfig } from 'src/app/shared/models/site-config.model'
 
 import { DataService } from 'src/app/shared/services/data.service'
 
@@ -13,18 +10,13 @@ import { DataService } from 'src/app/shared/services/data.service'
     selector: 'tdt-navbar',
     templateUrl: './navbar.component.html',
     styleUrls: ['./navbar.component.scss'],
-    imports: [AsyncPipe, RouterLink, NgOptimizedImage, RouterLinkActive, NgIf, NgForOf],
+    imports: [AsyncPipe, RouterLink, NgOptimizedImage, RouterLinkActive, NgIf],
 })
-export class NavbarComponent implements OnInit {
-    public config$: BehaviorSubject<SiteConfig>
-    public pages$: Observable<Page[]>
-    public logoUrl$: Observable<string>
-    public day$: Observable<string>
-    public month$: Observable<string>
-    public year$: Observable<string>
+export class NavbarComponent {
     public expandable = false
     public expanded = true
     public open = false
+    activeSubmenu = signal('')
 
     constructor(
         router: Router,
@@ -43,20 +35,47 @@ export class NavbarComponent implements OnInit {
         this.expanded = window.scrollY < 150 && this.expandable
     }
 
-    ngOnInit() {
-        this.config$ = this.dataService.getGlobalConfig()
-        this.logoUrl$ = this.config$.pipe(
+    get logoUrl$() {
+        return this.config$.pipe(
             map((config) =>
                 DataService.getThumbnailUrl(config.logo_tdt, ThumbnailNames.LARGE_CONTAIN)
             )
         )
-        this.day$ = this.config$.pipe(map((config) => config.date.match(/\d{1,2}\s&\s\d{1,2}/)[0]))
-        this.month$ = this.config$.pipe(
+    }
+
+    get day$() {
+        return this.config$.pipe(map((config) => config.date.match(/\d{1,2}\s&\s\d{1,2}/)[0]))
+    }
+     get month$() {
+        return this.config$.pipe(
             map((config) => config.date.toUpperCase().match(/\w{3,}/)[0])
         )
-        this.year$ = this.config$.pipe(map((config) => config.date.match(/\d{4}/)[0]))
-        this.pages$ = this.dataService
+    }
+    get year$() {
+        return this.config$.pipe( map( (config) => config.date.match( /\d{4}/ )[0] ) )
+    }
+    get pages$() {
+        return this.dataService
             .getPages() //
             .pipe(map((pages) => pages.filter((page) => page.parent_page_id === null)))
     }
+
+    get config$() {
+        return this.dataService.getGlobalConfig()
+    }
+
+    toggleSubmenu(submenu: string) {
+        this.activeSubmenu.set(this.activeSubmenu() === submenu ? '' : submenu)
+    }
+
+    getSubpages(pageId: number) {
+        return this.dataService
+            .getPages()
+            .pipe(
+                map((pages) =>
+                    pages.filter((page) => page.parent_page_id === pageId)
+                )
+            )
+    }
+
 }
