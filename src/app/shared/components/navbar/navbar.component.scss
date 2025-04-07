@@ -146,6 +146,8 @@ a:hover, a:active {
     margin: 0;
     padding-bottom: 2px;
     font-size: 13px;
+    display: inline-flex;
+    align-items: center;
 }
     @media screen and (min-width: 1100px) {
         .nav-bar {
@@ -248,7 +250,7 @@ a:hover, a:active {
         text-align: center;
         margin: 4em auto auto auto;
     }
-    a {
+    a, .dropdown {
         font-size: 1.1em;
         padding-bottom: 0.1em;
     }

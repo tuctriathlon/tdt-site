@@ -27,17 +27,13 @@
         @for (page of pages$ | async; track $index) {
             <li>
                 @if (page.url.startsWith('http')) {
-                    <a
-                        class="nav-item external-link"
-                        target="_blank"
-                        [attr.href]="page.url"
-                        >{{ page.page_name }}</a
-                    >
-                } @else if ((getSubpages(page.id) | async).length > 0 && !page.url.startsWith('courses')) {
-                    <button
-                        class="nav-item dropdown"
-                        (click)="toggleSubmenu(page.url)"
-                    >
+                    <a class="nav-item external-link" target="_blank" [attr.href]="page.url">{{
+                        page.page_name
+                    }}</a>
+                } @else if (
+                    (getSubpages(page.id) | async).length > 0 && !page.url.startsWith('courses')
+                ) {
+                    <button class="nav-item dropdown" (click)="toggleSubmenu(page.url)">
                         {{ page.page_name }}
                         @if (activeSubmenu() === page.url) {
                             <i class="icon material-icons">expand_more</i>
@@ -53,20 +49,20 @@
                                         class="nav-item external-link"
                                         target="_blank"
                                         [attr.href]="subpage.url"
-                                    >{{ subpage.page_name }}</a
+                                        >{{ subpage.page_name }}</a
                                     >
                                 } @else {
                                     <a
                                         class="nav-item"
                                         routerLinkActive="selected"
                                         [routerLink]="subpage.url"
-                                        (click)="open = !open">{{ subpage.page_name }}</a>
+                                        (click)="open = !open"
+                                        >{{ subpage.page_name }}</a
+                                    >
                                 }
                             </li>
                         }
-
                     </ul>
-
                 } @else {
                     <a
                         class="nav-item internal-link"

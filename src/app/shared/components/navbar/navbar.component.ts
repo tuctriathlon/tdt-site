@@ -46,13 +46,11 @@ export class NavbarComponent {
     get day$() {
         return this.config$.pipe(map((config) => config.date.match(/\d{1,2}\s&\s\d{1,2}/)[0]))
     }
-     get month$() {
-        return this.config$.pipe(
-            map((config) => config.date.toUpperCase().match(/\w{3,}/)[0])
-        )
+    get month$() {
+        return this.config$.pipe(map((config) => config.date.toUpperCase().match(/\w{3,}/)[0]))
     }
     get year$() {
-        return this.config$.pipe( map( (config) => config.date.match( /\d{4}/ )[0] ) )
+        return this.config$.pipe(map((config) => config.date.match(/\d{4}/)[0]))
     }
     get pages$() {
         return this.dataService
@@ -71,11 +69,6 @@ export class NavbarComponent {
     getSubpages(pageId: number) {
         return this.dataService
             .getPages()
-            .pipe(
-                map((pages) =>
-                    pages.filter((page) => page.parent_page_id === pageId)
-                )
-            )
+            .pipe(map((pages) => pages.filter((page) => page.parent_page_id === pageId)))
     }
-
 }
