@@ -1,5 +1,6 @@
-import { DatePipe } from '@angular/common'
+import { AsyncPipe, DatePipe, NgForOf, NgIf } from '@angular/common'
 import { Component, OnInit } from '@angular/core'
+import { RouterLink } from '@angular/router'
 import { Observable } from 'rxjs'
 
 import { map } from 'rxjs/operators'
@@ -10,6 +11,8 @@ import { DataService } from 'src/app/shared/services/data.service'
     selector: 'tdt-races-overview-page',
     templateUrl: './races-overview.component.html',
     styleUrls: ['./races-overview.component.scss'],
+    imports: [AsyncPipe, NgForOf, RouterLink, NgIf, DatePipe],
+    providers: [DatePipe]
 })
 export class RacesOverviewComponent implements OnInit {
     public races$: Observable<DayRace[]>

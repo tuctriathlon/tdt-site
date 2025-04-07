@@ -5,6 +5,7 @@
         "outDir": "./dist",
         "sourceMap": true,
         "declaration": false,
+        "esModuleInterop": true,
         "module": "es2022",
         "moduleResolution": "node",
         "emitDecoratorMetadata": true,
@@ -20,7 +21,6 @@
         "useDefineForClassFields": false,
         "noPropertyAccessFromIndexSignature": true,
         "resolveJsonModule": true,
-        "allowSyntheticDefaultImports": true,
     },
     "angularCompilerOptions": {
         "enableI18nLegacyMessageIdFormat": false,

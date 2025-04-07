@@ -1,4 +1,6 @@
+import { AsyncPipe, NgForOf, NgIf } from '@angular/common'
 import { Component, OnInit } from '@angular/core'
+import { SafeUrlPipe } from 'src/app/shared/pipes/safe-url.pipe'
 import { DataService } from 'src/app/shared/services/data.service'
 import { map } from 'rxjs/operators'
 
@@ -6,6 +8,7 @@ import { map } from 'rxjs/operators'
     selector: 'tdt-medias-page',
     templateUrl: './medias.component.html',
     styleUrls: ['./medias.component.scss'],
+    imports: [AsyncPipe, NgForOf, NgIf, SafeUrlPipe],
 })
 export class MediasComponent implements OnInit {
     public medias$
@@ -14,6 +17,7 @@ export class MediasComponent implements OnInit {
 
     ngOnInit() {
         this.medias$ = this.dataService.getMedias().pipe(
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             map((medias: any) =>
                 medias.map((media) => {
                     media.elements = media.medias_details

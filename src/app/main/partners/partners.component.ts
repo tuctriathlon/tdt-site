@@ -1,3 +1,4 @@
+import { NgForOf, NgIf, NgOptimizedImage } from '@angular/common'
 import { Component, OnInit } from '@angular/core'
 import { map } from 'rxjs/operators'
 import { ThumbnailNames } from 'src/app/shared/models/file.model'
@@ -8,6 +9,7 @@ import { DataService } from 'src/app/shared/services/data.service'
     selector: 'tdt-partners-page',
     templateUrl: './partners.component.html',
     styleUrls: ['./partners.component.scss'],
+    imports: [NgIf, NgForOf, NgOptimizedImage],
 })
 export class PartnersComponent implements OnInit {
     private partners$

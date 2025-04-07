@@ -1,5 +1,6 @@
+import { NgForOf, NgIf } from '@angular/common'
 import { Component, Input, OnChanges, OnInit } from '@angular/core'
-import { Router } from '@angular/router'
+import { Router, RouterLink, RouterLinkActive } from '@angular/router'
 import { Page } from 'src/app/shared/models/page.model'
 import { DataService } from 'src/app/shared/services/data.service'
 
@@ -7,6 +8,7 @@ import { DataService } from 'src/app/shared/services/data.service'
     selector: 'tdt-submenu',
     templateUrl: './submenu.component.html',
     styleUrls: ['./submenu.component.scss'],
+    imports: [RouterLink, RouterLinkActive, NgForOf, NgIf],
 })
 export class SubmenuComponent implements OnChanges, OnInit {
     @Input() menuItems: Partial<Page>[] = []
