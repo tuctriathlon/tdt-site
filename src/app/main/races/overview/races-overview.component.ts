@@ -12,6 +12,7 @@ import { DataService } from 'src/app/shared/services/data.service'
     templateUrl: './races-overview.component.html',
     styleUrls: ['./races-overview.component.scss'],
     imports: [AsyncPipe, NgForOf, RouterLink, NgIf, DatePipe],
+    providers: [DatePipe]
 })
 export class RacesOverviewComponent implements OnInit {
     public races$: Observable<DayRace[]>
