@@ -4,16 +4,11 @@ import { FooterComponent } from 'src/app/shared/components/footer/footer.compone
 import { NavbarComponent } from 'src/app/shared/components/navbar/navbar.component'
 import { SlideshowComponent } from 'src/app/shared/components/slideshow/slideshow.component'
 import { DataService } from 'src/app/shared/services/data.service'
-@Component( {
+@Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss'],
-    imports: [
-        NavbarComponent,
-        SlideshowComponent,
-        RouterOutlet,
-        FooterComponent,
-    ],
+    imports: [NavbarComponent, SlideshowComponent, RouterOutlet, FooterComponent],
 })
 export class AppComponent implements OnInit {
     home = false

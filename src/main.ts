@@ -31,8 +31,11 @@ bootstrapApplication(AppComponent, {
             useValue: 'fr-FR',
         },
         provideHttpClient(withInterceptorsFromDi()),
-        provideRouter(routes, withInMemoryScrolling({
-            scrollPositionRestoration: 'enabled',
-        }))
-    ]
+        provideRouter(
+            routes,
+            withInMemoryScrolling({
+                scrollPositionRestoration: 'enabled',
+            })
+        ),
+    ],
 }).catch((err) => console.log(err))
