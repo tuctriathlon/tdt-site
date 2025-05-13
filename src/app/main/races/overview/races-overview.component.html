@@ -26,7 +26,7 @@
                             <div class="race-icon material-icons">people</div>
                             <div class="race-text">{{ race.nombre_de_places }}</div>
                         </li>
-                        <li *ngFor="let step of race.etapes">
+                        <li *ngFor="let step of race.etapes | orderBy: 'ordre'">
                             <div class="race-icon">
                                 <i class="material-icons">{{ step.icone }}</i>
                             </div>
