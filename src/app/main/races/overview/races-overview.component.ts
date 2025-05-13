@@ -5,13 +5,14 @@ import { Observable } from 'rxjs'
 
 import { map } from 'rxjs/operators'
 import { DayRace, Race } from 'src/app/shared/models/race.model'
+import { OrderByPipe } from 'src/app/shared/pipes/orderBy.pipe'
 import { DataService } from 'src/app/shared/services/data.service'
 
 @Component({
     selector: 'tdt-races-overview-page',
     templateUrl: './races-overview.component.html',
     styleUrls: ['./races-overview.component.scss'],
-    imports: [AsyncPipe, NgForOf, RouterLink, NgIf, DatePipe],
+    imports: [AsyncPipe, NgForOf, RouterLink, NgIf, DatePipe, OrderByPipe],
     providers: [DatePipe],
 })
 export class RacesOverviewComponent implements OnInit {
