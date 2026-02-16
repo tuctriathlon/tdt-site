@@ -86,10 +86,8 @@
             },
             "titre_tdt": "Triathlon de Toulouse",
             "contactez_nous": "contact@triathlondetoulouse.com",
-            "header_color": "#3F51B5",
-            "footer_color": "#3F51B5",
             "linkedin_url": "https:\/\/www.linkedin.com\/company\/triathlondetoulouse",
-            "primary_color": "rgb(255,118,100)",
+            "primary_color": "#C45148",
             "secondary_color": "#008585",
             "date": "14 & 15 septembre 2024"
         }
