@@ -2,7 +2,7 @@
 <div>
     <article *ngFor="let article of articles$ | async" class="article">
         <h2 *ngIf="article.titre">{{ article?.titre }}</h2>
-        <p *ngIf="article.created_on" class="article-date">
+        <p *ngIf="article.created_on && article.afficher_date" class="article-date">
             {{ article?.created_on | date: 'dd MMMM YYYY' }}
         </p>
         <p *ngIf="article.description" [innerHtml]="article?.description | safeHtml"></p>
