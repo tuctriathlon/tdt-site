@@ -9,9 +9,7 @@ import { Component } from '@angular/core'
 })
 export class SlideshowComponent {
     public slideshow = [
-        '/assets/pictures/slideshow_tdt_1.jpg',
-        '/assets/pictures/slideshow_tdt_2.jpg',
-        '/assets/pictures/slideshow_tdt_3.jpg',
+        'https://www.triathlondetoulouse.com/assets/uploads/originals/e0aa16b0-0fcf-464d-84e2-91ac4b3fd199.png',
     ]
     public idx = 1
 
