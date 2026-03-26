@@ -163,13 +163,11 @@ a:hover, a:active {
             .logo-container {
                 .event-date {
                     display: unset;
-                    margin:auto 10px auto -10px;
-                    transform:matrix(0.99869231,0,-0.30286453,1.0013094,0,0);
+                    margin:auto 10px;
                     font-weight:900;
-                    font-family:'Arial Black',serif;
+                    font-family:'IBM Plex Sans','Arial Black',serif;
                     text-align:center;
                     text-anchor:middle;
-                    text-shadow: 4px 4px 2px rgba(0,0,0,0.3);
                     .day {
                         font-size:25px;
                         letter-spacing:-3px;
